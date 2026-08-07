@@ -1,0 +1,341 @@
+.hero{
+
+    max-width:1500px;
+
+    margin:0 auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:40px;
+
+    padding:40px 60px;
+
+}
+
+
+
+.hero__left{
+
+    width:45%;
+
+}
+
+
+
+.hero__left h1{
+
+    font-size:60px;
+
+    line-height:1.05;
+
+    font-weight:600;
+
+    letter-spacing:-1px;
+
+    color:#111;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.hero__left p{
+
+    width:470px;
+
+    font-size:19px;
+
+    line-height:1.5;
+
+    font-weight:400;
+
+    color:#333;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.hero__left button{
+
+    width:240px;
+
+    height:65px;
+
+    border-radius:16px;
+
+    background:white;
+
+    border:2px solid #D98C1F;
+
+    color:#D98C1F;
+
+    font-size:18px;
+
+    font-weight:500;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.hero__left button:hover{
+
+    background:#D98C1F;
+
+    color:white;
+
+}
+
+
+
+.hero__right{
+
+    width:55%;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+
+
+.hero__right img{
+
+    width:100%;
+
+    max-width:650px;
+
+}
+
+
+
+
+
+
+/* -------- TABLET -------- */
+
+
+@media(max-width:1100px){
+
+
+    .hero{
+
+        padding:40px;
+
+        gap:20px;
+
+    }
+
+
+
+    .hero__left{
+
+        width:50%;
+
+    }
+
+
+
+    .hero__left h1{
+
+        font-size:48px;
+
+    }
+
+
+
+    .hero__left p{
+
+        width:100%;
+
+        font-size:17px;
+
+    }
+
+
+
+    .hero__right{
+
+        width:50%;
+
+    }
+
+
+
+    .hero__right img{
+
+        max-width:520px;
+
+    }
+
+
+}
+
+
+
+
+
+
+
+/* -------- MOBILE -------- */
+
+
+@media(max-width:800px){
+
+
+    .hero{
+
+
+        flex-direction:column;
+
+
+        text-align:center;
+
+
+        padding:30px 25px 60px;
+
+
+        gap:40px;
+
+
+    }
+
+
+
+    .hero__left{
+
+        width:100%;
+
+        order:1;
+
+    }
+
+
+
+    .hero__left h1{
+
+
+        font-size:40px;
+
+
+        line-height:1.1;
+
+
+        margin-bottom:20px;
+
+
+    }
+
+
+
+    .hero__left p{
+
+
+        width:100%;
+
+
+        font-size:17px;
+
+
+        margin-bottom:30px;
+
+
+    }
+
+
+
+    .hero__left button{
+
+
+        width:220px;
+
+
+        height:60px;
+
+
+        font-size:16px;
+
+
+    }
+
+
+
+
+    .hero__right{
+
+
+        width:100%;
+
+
+        justify-content:center;
+
+
+        order:2;
+
+
+    }
+
+
+
+
+    .hero__right img{
+
+
+        width:100%;
+
+
+        max-width:450px;
+
+
+    }
+
+
+}
+
+
+
+
+
+
+/* -------- CELULAR PEQUENO -------- */
+
+
+@media(max-width:480px){
+
+
+    .hero{
+
+
+        padding:25px 20px 50px;
+
+    }
+
+
+
+    .hero__left h1{
+
+        font-size:34px;
+
+    }
+
+
+
+    .hero__right img{
+
+        max-width:350px;
+
+    }
+
+
+}

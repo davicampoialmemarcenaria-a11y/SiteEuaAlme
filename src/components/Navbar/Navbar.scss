@@ -1,0 +1,418 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Space Grotesk', sans-serif;
+}
+
+
+.navbar{
+
+    width:100%;
+    background:#fff;
+
+    padding:22px 0;
+
+}
+
+
+.navbar-container{
+
+    width:min(92%,1600px);
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+
+.navbar-right{
+
+    display:flex;
+    align-items:center;
+
+    gap:40px;
+
+}
+
+
+
+.navbar-links{
+
+    display:flex;
+    align-items:center;
+
+    gap:42px;
+
+}
+
+
+
+.navbar-brand{
+
+    display:flex;
+    align-items:center;
+
+    gap:18px;
+
+    flex-shrink:0;
+
+
+    img{
+
+        width:54px;
+        flex-shrink:0;
+
+    }
+
+
+    span{
+
+        font-size:28px;
+        font-weight:500;
+
+        color:#111;
+
+        letter-spacing:.4px;
+
+        white-space:nowrap;
+
+    }
+
+}
+
+
+
+
+.navbar-links a{
+
+    text-decoration:none;
+
+    color:#111;
+
+    font-size:20px;
+
+    font-weight:400;
+
+    transition:.3s;
+
+
+    &:hover{
+
+        color:#D98C1F;
+
+    }
+
+}
+
+
+
+
+.quote-btn{
+
+
+    width:245px;
+
+    height:58px;
+
+
+    border:none;
+
+    border-radius:16px;
+
+
+    background:#D98C1F;
+
+
+    color:white;
+
+
+    font-size:20px;
+
+    font-weight:500;
+
+
+    cursor:pointer;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.quote-btn:hover{
+
+    background:#c98317;
+
+}
+
+
+
+/* botão mobile escondido no desktop */
+
+.mobile-btn{
+
+    display:none;
+
+}
+
+
+
+
+.hamburger{
+
+
+    display:none;
+
+
+    border:none;
+
+    background:none;
+
+
+    font-size:34px;
+
+
+    color:#D98C1F;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+/* -------- TABLET -------- */
+
+
+@media(max-width:1100px){
+
+
+    .navbar-brand span{
+
+        font-size:24px;
+
+    }
+
+
+
+    .navbar-links{
+
+        gap:30px;
+
+    }
+
+
+
+    .quote-btn{
+
+        width:190px;
+
+        font-size:17px;
+
+    }
+
+
+}
+
+
+
+
+
+/* -------- MOBILE -------- */
+
+
+@media(max-width:860px){
+
+
+    .navbar{
+
+        padding:18px 0;
+
+    }
+
+
+
+    .navbar-container{
+
+        position:relative;
+
+    }
+
+
+
+    .navbar-right{
+
+        gap:0;
+
+    }
+
+
+
+    .hamburger{
+
+        display:block;
+
+    }
+
+
+
+    .desktop-btn{
+
+        display:none;
+
+    }
+
+
+
+    .mobile-btn{
+
+
+        display:block;
+
+
+        width:200px;
+
+        height:50px;
+
+
+        font-size:16px;
+
+
+        margin-top:10px;
+
+
+    }
+
+
+
+
+
+    .navbar-links{
+
+
+        position:absolute;
+
+
+        top:75px;
+
+
+        right:50%;
+
+
+        transform:translateX(85%) translateY(-15px);
+
+
+
+        width:260px;
+
+
+
+        background:white;
+
+
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:center;
+
+        justify-content:center;
+
+
+
+        padding:35px 20px;
+
+
+
+        border-radius:20px;
+
+
+
+        border:1px solid rgba(0,0,0,0.05);
+
+
+
+        box-shadow:
+
+            0 25px 60px rgba(0,0,0,0.20),
+
+            0 10px 25px rgba(0,0,0,0.12),
+
+            0 4px 10px rgba(0,0,0,0.08);
+
+
+
+        gap:25px;
+
+
+
+        opacity:0;
+
+        visibility:hidden;
+
+
+
+        transition:.3s;
+
+
+    }
+
+
+
+
+    .navbar-links.active{
+
+
+        opacity:1;
+
+
+        visibility:visible;
+
+
+
+        transform:translateX(85%) translateY(0);
+
+
+    }
+
+
+
+}
+
+
+
+
+/* -------- CELULAR PEQUENO -------- */
+
+
+@media(max-width:520px){
+
+
+    .navbar-brand span{
+
+        display:none;
+
+    }
+
+
+
+    .navbar-brand img{
+
+        width:48px;
+
+    }
+
+
+}
