@@ -1,0 +1,786 @@
+.project {
+  width: 100%;
+  background: #fff;
+  padding: 120px 0;
+  font-family: "Space Grotesk", sans-serif;
+
+  &__container {
+    width: min(92%, 1500px);
+    margin: 0 auto;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+  }
+
+  /* =====================================================
+     LEFT
+  ===================================================== */
+
+  &__left {
+    width: 32%;
+    min-width: 320px;
+
+    h2 {
+      font-size: clamp(3.8rem, 5vw, 5.8rem);
+      font-weight: 500;
+      line-height: 0.95;
+      color: #111;
+      margin: 0 0 45px;
+    }
+
+    p {
+      max-width: 420px;
+      font-size: 1.45rem;
+      line-height: 1.55;
+      color: #222;
+      margin: 0;
+    }
+  }
+
+  /* =====================================================
+     RIGHT
+  ===================================================== */
+
+  &__right {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 18px;
+    height: 610px;
+    min-width: 0;
+  }
+
+  /* =====================================================
+     OPTION
+  ===================================================== */
+
+  .option {
+    position: relative;
+    overflow: hidden;
+
+    flex: 1 1 0;
+    min-width: 90px;
+
+    cursor: pointer;
+
+    border-radius: 36px;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: flex-end;
+
+    transition:
+      flex 0.6s cubic-bezier(0.05, 0.61, 0.41, 0.95),
+      border-radius 0.45s ease,
+      transform 0.45s ease;
+
+    &:hover {
+      transform: translateY(-3px);
+    }
+
+    /* =====================================================
+       SHADOW
+    ===================================================== */
+
+    .shadow {
+      position: absolute;
+      inset: 0;
+
+      opacity: 0.35;
+
+      transition:
+        opacity 0.55s cubic-bezier(0.05, 0.61, 0.41, 0.95),
+        background 0.55s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+
+      pointer-events: none;
+    }
+
+    /* =====================================================
+       LABEL
+    ===================================================== */
+
+    .label {
+      position: absolute;
+
+      left: 18px;
+      right: 18px;
+      bottom: 18px;
+
+      display: flex;
+      align-items: center;
+
+      z-index: 5;
+
+      transition:
+        left 0.55s cubic-bezier(0.05, 0.61, 0.41, 0.95),
+        bottom 0.55s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    }
+
+    /* =====================================================
+       ICON
+    ===================================================== */
+
+    .icon {
+      width: 56px;
+      height: 56px;
+
+      flex-shrink: 0;
+
+      border-radius: 50%;
+
+      background: #fff;
+
+      /* CONTORNO REMOVIDO */
+      border: none;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+      transition:
+        width 0.4s ease,
+        height 0.4s ease;
+    }
+
+    .icon img {
+      width: 40px;
+      height:40px;
+
+      object-fit: contain;
+
+      display: block;
+
+      /* garante que a própria imagem não crie borda */
+      border: none;
+      outline: none;
+    }
+
+    /* =====================================================
+       INFO
+    ===================================================== */
+
+    .info {
+      overflow: hidden;
+
+      width: 0;
+
+      opacity: 0;
+
+      margin-left: 18px;
+
+      transform: translateX(30px);
+
+      color: #fff;
+
+      transition:
+        width 0.55s cubic-bezier(0.05, 0.61, 0.41, 0.95),
+        opacity 0.35s ease,
+        transform 0.55s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    }
+
+    .main {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.1;
+
+      margin-bottom: 6px;
+
+      white-space: nowrap;
+    }
+
+    .sub {
+      font-size: 1rem;
+      line-height: 1.3;
+
+      opacity: 0.9;
+
+      white-space: nowrap;
+    }
+
+    /* =====================================================
+       ACTIVE
+    ===================================================== */
+
+    &.active {
+      flex: 7;
+
+      .shadow {
+        opacity: 1;
+
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.7) 0%,
+          rgba(0, 0, 0, 0.2) 45%,
+          rgba(0, 0, 0, 0) 100%
+        );
+      }
+
+      .label {
+        left: 28px;
+        bottom: 24px;
+      }
+
+      .info {
+        width: 320px;
+
+        opacity: 1;
+
+        transform: translateX(0);
+      }
+    }
+
+    /* =====================================================
+       INACTIVE
+    ===================================================== */
+
+    &:not(.active) {
+      .shadow {
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.35),
+          rgba(0, 0, 0, 0)
+        );
+      }
+    }
+  }
+}
+
+/* =========================================================
+   TABLET / SMALL DESKTOP
+========================================================= */
+
+@media (max-width: 1400px) {
+  .project {
+    &__content {
+      gap: 45px;
+    }
+
+    &__left {
+      width: 30%;
+
+      h2 {
+        font-size: 4.3rem;
+      }
+
+      p {
+        font-size: 1.25rem;
+      }
+    }
+
+    &__right {
+      height: 520px;
+    }
+
+    .option {
+      &.active {
+        flex: 6;
+      }
+
+      .main {
+        font-size: 1.6rem;
+      }
+
+      .info {
+        max-width: 270px;
+      }
+    }
+  }
+}
+
+/* =========================================================
+   NOTEBOOK / TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+  .project {
+    padding: 90px 0;
+
+    &__content {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 50px;
+    }
+
+    &__left {
+      width: 100%;
+      min-width: 0;
+      max-width: 700px;
+
+      h2 {
+        font-size: clamp(3.5rem, 7vw, 5rem);
+        margin-bottom: 30px;
+      }
+
+      p {
+        max-width: 600px;
+      }
+    }
+
+    &__right {
+      width: 100%;
+      height: 500px;
+    }
+
+    .option {
+      min-width: 70px;
+
+      &.active {
+        flex: 6;
+
+        .label {
+          left: 24px;
+          bottom: 22px;
+        }
+
+        .info {
+          width: 260px;
+        }
+      }
+
+      .main {
+        font-size: 1.5rem;
+      }
+
+      .sub {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .project {
+    padding: 65px 0;
+    width: 100%;
+    overflow: hidden;
+
+    &__container {
+      width: 92%;
+      margin: 0 auto;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 35px;
+    }
+
+    /* =====================================================
+       TEXTO
+    ===================================================== */
+
+  .project__left {
+    width: 100%;
+    min-width: 0;
+    text-align: center;
+
+    h2 {
+      font-size: clamp(3rem, 12vw, 4rem);
+      line-height: 0.95;
+      margin-bottom: 25px;
+    }
+
+    p {
+      max-width: 100%;
+      font-size: 1rem;
+      line-height: 1.5;
+      margin: 0 auto;
+    }
+    }
+
+    /* =====================================================
+       CARDS
+    ===================================================== */
+
+    &__right {
+      width: 100%;
+      height: 420px;
+
+      display: flex;
+      flex-direction: row;
+
+      align-items: stretch;
+
+      gap: 8px;
+
+      overflow: hidden;
+
+      flex: none;
+    }
+
+    /* =====================================================
+       CARD
+    ===================================================== */
+
+    .option {
+      position: relative;
+
+      /*
+       * IMPORTANTE:
+       * todos começam com o mesmo tamanho
+       */
+      flex: 1 1 0;
+
+      width: auto;
+      min-width: 42px;
+      height: 100%;
+
+      border-radius: 24px;
+
+      overflow: hidden;
+
+      /*
+       * mantém suas imagens background
+       */
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      display: flex;
+      align-items: flex-end;
+
+      cursor: pointer;
+
+      transition:
+        flex 0.6s cubic-bezier(0.05, 0.61, 0.41, 0.95),
+        border-radius 0.45s ease;
+
+      &:hover {
+        transform: none;
+      }
+
+      /* ===================================================
+         SOMBRA
+      =================================================== */
+
+      .shadow {
+        position: absolute;
+
+        inset: 0;
+
+        z-index: 1;
+
+        opacity: 1;
+
+        pointer-events: none;
+
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.38),
+          rgba(0, 0, 0, 0)
+        );
+      }
+
+      /* ===================================================
+         LABEL
+      =================================================== */
+
+      .label {
+        position: absolute;
+
+        left: 8px;
+        right: 8px;
+        bottom: 10px;
+
+        z-index: 5;
+
+        display: flex;
+
+        align-items: center;
+
+        width: auto;
+
+        transition:
+          left 0.5s ease,
+          right 0.5s ease,
+          bottom 0.5s ease;
+      }
+
+      /* ===================================================
+         ÍCONE
+      =================================================== */
+
+      .icon {
+        width: 46px;
+        height: 46px;
+
+        min-width: 46px;
+        min-height: 46px;
+
+        flex-shrink: 0;
+
+        border-radius: 50%;
+
+        background: #fff;
+
+        border: none;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.16);
+      }
+
+      .icon img {
+        width: 30px;
+        height: 30px;
+
+        object-fit: contain;
+
+        display: block;
+
+        border: none;
+        outline: none;
+      }
+
+      /* ===================================================
+         INFORMAÇÕES
+      =================================================== */
+
+      .info {
+        width: 0;
+
+        max-width: 150px;
+
+        margin-left: 10px;
+
+        overflow: hidden;
+
+        opacity: 0;
+
+        transform: translateX(20px);
+
+        color: #fff;
+
+        transition:
+          width 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95),
+          opacity 0.35s ease,
+          transform 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+      }
+
+      .main {
+        font-size: 1.05rem;
+
+        font-weight: 700;
+
+        line-height: 1.1;
+
+        margin: 0;
+
+        white-space: nowrap;
+      }
+
+      .sub {
+        display: none;
+      }
+
+      /* ===================================================
+         CARD ATIVO
+      =================================================== */
+
+      &.active {
+        /*
+         * O ativo fica aproximadamente 4x maior
+         */
+        flex: 4 1 0;
+
+        .shadow {
+          opacity: 1;
+
+          background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.72) 0%,
+            rgba(0, 0, 0, 0.28) 48%,
+            rgba(0, 0, 0, 0) 100%
+          );
+        }
+
+        .label {
+          left: 15px;
+          right: 15px;
+          bottom: 15px;
+        }
+
+        .info {
+          width: 145px;
+
+          opacity: 1;
+
+          transform: translateX(0);
+        }
+      }
+
+      /* ===================================================
+         INATIVOS
+      =================================================== */
+
+      &:not(.active) {
+
+        .label {
+          left: 7px;
+          right: 7px;
+        }
+
+        .info {
+          width: 0;
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+
+/* =========================================================
+   CELULAR PEQUENO
+========================================================= */
+
+@media (max-width: 500px) {
+
+  .project {
+    padding: 55px 0;
+
+    &__container {
+      width: 92%;
+    }
+
+    &__content {
+      gap: 30px;
+    }
+
+    &__left {
+
+      h2 {
+        font-size: 2.8rem;
+        line-height: 0.95;
+      }
+
+      p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+      }
+    }
+
+    &__right {
+      height: 350px;
+
+      gap: 6px;
+    }
+
+    .option {
+      min-width: 36px;
+
+      border-radius: 20px;
+
+      .label {
+        bottom: 9px;
+      }
+
+      .icon {
+        width: 42px;
+        height: 42px;
+
+        min-width: 42px;
+        min-height: 42px;
+      }
+
+      .icon img {
+        width: 18px;
+        height: 18px;
+      }
+
+      .main {
+        font-size: 0.95rem;
+      }
+
+      &.active {
+
+        flex: 4 1 0;
+
+        .label {
+          left: 11px;
+          right: 11px;
+          bottom: 12px;
+        }
+
+        .info {
+          width: 120px;
+
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}
+
+
+/* =========================================================
+   CELULAR MUITO PEQUENO
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .project {
+
+    &__right {
+      height: 310px;
+
+      gap: 5px;
+    }
+
+    .option {
+      min-width: 32px;
+
+      border-radius: 18px;
+
+      .icon {
+        width: 38px;
+        height: 38px;
+
+        min-width: 38px;
+        min-height: 38px;
+      }
+
+      .icon img {
+        width: 16px;
+        height: 16px;
+      }
+
+      &.active {
+
+        .label {
+          left: 9px;
+          right: 9px;
+          bottom: 10px;
+        }
+
+        .info {
+          width: 105px;
+
+          margin-left: 7px;
+        }
+
+        .main {
+          font-size: 0.85rem;
+        }
+      }
+    }
+  }
+}

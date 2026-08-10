@@ -1,0 +1,565 @@
+.seconds{
+
+    width:100%;
+
+    padding:90px 0;
+
+    background:#fff;
+
+}
+
+
+
+
+
+.seconds__container{
+
+    width:min(1400px,92%);
+
+    margin:auto;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+
+    gap:40px;
+
+}
+
+
+
+
+
+
+/* ---------------- TEXT ---------------- */
+
+
+.seconds__left{
+
+    flex:1;
+
+    max-width:700px;
+
+
+
+    p{
+
+        font-family:"Space Grotesk", sans-serif;
+
+        font-size:1.10rem;
+
+        line-height:1.9;
+
+        width:100%;
+
+        color:#222;
+
+        margin-bottom:24px;
+
+    }
+
+
+
+    strong{
+
+        font-weight:700;
+
+    }
+
+}
+
+
+
+
+
+
+/* ---------------- CARD ---------------- */
+
+
+.seconds__right{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    /* move o card somente no desktop */
+
+    transform:translateX(-30px);
+
+}
+
+
+
+
+
+
+.seconds__card{
+
+
+    width:530px;
+
+    height:480px;
+
+
+
+    background:#D48821;
+
+
+
+    border-radius:38px;
+
+
+
+    position:relative;
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+
+
+    padding:25px 30px 35px;
+
+
+
+    border:2px solid #161616;
+
+
+    box-shadow:0 8px 0 #161616;
+
+
+
+    transition:.35s;
+
+
+
+    &:hover{
+
+        transform:translateY(-5px);
+
+        box-shadow:0 13px 0 #161616;
+
+    }
+
+
+
+
+
+
+    img{
+
+
+        width:125%;
+
+
+        max-width:480px;
+
+
+        height:auto;
+
+
+        object-fit:contain;
+
+
+        margin-top:-15px;
+
+
+        transform:translateX(-10px);
+
+
+
+        user-select:none;
+
+        pointer-events:none;
+
+
+    }
+
+
+
+
+
+    h2{
+
+
+        color:#fff;
+
+
+        font-family:"Space Grotesk", sans-serif;
+
+
+        font-size:1.55rem;
+
+
+        font-weight:700;
+
+
+        line-height:1.2;
+
+
+        text-align:center;
+
+
+        text-transform:uppercase;
+
+
+        letter-spacing:-.5px;
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+/* ---------------- TABLET ---------------- */
+
+
+@media(max-width:1200px){
+
+
+
+    .seconds__container{
+
+        gap:35px;
+
+    }
+
+
+
+
+    .seconds__left{
+
+
+        max-width:600px;
+
+
+
+        p{
+
+            font-size:1rem;
+
+        }
+
+    }
+
+
+
+
+
+    .seconds__right{
+
+        transform:translateX(-15px);
+
+    }
+
+
+
+
+
+
+    .seconds__card{
+
+
+        width:390px;
+
+        height:450px;
+
+
+
+        img{
+
+            width:120%;
+
+        }
+
+
+
+
+        h2{
+
+            font-size:1.4rem;
+
+        }
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ---------------- MOBILE ---------------- */
+
+
+@media(max-width:900px){
+
+
+
+    .seconds{
+
+
+        padding:70px 0;
+
+    }
+
+
+
+
+
+
+    .seconds__container{
+
+
+        width:90%;
+
+
+        flex-direction:column;
+
+
+        gap:50px;
+
+
+    }
+
+
+
+
+
+
+
+    .seconds__left{
+
+
+        max-width:100%;
+
+
+        p{
+
+
+            font-size:1rem;
+
+            line-height:1.75;
+
+        }
+
+    }
+
+
+
+
+
+
+
+    .seconds__right{
+
+
+        width:100%;
+
+
+        transform:none;
+
+
+    }
+
+
+
+
+
+
+
+
+    .seconds__card{
+
+
+        width:100%;
+
+
+        max-width:430px;
+
+
+        height:auto;
+
+
+        min-height:450px;
+
+
+        margin:auto;
+
+
+
+        padding:25px;
+
+
+        border-radius:32px;
+
+
+        box-sizing:border-box;
+
+
+
+        img{
+
+
+            width:125%;
+
+
+            max-width:400px;
+
+
+            margin-top:-15px;
+
+
+            transform:translateX(-5px);
+
+        }
+
+
+
+
+        h2{
+
+
+            font-size:1.35rem;
+
+
+            margin-top:20px;
+
+        }
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+/* ---------------- SMALL MOBILE ---------------- */
+
+
+@media(max-width:480px){
+
+
+
+    .seconds{
+
+
+        padding:50px 0;
+
+    }
+
+
+
+
+
+
+    .seconds__container{
+
+
+        width:88%;
+
+    }
+
+
+
+
+
+
+
+    .seconds__left{
+
+
+        p{
+
+
+            font-size:.95rem;
+
+
+            line-height:1.7;
+
+        }
+
+    }
+
+
+
+
+
+
+
+    .seconds__card{
+
+
+        min-height:390px;
+
+
+        border-radius:26px;
+
+
+        padding:20px;
+
+
+        box-shadow:0 6px 0 #161616;
+
+
+
+
+
+        img{
+
+
+            width:130%;
+
+
+        }
+
+
+
+
+
+        h2{
+
+
+            font-size:1.15rem;
+
+
+            letter-spacing:0;
+
+        }
+
+
+    }
+
+
+}

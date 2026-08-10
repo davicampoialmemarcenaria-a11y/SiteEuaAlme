@@ -1,0 +1,931 @@
+.card-section {
+
+  width: 100%;
+
+  padding: 100px 0 120px;
+
+  background: #fff;
+
+  font-family: "Space Grotesk", sans-serif;
+
+  color: #111;
+
+
+  // =====================================================
+  // CONTAINER
+  // =====================================================
+
+  &__container {
+  width: min(90%, 1500px);
+  margin: 0 auto;
+}
+
+
+  // =====================================================
+  // HEADER
+  // =====================================================
+
+  &__header {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 28px;
+
+    margin-bottom: 48px;
+
+    padding-left: 0;
+
+  }
+
+
+  &__header h2 {
+
+    display: inline-block;
+
+    margin: 0;
+
+    padding: 3px 7px 4px;
+
+    background: #df8c17;
+
+    border-radius: 4px;
+
+    font-size: 2rem;
+
+    font-weight: 500;
+
+    line-height: 1;
+
+    color: #111;
+
+  }
+
+
+  &__header p {
+
+    margin: 1px 0 0;
+
+    font-size: 0.95rem;
+
+    line-height: 1.2;
+
+    color: #222;
+
+  }
+
+
+  // =====================================================
+  // GRID
+  // =====================================================
+
+  &__grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    grid-template-rows: repeat(3, 300px);
+
+    gap: 24px 32px;
+
+  }
+
+}
+
+
+
+// =========================================================
+// CARD BASE
+// =========================================================
+
+.model-card {
+
+  position: relative;
+
+  width: 100%;
+
+  height: 100%;
+
+  overflow: hidden;
+
+  border-radius: 34px;
+
+  border: 1px solid #606068;
+
+  box-sizing: border-box;
+
+  box-shadow:
+    0 6px 0 #17171b;
+
+  display: flex;
+
+  align-items: center;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+
+  &:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+      0 8px 0 #17171b;
+
+  }
+
+}
+
+
+
+// =========================================================
+// CORES
+// =========================================================
+
+.model-card--light {
+
+  background: #f3f3f3;
+
+}
+
+
+.model-card--orange {
+
+  background: #df8c17;
+
+  border-color: #414148;
+
+}
+
+
+.model-card--brown {
+
+  background: #4a1e00;
+
+  border-color: #171717;
+
+}
+
+
+
+// =========================================================
+// TÍTULOS
+// =========================================================
+
+.model-card__title {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 0;
+
+  font-size: 1.55rem;
+
+  font-weight: 500;
+
+  line-height: 1.05;
+
+  color: #111;
+
+}
+
+
+.model-card__title span {
+
+  display: inline-block;
+
+  width: fit-content;
+
+  padding: 1px 5px 3px;
+
+  background: #df8c17;
+
+}
+
+
+.model-card__title--white span {
+
+  background: #fff;
+
+  color: #111;
+
+}
+
+
+.model-card__title--orange span {
+
+  background: #df8c17;
+
+  color: #111;
+
+}
+
+
+
+// =========================================================
+// CARD 1
+// =========================================================
+
+.card-one {
+
+  padding: 40px 35px;
+
+  justify-content: space-between;
+
+}
+
+
+.card-one .model-card__content {
+
+  height: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+}
+
+
+.card-one .model-card__title {
+
+  margin-top: 0;
+
+}
+
+
+.model-card__learn {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  font-size: 0.8rem;
+
+  font-weight: 500;
+
+}
+
+
+.arrow {
+
+  width: 29px;
+
+  height: 29px;
+
+  border-radius: 50%;
+
+  background: #17171b;
+
+  color: #df8c17;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 1.1rem;
+
+  line-height: 1;
+
+}
+
+
+.model-card__list {
+
+  margin: 0;
+
+  padding: 0;
+
+  list-style: none;
+
+}
+
+
+.model-card__list li {
+
+  position: relative;
+
+  padding-left: 15px;
+
+  margin-bottom: 15px;
+
+  font-size: 0.82rem;
+
+  line-height: 1.3;
+
+  color: #202024;
+
+}
+
+
+.model-card__list li::before {
+
+  content: "•";
+
+  position: absolute;
+
+  left: 0;
+
+  top: 0;
+
+}
+
+
+.card-one .model-card__list {
+
+  width: 48%;
+
+  margin-right: 5px;
+
+}
+
+
+
+// =========================================================
+// CARD 2
+// =========================================================
+
+.card-two {
+
+  padding: 32px 27px;
+
+  justify-content: space-between;
+
+}
+
+
+.card-two .model-card__title {
+
+  align-self: flex-start;
+
+}
+
+
+.card-two .model-card__image {
+
+  position: absolute;
+
+  right: 20px;
+
+  top: 35px;
+
+  width: 52%;
+
+  height: 75%;
+
+  object-fit: contain;
+
+}
+
+
+
+// =========================================================
+// CARD 3
+// =========================================================
+
+.card-three {
+
+  justify-content: center;
+
+  align-items: center;
+
+}
+
+
+.card-three .model-card__image {
+
+  width: 72%;
+
+  height: 90%;
+
+  object-fit: contain;
+
+}
+
+
+
+// =========================================================
+// CARD 4
+// =========================================================
+
+.card-four {
+
+  padding: 35px 42px;
+
+}
+
+
+.card-four .model-card__list {
+
+  width: 100%;
+
+}
+
+
+.model-card__list--full li {
+
+  margin-bottom: 14px;
+
+  font-size: 0.8rem;
+
+}
+
+
+
+// =========================================================
+// CARD 5
+// =========================================================
+
+.card-five {
+
+  padding: 40px 32px;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+}
+
+
+.card-five .model-card__description {
+
+  width: 48%;
+
+  margin: 5px 0 0;
+
+  font-size: 0.8rem;
+
+  line-height: 1.25;
+
+  color: #151515;
+
+}
+
+
+
+// =========================================================
+// CARD 6
+// =========================================================
+
+.card-six {
+
+  padding: 30px 26px;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+}
+
+
+.card-six .model-card__image {
+
+  position: absolute;
+
+  right: 20px;
+
+  bottom: 8px;
+
+  width: 55%;
+
+  height: 85%;
+
+  object-fit: contain;
+
+}
+
+
+.card-six .model-card__contact {
+
+  position: absolute;
+
+  left: 36px;
+
+  bottom: 22px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  color: #fff;
+
+  font-size: 0.8rem;
+
+}
+
+
+.arrow--white {
+
+  background: #fff;
+
+  color: #4a1e00;
+
+}
+
+
+
+
+
+// =========================================================
+// TABLET
+// =========================================================
+
+@media (max-width: 1000px) {
+
+  .card-section {
+
+    padding: 70px 0;
+
+  }
+
+
+  .card-section__grid {
+
+    grid-template-rows: repeat(3, 200px);
+
+    gap: 15px;
+
+  }
+
+
+  .model-card {
+
+    border-radius: 28px;
+
+  }
+
+
+  .model-card__title {
+
+    font-size: 1.35rem;
+
+  }
+
+
+  .model-card__list li {
+
+    font-size: 0.75rem;
+
+  }
+
+
+  .card-one {
+
+    padding: 28px;
+
+  }
+
+
+  .card-one .model-card__list {
+
+    width: 50%;
+
+  }
+
+
+  .card-five .model-card__description {
+
+    width: 50%;
+
+    font-size: 0.72rem;
+
+  }
+
+}
+
+
+
+// =========================================================
+// MOBILE
+// =========================================================
+
+@media (max-width: 768px) {
+
+  .card-section {
+
+    padding: 60px 0 75px;
+
+  }
+
+
+  .card-section__container {
+
+    width: 92%;
+
+  }
+
+
+  // -----------------------------------------------------
+  // HEADER
+  // -----------------------------------------------------
+
+  .card-section__header {
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-bottom: 30px;
+
+  }
+
+
+  .card-section__header h2 {
+
+    font-size: 1.45rem;
+
+    padding: 5px 7px;
+
+  }
+
+
+  .card-section__header p {
+
+    font-size: 0.72rem;
+
+  }
+
+
+  // -----------------------------------------------------
+  // GRID
+  // -----------------------------------------------------
+
+  .card-section__grid {
+
+    grid-template-columns: 1fr;
+
+    grid-template-rows: none;
+
+    gap: 18px;
+
+  }
+
+
+  // -----------------------------------------------------
+  // CARD
+  // -----------------------------------------------------
+
+  .model-card {
+
+    min-height: 220px;
+
+    height: 220px;
+
+    border-radius: 25px;
+
+  }
+
+
+  .model-card__title {
+
+    font-size: 1.4rem;
+
+  }
+
+
+  // -----------------------------------------------------
+  // CARD 1
+  // -----------------------------------------------------
+
+  .card-one {
+
+    padding: 28px;
+
+  }
+
+
+  .card-one .model-card__list {
+
+    width: 52%;
+
+  }
+
+
+  // -----------------------------------------------------
+  // CARD 2
+  // -----------------------------------------------------
+
+  .card-two {
+
+    padding: 28px;
+
+  }
+
+
+  .card-two .model-card__image {
+
+    right: 10px;
+
+    width: 53%;
+
+  }
+
+
+  // -----------------------------------------------------
+  // CARD 3
+  // -----------------------------------------------------
+
+  .card-three .model-card__image {
+
+    width: 70%;
+
+    height: 90%;
+
+  }
+
+
+  // -----------------------------------------------------
+  // CARD 4
+  // -----------------------------------------------------
+
+  .card-four {
+
+    padding: 30px;
+
+  }
+
+
+  .card-four .model-card__list li {
+
+    font-size: 0.78rem;
+
+    margin-bottom: 13px;
+
+  }
+
+
+  // -----------------------------------------------------
+  // CARD 5
+  // -----------------------------------------------------
+
+  .card-five {
+
+    padding: 30px;
+
+  }
+
+
+  .card-five .model-card__description {
+
+    width: 48%;
+
+    font-size: 0.75rem;
+
+  }
+
+
+  // -----------------------------------------------------
+  // CARD 6
+  // -----------------------------------------------------
+
+  .card-six {
+
+    padding: 28px;
+
+  }
+
+
+  .card-six .model-card__image {
+
+    width: 58%;
+
+    right: 5px;
+
+  }
+
+
+  .card-six .model-card__contact {
+
+    left: 28px;
+
+    bottom: 20px;
+
+  }
+
+}
+
+
+
+// =========================================================
+// SMALL MOBILE
+// =========================================================
+
+@media (max-width: 500px) {
+
+  .card-section {
+
+    padding: 50px 0 60px;
+
+  }
+
+
+  .card-section__header {
+
+    gap: 10px;
+
+  }
+
+
+  .card-section__header h2 {
+
+    font-size: 1.25rem;
+
+  }
+
+
+  .card-section__header p {
+
+    font-size: 0.65rem;
+
+  }
+
+
+  .card-section__grid {
+
+    gap: 16px;
+
+  }
+
+
+  .model-card {
+
+    height: 205px;
+
+    min-height: 205px;
+
+    border-radius: 23px;
+
+  }
+
+
+  .model-card__title {
+
+    font-size: 1.25rem;
+
+  }
+
+
+  .card-one {
+
+    padding: 25px;
+
+  }
+
+
+  .card-one .model-card__list {
+
+    width: 50%;
+
+  }
+
+
+  .model-card__list li {
+
+    font-size: 0.68rem;
+
+  }
+
+
+  .card-two .model-card__image {
+
+    width: 55%;
+
+    right: 5px;
+
+  }
+
+
+  .card-three .model-card__image {
+
+    width: 78%;
+
+  }
+
+
+  .card-five .model-card__description {
+
+    font-size: 0.68rem;
+
+  }
+
+
+  .card-six .model-card__image {
+
+    width: 60%;
+
+  }
+
+}
