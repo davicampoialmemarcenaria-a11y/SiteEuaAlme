@@ -1,0 +1,644 @@
+.second-about {
+  width: 100%;
+  background: #ffffff;
+  padding: 110px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.second-about__container {
+  width: min(92%, 1650px);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+
+  align-items: center;
+
+  gap: 70px;
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.second-about__content {
+  width: 100%;
+  max-width: 780px;
+
+  color: #050505;
+
+  transform: translateX(55px);
+
+  p {
+    margin: 0 0 22px;
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: clamp(1rem, 1.35vw, 1.35rem);
+
+    font-weight: 400;
+
+    line-height: 1.62;
+
+    letter-spacing: -0.15px;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* =========================================================
+   VISUAL
+========================================================= */
+
+.second-about__visual {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  transform: translateX(50px);
+}
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.second-about__card {
+  position: relative;
+
+  width: 70%;
+  max-width: 660px;
+
+  aspect-ratio: 1.08 / 1;
+
+  background: #d48821;
+
+  border: 2px solid #161616;
+
+  border-radius: 54px;
+
+  box-shadow: 0 8px 0 #161616;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 12px 0 #161616;
+  }
+}
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.second-about__image {
+  display: block;
+
+  width: 60%;
+
+  max-width: 620px;
+
+  height: auto;
+
+  object-fit: contain;
+
+  user-select: none;
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (max-width: 1500px) {
+
+  .second-about {
+    padding: 100px 0;
+  }
+
+  .second-about__container {
+    width: min(92%, 1400px);
+
+    grid-template-columns: 1.05fr 0.95fr;
+
+    gap: 55px;
+  }
+
+  .second-about__content {
+    max-width: 680px;
+
+    transform: translateX(-25px);
+
+    p {
+      font-size: 1.18rem;
+      line-height: 1.62;
+    }
+  }
+
+  .second-about__visual {
+    transform: translateX(25px);
+  }
+
+  .second-about__card {
+    max-width: 590px;
+
+    border-radius: 48px;
+  }
+
+  .second-about__image {
+    width: 94%;
+  }
+}
+
+/* =========================================================
+TELAS INTERMEDIÁRIAS
+1351px — 1450px
+
+Ajuste específico para notebooks/monitores nessa faixa.
+Evita que o card fique grande demais e dá margem ao texto.
+========================================================= */
+
+@media (max-width: 1500px) and (min-width: 1351px) {
+
+  .second-about {
+    padding: 90px 0;
+  }
+
+  .second-about__container {
+    width: 88%;
+    max-width: 1250px;
+
+    grid-template-columns: 1.15fr 0.85fr;
+
+    gap: 40px;
+  }
+
+  /* =========================
+     TEXTO
+     ========================= */
+
+  .second-about__content {
+    width: 100%;
+    max-width: 680px;
+
+    transform: none;
+
+    p {
+      font-size: 1.08rem;
+      line-height: 1.65;
+    }
+  }
+
+  /* =========================
+     VISUAL
+     ========================= */
+
+  .second-about__visual {
+    width: 100%;
+
+    transform: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* =========================
+     CARD MENOR
+     ========================= */
+
+  .second-about__card {
+    width: 340px;
+    max-width: 340px;
+
+    aspect-ratio: 1 / 1;
+
+    border-radius: 38px;
+
+    box-shadow: 0 7px 0 #161616;
+  }
+
+  /* =========================
+     IMAGEM MENOR
+     ========================= */
+
+  .second-about__image {
+    width: 76%;
+    max-width: 260px;
+  }
+}
+/* =========================================================
+   NOTEBOOK / TELAS INTERMEDIÁRIAS
+   1201px — 1350px
+
+   Essa era a faixa que estava causando o problema.
+========================================================= */
+
+@media (max-width: 1350px) and (min-width: 1201px) {
+
+  .second-about {
+    padding: 85px 0;
+  }
+
+  .second-about__container {
+    width: 88%;
+
+    grid-template-columns: 1.15fr 0.85fr;
+
+    gap: 35px;
+  }
+
+  /* Texto volta para dentro da margem */
+  .second-about__content {
+    max-width: 650px;
+
+    transform: none;
+
+    p {
+      font-size: 1.05rem;
+
+      line-height: 1.65;
+    }
+  }
+
+  /* Card também volta para dentro da área */
+  .second-about__visual {
+    transform: none;
+
+    justify-content: center;
+  }
+
+  /*
+    CARD MENOR
+  */
+
+  .second-about__card {
+    width: 300px;
+
+    max-width: 300px;
+
+    aspect-ratio: 1 / 1;
+
+    border-radius: 36px;
+
+    box-shadow: 0 7px 0 #161616;
+  }
+
+  /*
+    IMAGEM MENOR DENTRO DO CARD
+  */
+
+  .second-about__image {
+    width: 74%;
+
+    max-width: 225px;
+  }
+}
+
+
+/* =========================================================
+   NOTEBOOK
+   1200px para baixo
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .second-about {
+    padding: 80px 0;
+  }
+
+  .second-about__container {
+    width: min(88%, 900px);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 45px;
+  }
+
+  .second-about__content {
+    order: 1;
+
+    width: 100%;
+
+    max-width: 850px;
+
+    transform: none;
+
+    text-align: justify;
+
+    p {
+      font-size: 1.08rem;
+
+      line-height: 1.7;
+
+      text-align: justify;
+    }
+  }
+
+  .second-about__visual {
+    order: 2;
+
+    width: 100%;
+
+    transform: none;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+  }
+
+  /*
+    CARD MENOR
+  */
+
+  .second-about__card {
+    width: 300px;
+
+    max-width: 300px;
+
+    aspect-ratio: 1 / 1;
+
+    border-radius: 34px;
+
+    box-shadow: 0 7px 0 #161616;
+  }
+
+  .second-about__image {
+    width: 72%;
+
+    max-width: 220px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+  .second-about {
+    padding: 70px 0 75px;
+  }
+
+  .second-about__container {
+    width: min(88%, 760px);
+
+    gap: 40px;
+  }
+
+  .second-about__content {
+    width: 100%;
+
+    max-width: 760px;
+
+    text-align: justify;
+
+    p {
+      font-size: 1.02rem;
+
+      line-height: 1.7;
+
+      text-align: justify;
+
+      margin-bottom: 20px;
+    }
+  }
+
+  .second-about__visual {
+    width: 100%;
+
+    transform: none;
+  }
+
+  /*
+    CARD AINDA MENOR
+  */
+
+  .second-about__card {
+    width: 280px;
+
+    max-width: 280px;
+
+    aspect-ratio: 1 / 1;
+
+    border-radius: 32px;
+
+    box-shadow: 0 7px 0 #161616;
+  }
+
+  .second-about__image {
+    width: 70%;
+
+    max-width: 205px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .second-about {
+    padding: 55px 0 65px;
+  }
+
+  .second-about__container {
+    width: 86%;
+
+    max-width: 520px;
+
+    gap: 35px;
+  }
+
+  .second-about__content {
+    width: 100%;
+
+    max-width: 100%;
+
+    transform: none;
+
+    text-align: justify;
+
+    p {
+      width: 100%;
+
+      font-size: 0.96rem;
+
+      line-height: 1.7;
+
+      text-align: justify;
+
+      margin-bottom: 19px;
+    }
+  }
+
+  .second-about__visual {
+    width: 100%;
+
+    transform: none;
+
+    display: flex;
+
+    justify-content: center;
+  }
+
+  /*
+    CARD PEQUENO
+  */
+
+  .second-about__card {
+    width: 250px;
+
+    max-width: 250px;
+
+    aspect-ratio: 1 / 1;
+
+    border-radius: 30px;
+
+    border-width: 2px;
+
+    box-shadow: 0 6px 0 #161616;
+  }
+
+  .second-about__image {
+    width: 76%;
+
+    max-width: 190px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+  .second-about {
+    padding: 45px 0 55px;
+  }
+
+  .second-about__container {
+    width: 86%;
+
+    max-width: 360px;
+
+    gap: 30px;
+  }
+
+  .second-about__content {
+    width: 100%;
+
+    text-align: justify;
+
+    p {
+      width: 100%;
+
+      font-size: 0.91rem;
+
+      line-height: 1.68;
+
+      text-align: justify;
+
+      margin-bottom: 18px;
+    }
+  }
+
+  .second-about__visual {
+    width: 100%;
+
+    transform: none;
+  }
+
+  /*
+    CARD BEM MENOR
+  */
+
+  .second-about__card {
+    width: 220px;
+
+    max-width: 220px;
+
+    aspect-ratio: 1 / 1;
+
+    border-radius: 27px;
+
+    box-shadow: 0 6px 0 #161616;
+  }
+
+  .second-about__image {
+    width: 76%;
+
+    max-width: 170px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL DEVICES
+========================================================= */
+
+@media (max-width: 350px) {
+
+  .second-about__container {
+    width: 84%;
+  }
+
+  .second-about__content {
+
+    p {
+      font-size: 0.87rem;
+
+      line-height: 1.65;
+    }
+  }
+
+  .second-about__card {
+    width: 200px;
+
+    max-width: 200px;
+
+    border-radius: 24px;
+
+    box-shadow: 0 5px 0 #161616;
+  }
+
+  .second-about__image {
+    width: 76%;
+
+    max-width: 155px;
+  }
+}
