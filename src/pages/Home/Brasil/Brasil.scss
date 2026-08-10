@@ -1,0 +1,490 @@
+// =========================================================
+// BRASIL SECTION
+// =========================================================
+
+.brasil {
+  width: 100%;
+  background: #fff;
+  padding: 95px 0 110px;
+  font-family: "Space Grotesk", sans-serif;
+  color: #111;
+}
+
+// =========================================================
+// CONTAINER
+// =========================================================
+
+.brasil__container {
+  width: min(90%, 1500px);
+  margin: 0 auto;
+}
+
+// =========================================================
+// CONTENT
+// =========================================================
+
+.brasil__content {
+  display: grid;
+
+  // Mantém o texto à esquerda e dá mais espaço para a imagem
+  grid-template-columns: 40% 60%;
+
+  align-items: center;
+  min-height: 520px;
+}
+
+// =========================================================
+// TEXT
+// =========================================================
+
+.brasil__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding-left: 5px;
+
+  position: relative;
+  z-index: 2;
+}
+
+// =========================================================
+// TITLE
+// =========================================================
+
+.brasil__text h2 {
+  margin: 0 0 38px;
+
+  font-size: clamp(4rem, 5vw, 5rem);
+
+  font-weight: 400;
+
+  line-height: 0.95;
+
+  letter-spacing: -2px;
+
+  color: #000;
+}
+
+// =========================================================
+// DESCRIPTION
+// =========================================================
+
+.brasil__text p {
+  width: 100%;
+  max-width: 610px;
+
+  margin: 0 0 68px;
+
+  font-size: 1.35rem;
+
+  font-weight: 400;
+
+  line-height: 1.45;
+
+  color: #111;
+}
+
+// =========================================================
+// BUTTON
+// =========================================================
+
+.brasil__button {
+  width: 405px;
+  height: 84px;
+
+  padding: 0 22px 0 44px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #df8c17;
+
+  border-radius: 17px;
+
+  color: #fff;
+
+  text-decoration: none;
+
+  font-size: 1.35rem;
+
+  font-weight: 400;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.brasil__button:hover {
+  transform: translateY(-3px);
+  background: #d18112;
+}
+
+// =========================================================
+// ARROW
+// =========================================================
+
+.brasil__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 2.8rem;
+
+  font-weight: 300;
+
+  line-height: 1;
+
+  margin-top: -4px;
+
+  transition: transform 0.25s ease;
+}
+
+.brasil__button:hover .brasil__arrow {
+  transform: translateX(6px);
+}
+
+// =========================================================
+// IMAGE
+// =========================================================
+
+// =========================================================
+// IMAGE - DESKTOP
+// =========================================================
+
+// =========================================================
+// IMAGE
+// =========================================================
+
+.brasil__image {
+
+  width: 80%;
+  height: 80%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: visible;
+
+  position: relative;
+
+  /* desloca a imagem para a direita */
+  margin-left: 80px;
+}
+
+.brasil__image img {
+
+  display: block;
+
+  width: 100%;
+  max-width: 850px;
+
+  height: auto;
+
+  object-fit: contain;
+}
+
+// =========================================================
+// LARGE DESKTOP
+// =========================================================
+
+@media (min-width: 1600px) {
+  .brasil {
+    padding: 110px 0 125px;
+  }
+
+  .brasil__content {
+    min-height: 580px;
+
+    // Mais espaço para a imagem
+    grid-template-columns: 40% 60%;
+  }
+
+  .brasil__text h2 {
+    font-size: 5.2rem;
+  }
+
+  .brasil__text p {
+    font-size: 1.45rem;
+    max-width: 650px;
+  }
+
+  .brasil__button {
+    width: 410px;
+    height: 86px;
+
+    font-size: 1.4rem;
+  }
+
+  .brasil__image {
+    // ainda mais para a direita em telas grandes
+    left: 70px;
+  }
+
+  .brasil__image img {
+    max-width: 900px;
+  }
+}
+
+// =========================================================
+// TABLET / SMALL DESKTOP
+// =========================================================
+
+@media (max-width: 1100px) {
+  .brasil {
+    padding: 80px 0 90px;
+  }
+
+  .brasil__content {
+    grid-template-columns: 43% 57%;
+
+    min-height: 450px;
+  }
+
+  .brasil__text h2 {
+    font-size: clamp(3.5rem, 6vw, 4.5rem);
+
+    margin-bottom: 28px;
+  }
+
+  .brasil__text p {
+    max-width: 500px;
+
+    font-size: 1.1rem;
+
+    margin-bottom: 45px;
+  }
+
+  .brasil__button {
+    width: 330px;
+
+    height: 70px;
+
+    padding-left: 30px;
+
+    font-size: 1.1rem;
+
+    border-radius: 14px;
+  }
+
+  .brasil__arrow {
+    font-size: 2.3rem;
+  }
+
+  .brasil__image {
+    left: 30px;
+
+    width: 100%;
+
+    justify-content: flex-end;
+  }
+
+  .brasil__image img {
+    max-width: 650px;
+  }
+}
+
+// =========================================================
+// TABLET
+// =========================================================
+
+@media (max-width: 768px) {
+  .brasil {
+    padding: 70px 0 80px;
+  }
+
+  .brasil__container {
+    width: 90%;
+  }
+
+  .brasil__content {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    min-height: auto;
+  }
+
+  // -------------------------------------------------------
+  // TEXT
+  // -------------------------------------------------------
+
+  .brasil__text {
+    width: 100%;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 0;
+  }
+
+  .brasil__text h2 {
+    margin-bottom: 25px;
+
+    font-size: clamp(3rem, 12vw, 4rem);
+
+    letter-spacing: -1px;
+  }
+
+  .brasil__text p {
+    width: 100%;
+
+    max-width: 600px;
+
+    margin-bottom: 35px;
+
+    font-size: 1.05rem;
+
+    line-height: 1.5;
+  }
+
+  // -------------------------------------------------------
+  // BUTTON
+  // -------------------------------------------------------
+
+  .brasil__button {
+    width: min(100%, 380px);
+
+    height: 68px;
+
+    padding: 0 25px;
+
+    border-radius: 14px;
+
+    font-size: 1.05rem;
+  }
+
+  .brasil__arrow {
+    font-size: 2.3rem;
+  }
+
+  // -------------------------------------------------------
+  // IMAGE
+  // -------------------------------------------------------
+
+  .brasil__image {
+    width: 100%;
+
+    margin-top: 45px;
+
+    // REMOVE O DESLOCAMENTO DO DESKTOP
+    left: 0;
+
+    justify-content: center;
+  }
+
+  .brasil__image img {
+    width: 100%;
+
+    max-width: 650px;
+
+    margin-left: -40px;
+  }
+}
+
+// =========================================================
+// MOBILE
+// =========================================================
+
+@media (max-width: 500px) {
+  .brasil {
+    padding: 55px 0 70px;
+  }
+
+  .brasil__container {
+    width: 92%;
+  }
+
+  .brasil__text h2 {
+    font-size: 3rem;
+
+    margin-bottom: 22px;
+  }
+
+  .brasil__text p {
+    max-width: 360px;
+
+    font-size: 0.95rem;
+
+    line-height: 1.5;
+
+    margin-bottom: 30px;
+  }
+
+  .brasil__button {
+    width: 100%;
+
+    max-width: 350px;
+
+    height: 62px;
+
+    padding: 0 20px 0 25px;
+
+    border-radius: 13px;
+
+    font-size: 0.95rem;
+  }
+
+  .brasil__arrow {
+    font-size: 2rem;
+  }
+
+  .brasil__image {
+    margin-top: 35px;
+
+    left: 0;
+
+    width: 100%;
+
+    justify-content: center;
+  }
+
+  .brasil__image img {
+    width: 110%;
+
+    max-width: none;
+
+    margin-left: -5%;
+  }
+}
+
+// =========================================================
+// VERY SMALL PHONES
+// =========================================================
+
+@media (max-width: 380px) {
+  .brasil {
+    padding: 45px 0 60px;
+  }
+
+  .brasil__text h2 {
+    font-size: 2.7rem;
+  }
+
+  .brasil__text p {
+    font-size: 0.9rem;
+  }
+
+  .brasil__button {
+    height: 58px;
+
+    font-size: 0.9rem;
+  }
+
+  .brasil__image {
+    left: 0;
+  }
+
+  .brasil__image img {
+    width: 115%;
+
+    margin-left: -7.5%;
+  }
+}
