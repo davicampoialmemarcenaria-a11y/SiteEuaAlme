@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import emailjs from "@emailjs/browser";
 
 import "./Forms.scss";
@@ -6,6 +7,8 @@ import "./Forms.scss";
 import logoForms from "../../../assets/imgs/logoforms.png";
 
 export default function Forms() {
+  const { t } = useTranslation();
+
   const form = useRef();
 
   const [status, setStatus] = useState("");
@@ -44,13 +47,12 @@ export default function Forms() {
 
       <div className="contact-form-header">
 
-        <h2>Contact Us</h2>
+        <h2>
+          {t("contactForm.title")}
+        </h2>
 
         <p>
-          Want to learn more about how our service model works in the
-          United States? Fill out the form, and our team will get in
-          touch to walk you through the process, answer your questions,
-          and show you how we can build a successful partnership together.
+          {t("contactForm.description")}
         </p>
 
       </div>
@@ -64,7 +66,7 @@ export default function Forms() {
 
         {/* ===================================================
             LEFT — FORM
-            =================================================== */}
+        =================================================== */}
 
         <form
           ref={form}
@@ -77,14 +79,14 @@ export default function Forms() {
           <div className="contact-form__field">
 
             <label htmlFor="name">
-              Name
+              {t("contactForm.fields.name.label")}
             </label>
 
             <input
               id="name"
               type="text"
               name="name"
-              placeholder="Name"
+              placeholder={t("contactForm.fields.name.placeholder")}
               required
             />
 
@@ -96,14 +98,14 @@ export default function Forms() {
           <div className="contact-form__field">
 
             <label htmlFor="subject">
-              Subject
+              {t("contactForm.fields.subject.label")}
             </label>
 
             <input
               id="subject"
               type="text"
               name="subject"
-              placeholder="Subject"
+              placeholder={t("contactForm.fields.subject.placeholder")}
               required
             />
 
@@ -115,14 +117,14 @@ export default function Forms() {
           <div className="contact-form__field">
 
             <label htmlFor="email">
-              Email*
+              {t("contactForm.fields.email.label")}
             </label>
 
             <input
               id="email"
               type="email"
               name="email"
-              placeholder="Email"
+              placeholder={t("contactForm.fields.email.placeholder")}
               required
             />
 
@@ -134,13 +136,13 @@ export default function Forms() {
           <div className="contact-form__field contact-form__field--message">
 
             <label htmlFor="message">
-              Message*
+              {t("contactForm.fields.message.label")}
             </label>
 
             <textarea
               id="message"
               name="message"
-              placeholder="Message"
+              placeholder={t("contactForm.fields.message.placeholder")}
               required
             />
 
@@ -155,8 +157,8 @@ export default function Forms() {
             disabled={status === "sending"}
           >
             {status === "sending"
-              ? "Sending..."
-              : "Send Message"}
+              ? t("contactForm.button.sending")
+              : t("contactForm.button.send")}
           </button>
 
         </form>
@@ -164,7 +166,7 @@ export default function Forms() {
 
         {/* ===================================================
             RIGHT — LOGO
-            =================================================== */}
+        =================================================== */}
 
         <div className="contact-form__logo">
 
@@ -183,6 +185,7 @@ export default function Forms() {
       ===================================================== */}
 
       {status === "success" && (
+
         <div className="contact-success-overlay">
 
           <div className="contact-success-modal">
@@ -191,7 +194,7 @@ export default function Forms() {
               type="button"
               className="contact-success-modal__close"
               onClick={() => setStatus("")}
-              aria-label="Close"
+              aria-label={t("contactForm.modal.close")}
             >
               ×
             </button>
@@ -207,16 +210,16 @@ export default function Forms() {
             {/* TITLE */}
 
             <h3>
-              Message sent!
+              {t("contactForm.success.title")}
             </h3>
 
 
             {/* MESSAGE */}
 
             <p>
-              Thank you for reaching out to us.
+              {t("contactForm.success.messageLine1")}
               <br />
-              Our team will get back to you soon.
+              {t("contactForm.success.messageLine2")}
             </p>
 
 
@@ -227,12 +230,13 @@ export default function Forms() {
               className="contact-success-modal__button"
               onClick={() => setStatus("")}
             >
-              Done
+              {t("contactForm.success.button")}
             </button>
 
           </div>
 
         </div>
+
       )}
 
 
@@ -241,6 +245,7 @@ export default function Forms() {
       ===================================================== */}
 
       {status === "error" && (
+
         <div className="contact-success-overlay">
 
           <div className="contact-success-modal">
@@ -249,7 +254,7 @@ export default function Forms() {
               type="button"
               className="contact-success-modal__close"
               onClick={() => setStatus("")}
-              aria-label="Close"
+              aria-label={t("contactForm.modal.close")}
             >
               ×
             </button>
@@ -265,16 +270,16 @@ export default function Forms() {
             {/* TITLE */}
 
             <h3>
-              Something went wrong
+              {t("contactForm.error.title")}
             </h3>
 
 
             {/* MESSAGE */}
 
             <p>
-              We couldn't send your message.
+              {t("contactForm.error.messageLine1")}
               <br />
-              Please try again in a moment.
+              {t("contactForm.error.messageLine2")}
             </p>
 
 
@@ -285,12 +290,13 @@ export default function Forms() {
               className="contact-success-modal__button"
               onClick={() => setStatus("")}
             >
-              Try Again
+              {t("contactForm.error.button")}
             </button>
 
           </div>
 
         </div>
+
       )}
 
     </section>

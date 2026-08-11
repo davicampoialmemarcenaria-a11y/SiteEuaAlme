@@ -1,8 +1,12 @@
+import { useTranslation } from "react-i18next";
+
 import "./Seconds.scss";
 
 import desenho from "../../../assets/imgs/card1home.png";
 
 export default function Seconds() {
+  const { t } = useTranslation();
+
   return (
     <section className="seconds">
 
@@ -11,28 +15,21 @@ export default function Seconds() {
         <div className="seconds__left">
 
           <p>
-            <strong>Alme</strong> was founded with the vision of creating a
-            woodworking company that breaks away from industry standards,
-            overcoming market limitations through modern solutions, smart
-            processes, and truly personalized service.
+            {t("seconds.paragraph1.before")}
+            <strong>{t("seconds.paragraph1.brand")}</strong>
+            {t("seconds.paragraph1.after")}
           </p>
 
           <p>
-            We design and manufacture fully custom cabinetry with premium
-            craftsmanship, tailored exclusively to your project.
+            {t("seconds.paragraph2")}
           </p>
 
           <p>
-            In the United States, our service model offers greater speed and
-            flexibility: your cabinetry is delivered ready for installation,
-            partially pre-assembled, carefully packaged, and accompanied by
-            assembly instructions and all the necessary hardware.
+            {t("seconds.paragraph3")}
           </p>
 
           <p>
-            This allows you to schedule the installation with the professional
-            you trust, at the time that works best for you—without compromising
-            on quality, customization, or exceptional craftsmanship.
+            {t("seconds.paragraph4")}
           </p>
 
         </div>
@@ -41,12 +38,15 @@ export default function Seconds() {
 
           <div className="seconds__card">
 
-            <img src={desenho} alt="Millwork" />
+            <img
+              src={desenho}
+              alt={t("seconds.imageAlt")}
+            />
 
             <h2>
-              THE FUTURE OF CUSTOM.
+              {t("seconds.cardTitleLine1")}
               <br />
-              MILLWORK STARTS HERE.
+              {t("seconds.cardTitleLine2")}
             </h2>
 
           </div>

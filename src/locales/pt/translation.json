@@ -1,0 +1,250 @@
+{
+  "nav": {
+    "brand": "ALME MARCENARIA",
+    "home": "Início",
+    "about": "Sobre Nós",
+    "contact": "Contato",
+    "quote": "Solicitar Orçamento",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu"
+  },
+  "hero": {
+    "titleLine1": "MÓVEIS",
+    "titleLine2": "PLANEJADOS, FEITOS",
+    "titleLine3": "COM CONFIANÇA.",
+    "description": "Nossa forma de trabalhar combina fabricação de alta qualidade, logística inteligente e um atendimento pensado para tornar todo o processo mais simples e eficiente.",
+    "button": "Entre em contato",
+    "imageAlt": "Projeto de móveis planejados"
+  },
+  "seconds": {
+    "paragraph1": {
+      "before": "",
+      "brand": "Alme",
+      "after": " nasceu com a visão de criar uma marcenaria que rompe os padrões tradicionais do mercado, superando limitações por meio de soluções modernas, processos inteligentes e um atendimento verdadeiramente personalizado."
+    },
+    "paragraph2": "Projetamos e fabricamos móveis planejados totalmente personalizados, com acabamento premium e desenvolvidos exclusivamente para cada projeto.",
+    "paragraph3": "Nos Estados Unidos, nosso modelo de atendimento oferece mais agilidade e flexibilidade: os móveis são entregues prontos para instalação, parcialmente pré-montados, cuidadosamente embalados e acompanhados de instruções e todas as ferragens necessárias.",
+    "paragraph4": "Isso permite que você realize a instalação com o profissional de sua confiança, no momento mais conveniente, sem abrir mão da qualidade, personalização ou excelência construtiva.",
+    "cardTitleLine1": "O FUTURO DOS MÓVEIS",
+    "cardTitleLine2": "PLANEJADOS COMEÇA AQUI.",
+    "imageAlt": "Marcenaria personalizada"
+  }, "projects": {
+    "titleLine1": "Projetos",
+    "titleLine2": "Em Destaque",
+    "description": "Cada projeto conta uma história. Inspire-se em ambientes que refletem a qualidade e a essência do nosso trabalho.",
+    "cards": [
+      {
+        "title": "Foco na Excelência",
+        "subtitle": "Design elegante e funcional."
+      },
+      {
+        "title": "Projetos Refinados",
+        "subtitle": "Ambientes exclusivos."
+      },
+      {
+        "title": "Soluções Planejadas",
+        "subtitle": "Cada detalhe importa."
+      },
+      {
+        "title": "+500 Projetos",
+        "subtitle": "Entregando exclusividade."
+      }
+    ]
+  }, "cards": {
+    "title": "Nosso modelo",
+    "subtitle": "O que torna nosso modelo de atendimento diferente?",
+
+    "learnMore": "SAIBA MAIS",
+    "contact": "CONTATO",
+
+    "card1": {
+      "title1": "altos",
+      "title2": "padrões",
+      "item1": "Marcenaria 100% personalizada para o seu espaço.",
+      "item2": "Fabricação com padrão premium de qualidade.",
+      "item3": "Entrega rápida e bem organizada."
+    },
+
+    "card2": {
+      "title1": "Visão de",
+      "title2": "longo prazo",
+      "alt": "Visão de longo prazo"
+    },
+
+    "card3": {
+      "alt": "Marcenaria planejada"
+    },
+
+    "card4": {
+      "item1": "Componentes pré-montados para facilitar a instalação.",
+      "item2": "Manual de montagem e todas as ferragens inclusas.",
+      "item3": "Liberdade para instalar com o profissional de sua preferência.",
+      "item4": "Mais praticidade, economia de tempo e flexibilidade."
+    },
+
+    "card5": {
+      "title1": "Decisões",
+      "title2": "sustentáveis",
+      "description": "Seu projeto único. Nossa fabricação. Instalação no seu tempo, com o profissional da sua confiança."
+    },
+
+    "card6": {
+      "title1": "Transformando",
+      "title2": "promessas em resultados",
+      "alt": "Transformando promessas em resultados"
+    }}, "brasil": {
+    "title": "NOSSAS RAÍZES",
+    "description": "Conheça a história da Alme e descubra uma experiência completa em marcenaria planejada desenvolvida para o mercado brasileiro.",
+    "button": "Visite nosso site no Brasil",
+    "imageAlt": "Ilustração da bandeira do Brasil"
+  },"heroAbout": {
+    "title": "Conheça a nossa história!",
+    "paragraph1": "Cada projeto representa um sonho, um investimento e a expectativa de transformar um ambiente em algo verdadeiramente único. Por isso, acreditamos que a marcenaria planejada deve ir além da execução técnica — ela deve proporcionar segurança, transparência e confiança em todas as etapas do processo.",
+    "paragraph2": "Foi com essa visão que construímos a nossa história.",
+    "imageAlt": "Ilustração do processo de marcenaria da ALME"
+  }, "secondAbout": {
+    "paragraph1": "A Alme Marcenaria foi fundada em 2020 por dois amigos de infância com o objetivo de oferecer uma abordagem mais segura, organizada e confiável para projetos de marcenaria planejada. Desde o início, nosso compromisso foi transformar desafios em processos bem estruturados, garantindo tranquilidade para clientes e parceiros.",
+    "paragraph2": "Mais do que entregar marcenaria sob medida, buscamos construir confiança. Queremos que nossos clientes se sintam amparados, seguros e bem atendidos durante toda a jornada, sabendo que seu projeto está em boas mãos.",
+    "imageAlt": "Ilustração de marcenaria planejada"
+  }, "questions": {
+    "items": [
+      {
+        "number": "01",
+        "title": "Contato",
+        "text": "Todo grande projeto começa com uma conversa. Nossa equipe está pronta para entender as necessidades do seu projeto, esclarecer dúvidas e conhecer os detalhes que fazem toda a diferença no resultado final. Nesta etapa, alinhamos expectativas, analisamos as informações iniciais e reunimos tudo o que é necessário para elaborar o orçamento."
+      },
+      {
+        "number": "02",
+        "title": "Orçamento",
+        "text": "Após entendermos o seu projeto, nossa equipe analisa todas as informações fornecidas e desenvolve um orçamento detalhado com base nas necessidades, especificações, materiais e resultados desejados."
+      },
+      {
+        "number": "03",
+        "title": "Proposta e Contrato",
+        "text": "Depois da aprovação do orçamento, elaboramos a proposta comercial e o contrato, detalhando claramente escopo, especificações, prazos, responsabilidades e condições do projeto."
+      },
+      {
+        "number": "04",
+        "title": "Aprovação do Projeto",
+        "text": "Com a proposta e o contrato definidos, o projeto segue para a etapa de aprovação. Revisamos todos os detalhes em conjunto para garantir que tudo esteja alinhado antes do início da produção."
+      },
+      {
+        "number": "05",
+        "title": "Pré-montagem",
+        "text": "Antes do envio, cada componente passa por um cuidadoso processo de pré-montagem. Isso permite que nossa equipe verifique medidas, acabamentos, encaixes e a qualidade geral antes que o projeto siga para seu destino final."
+      },
+      {
+        "number": "06",
+        "title": "Envio e Entrega",
+        "text": "Após todas as verificações e aprovações, o projeto é cuidadosamente preparado para transporte e entrega, garantindo que cada componente chegue em segurança e pronto para a próxima etapa."
+      }
+    ]
+  },  "vem": {
+    "title": "Vamos transformar seu projeto em realidade",
+    "description": "Todo grande projeto começa com a decisão certa. Entre em contato com nossa equipe e descubra tudo o que é possível realizar.",
+    "button": "Solicite sua proposta gratuita",
+    "imageAlt": "Nosso processo de marcenaria"
+  }, "values": {
+  "title": "Nossos valores",
+  "items": [
+    {
+      "title": "EXCELÊNCIA",
+      "text": "Buscamos os mais altos padrões em tudo o que fazemos, proporcionando uma experiência excepcional e estabelecendo referências em cada etapa do projeto. Do planejamento e coordenação técnica à produção e entrega final, dedicamos atenção a cada detalhe, garantindo precisão, consistência e uma qualidade inegociável que supera expectativas."
+    },
+    {
+      "title": "COMPROMETIMENTO",
+      "text": "Honramos nossa palavra com responsabilidade, transparência e respeito, transformando promessas em resultados. Construímos confiança por meio de uma comunicação clara, responsabilidade sobre nossas ações e uma execução confiável, fortalecendo relacionamentos duradouros com clientes, arquitetos, parceiros e todos os envolvidos em cada projeto."
+    },
+    {
+      "title": "MELHORIA CONTÍNUA",
+      "text": "Estamos constantemente aprendendo, aprimorando nossos processos e adotando a inovação para continuar evoluindo. Ao nos desafiar diariamente a melhorar, aumentamos a eficiência, fortalecemos a colaboração e entregamos soluções cada vez mais inteligentes, confiáveis e de maior qualidade."
+    },
+    {
+      "title": "LONGEVIDADE",
+      "text": "Pensamos no longo prazo, construindo relacionamentos duradouros e tomando decisões sustentáveis que resistem ao tempo. Valorizamos consistência, durabilidade e confiança, criando parcerias e soluções desenvolvidas para gerar valor contínuo tanto para nossos clientes quanto para nossa empresa."
+    },
+    {
+      "title": "CRESCIMENTO",
+      "text": "Acreditamos no sucesso compartilhado, criando oportunidades e gerando valor para nossos clientes, colaboradores e parceiros. Ao crescer juntos, incentivar a colaboração e investir em pessoas e inovação, construímos um ecossistema mais forte, onde todos têm a oportunidade de prosperar e evoluir."
+    }
+  ]
+}, "contactHero": {
+  "title": "Vamos criar o que vem a seguir.",
+  "description": "Solicite um orçamento e descubra como podemos transformar seu projeto em uma solução totalmente personalizada, entregue com qualidade, precisão e um processo pensado para atender às suas necessidades.",
+  "button": "Entre em contato",
+  "imageAlt": "Alme"
+},  "contactForm": {
+    "title": "Busque",
+    "description": "Quer saber mais sobre como funciona nosso modelo de serviço nos Estados Unidos? Preencha o formulário e nossa equipe entrará em contato para explicar o processo, responder suas perguntas e mostrar como podemos construir uma parceria de sucesso juntos.",
+    "fields": {
+      "name": {
+        "label": "Nome",
+        "placeholder": "Nome"
+      },
+      "subject": {
+        "label": "Assunto",
+        "placeholder": "Assunto"
+      },
+      "email": {
+        "label": "E-mail*",
+        "placeholder": "E-mail"
+      },
+      "message": {
+        "label": "Mensagem*",
+        "placeholder": "Mensagem"
+      }
+    },
+    "button": {
+      "send": "Enviar mensagem",
+      "sending": "Enviando..."
+    },
+    "modal": {
+      "close": "Fechar"
+    },
+    "success": {
+      "title": "Mensagem enviada!",
+      "messageLine1": "Obrigado por entrar em contato conosco.",
+      "messageLine2": "Nossa equipe entrará em contato em breve.",
+      "button": "Concluído"
+    },
+    "error": {
+      "title": "Algo deu errado",
+      "messageLine1": "Não foi possível enviar sua mensagem.",
+      "messageLine2": "Tente novamente em alguns instantes.",
+      "button": "Tentar novamente"
+    }
+  },  "footer": {
+    "title": "Navegação",
+
+    "menu": {
+      "title": "MENU",
+      "home": "INÍCIO",
+      "about": "SOBRE",
+      "contact": "CONTATO"
+    },
+
+    "channels": {
+      "title": "ATENDIMENTO",
+
+      "hours": {
+        "week": "Seg - Qui: 07:00 - 18:00 (FUSO)",
+        "friday": "Sex: 07:00 - 17:00",
+        "weekend": "Sáb - Dom: Fechado"
+      },
+
+      "address": {
+        "line1": "Alameda Prof. Lucas Nogueira Garcez, 5220,",
+        "line2": "Atibaia - SP, Brasil"
+      }
+    },
+
+    "links": {
+      "title": "LINKS",
+      "whatsapp": "WhatsApp",
+      "instagram": "Instagram",
+      "email": "E-mail",
+      "tiktok": "TikTok",
+      "pinterest": "Pinterest"
+    }
+  }
+}

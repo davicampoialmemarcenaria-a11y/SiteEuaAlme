@@ -1,8 +1,11 @@
 import "./HeroAbout.scss";
+import { useTranslation } from "react-i18next";
 
 import heroAbout from "../../../assets/imgs/heroabout.png";
 
 export default function HeroAbout() {
+  const { t } = useTranslation();
+
   return (
     <section className="hero-about">
 
@@ -16,12 +19,11 @@ export default function HeroAbout() {
 
           <img
             src={heroAbout}
-            alt="ALME custom millwork process illustration"
+            alt={t("heroAbout.imageAlt")}
             className="hero-about__image"
           />
 
         </div>
-
 
         {/* ==================================================
             TEXTO
@@ -30,19 +32,15 @@ export default function HeroAbout() {
         <div className="hero-about__content">
 
           <h1>
-            Get to know us!
+            {t("heroAbout.title")}
           </h1>
 
           <p>
-            Every project represents a dream, an investment, and the
-            expectation of transforming a space into something truly
-            unique. That’s why we believe custom millwork should go
-            beyond technical execution—it should provide security,
-            transparency, and confidence at every stage of the process.
+            {t("heroAbout.paragraph1")}
           </p>
 
           <p>
-            It is with this vision that we have built our story.
+            {t("heroAbout.paragraph2")}
           </p>
 
         </div>

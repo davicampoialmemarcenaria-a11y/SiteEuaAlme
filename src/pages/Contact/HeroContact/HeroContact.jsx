@@ -1,9 +1,13 @@
+import { useTranslation } from "react-i18next";
+
 import "./HeroContact.scss";
 
 import heroContact from "../../../assets/imgs/herocontact.png";
 import imgNavbar from "../../../assets/imgs/imgnavbar.png";
 
 export default function HeroContact() {
+  const { t } = useTranslation();
+
   return (
     <section className="contact-hero">
 
@@ -11,19 +15,17 @@ export default function HeroContact() {
       <div className="contact-hero__illustration">
         <img
           src={heroContact}
-          alt="Alme"
+          alt={t("contactHero.imageAlt")}
         />
       </div>
 
       {/* CONTEÚDO DA DIREITA */}
       <div className="contact-hero__content">
 
-        <h1>Let’s create what’s next.</h1>
+        <h1>{t("contactHero.title")}</h1>
 
         <p>
-          Request a quote and discover how we can transform your project
-          into a fully customized solution, delivered with quality,
-          precision, and a process designed around your needs.
+          {t("contactHero.description")}
         </p>
 
         {/* LOGO + BOTÃO */}
@@ -36,12 +38,12 @@ export default function HeroContact() {
           />
 
           <a
-            href="https://wa.me/5511944956944"
+            href="https://wa.me/6892762034"
             className="contact-hero__button"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span>Book a consultation</span>
+            <span>{t("contactHero.button")}</span>
           </a>
 
         </div>

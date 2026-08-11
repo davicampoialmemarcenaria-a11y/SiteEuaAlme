@@ -1,0 +1,250 @@
+{
+  "nav": {
+    "brand": "ALME CARPINTERÍA",
+    "home": "Inicio",
+    "about": "Sobre Nosotros",
+    "contact": "Contacto",
+    "quote": "Solicitar Presupuesto",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú"
+  },
+  "hero": {
+    "titleLine1": "MUEBLES",
+    "titleLine2": "PERSONALIZADOS, HECHOS",
+    "titleLine3": "CON CONFIANZA.",
+    "description": "Nuestra forma de trabajar combina fabricación de alta calidad, logística inteligente y un enfoque de servicio diseñado para hacer que todo el proceso sea más simple y eficiente.",
+    "button": "Contáctenos",
+    "imageAlt": "Proyecto de muebles personalizados"
+  },
+  "seconds": {
+    "paragraph1": {
+      "before": "",
+      "brand": "Alme",
+      "after": " nació con la visión de crear una empresa de carpintería que rompe con los estándares tradicionales de la industria, superando limitaciones mediante soluciones modernas, procesos inteligentes y una atención verdaderamente personalizada."
+    },
+    "paragraph2": "Diseñamos y fabricamos mobiliario totalmente personalizado con acabados premium, desarrollado exclusivamente para cada proyecto.",
+    "paragraph3": "En Estados Unidos, nuestro modelo de servicio ofrece mayor rapidez y flexibilidad: los muebles se entregan listos para instalar, parcialmente preensamblados, cuidadosamente embalados y acompañados de instrucciones y todos los herrajes necesarios.",
+    "paragraph4": "Esto le permite programar la instalación con el profesional de su confianza, en el momento que mejor le convenga, sin comprometer la calidad, la personalización ni la excelencia en la fabricación.",
+    "cardTitleLine1": "EL FUTURO DEL MOBILIARIO",
+    "cardTitleLine2": "PERSONALIZADO COMIENZA AQUÍ.",
+    "imageAlt": "Carpintería personalizada"
+  },  "projects": {
+    "titleLine1": "Proyectos",
+    "titleLine2": "Destacados",
+    "description": "Cada proyecto cuenta una historia. Inspírese en espacios que reflejan la calidad y la esencia de nuestro trabajo.",
+    "cards": [
+      {
+        "title": "Enfoque en la Excelencia",
+        "subtitle": "Diseño elegante y funcional."
+      },
+      {
+        "title": "Proyectos Refinados",
+        "subtitle": "Ambientes exclusivos."
+      },
+      {
+        "title": "Soluciones Planificadas",
+        "subtitle": "Cada detalle importa."
+      },
+      {
+        "title": "Más de 500 Proyectos",
+        "subtitle": "Entregando exclusividad."
+      }
+    ]
+  },  "cards": {
+    "title": "Nuestro modelo",
+    "subtitle": "¿Qué hace diferente nuestro modelo de servicio?",
+
+    "learnMore": "SABER MÁS",
+    "contact": "CONTACTO",
+
+    "card1": {
+      "title1": "altos",
+      "title2": "estándares",
+      "item1": "Carpintería 100% personalizada para su espacio.",
+      "item2": "Fabricación con calidad premium.",
+      "item3": "Entrega rápida y bien organizada."
+    },
+
+    "card2": {
+      "title1": "Pensamiento",
+      "title2": "a largo plazo",
+      "alt": "Pensamiento a largo plazo"
+    },
+
+    "card3": {
+      "alt": "Carpintería personalizada"
+    },
+
+    "card4": {
+      "item1": "Componentes preensamblados para facilitar la instalación.",
+      "item2": "Guía de montaje y todos los herrajes incluidos.",
+      "item3": "Libertad para instalar con el profesional de su preferencia.",
+      "item4": "Mayor comodidad, ahorro de tiempo y flexibilidad."
+    },
+
+    "card5": {
+      "title1": "Decisiones",
+      "title2": "sostenibles",
+      "description": "Su proyecto único. Nuestra fabricación. Instalación en el momento que prefiera, con el profesional de su confianza."
+    },
+
+    "card6": {
+      "title1": "Convertimos",
+      "title2": "promesas en resultados",
+      "alt": "Convertimos promesas en resultados"
+    }},   "brasil": {
+    "title": "NUESTRAS RAÍCES",
+    "description": "Conozca la historia de Alme y descubra una experiencia completa en carpintería a medida diseñada para el mercado brasileño.",
+    "button": "Visita nuestro sitio local",
+    "imageAlt": "Ilustración de la bandera de Brasil"
+  },  "heroAbout": {
+    "title": "¡Conócenos!",
+    "paragraph1": "Cada proyecto representa un sueño, una inversión y la expectativa de transformar un espacio en algo verdaderamente único. Por eso creemos que la carpintería a medida debe ir más allá de la ejecución técnica: debe brindar seguridad, transparencia y confianza en cada etapa del proceso.",
+    "paragraph2": "Con esta visión hemos construido nuestra historia.",
+    "imageAlt": "Ilustración del proceso de carpintería de ALME"
+  },"secondAbout": {
+    "paragraph1": "Alme Carpintería a Medida fue fundada en 2020 por dos amigos de la infancia con el objetivo de ofrecer un enfoque más seguro, organizado y confiable para proyectos de carpintería a medida. Desde el principio, nuestro compromiso ha sido transformar los desafíos en procesos bien gestionados, garantizando tranquilidad tanto para clientes como para socios.",
+    "paragraph2": "Más que entregar carpintería personalizada, buscamos construir confianza. Queremos que nuestros clientes se sientan acompañados, seguros y respaldados durante todo el proceso, sabiendo que su proyecto está en buenas manos.",
+    "imageAlt": "Ilustración de carpintería a medida"
+  }, "questions": {
+    "items": [
+      {
+        "number": "01",
+        "title": "Contacto",
+        "text": "Todo gran proyecto comienza con una conversación. Nuestro equipo está preparado para comprender las necesidades de su proyecto, responder sus preguntas y conocer los detalles que marcan la diferencia en el resultado final. En esta etapa alineamos expectativas, revisamos la información inicial y recopilamos todo lo necesario para preparar su presupuesto."
+      },
+      {
+        "number": "02",
+        "title": "Presupuesto",
+        "text": "Una vez que comprendemos su proyecto, nuestro equipo analiza toda la información proporcionada y desarrolla un presupuesto detallado basado en sus necesidades, especificaciones, materiales y resultados esperados."
+      },
+      {
+        "number": "03",
+        "title": "Propuesta y Contrato",
+        "text": "Después de aprobar el presupuesto, preparamos la propuesta y el contrato, definiendo claramente el alcance, especificaciones, plazos, responsabilidades y condiciones del proyecto."
+      },
+      {
+        "number": "04",
+        "title": "Aprobación del Proyecto",
+        "text": "Con la propuesta y el contrato finalizados, el proyecto avanza a la etapa de aprobación. Revisamos todos los detalles conjuntamente para garantizar que todo esté alineado antes de comenzar la producción."
+      },
+      {
+        "number": "05",
+        "title": "Preensamblaje",
+        "text": "Antes de la entrega, cada componente pasa por un cuidadoso proceso de preensamblaje. Esto permite a nuestro equipo verificar medidas, acabados, herrajes y la calidad general antes de que el proyecto llegue a su destino final."
+      },
+      {
+        "number": "06",
+        "title": "Envío y Entrega",
+        "text": "Una vez que todo ha sido revisado y aprobado, su proyecto se prepara cuidadosamente para el envío y la entrega, garantizando que cada componente llegue de forma segura y listo para la siguiente etapa."
+      }
+    ]
+  },  "vem": {
+    "title": "Hagamos que suceda",
+    "description": "Todo gran proyecto comienza con la decisión correcta. Póngase en contacto con nuestro equipo y descubra todo lo que es posible.",
+    "button": "Solicite su propuesta gratuita",
+    "imageAlt": "Nuestro proceso de carpintería"
+  }, "values": {
+  "title": "Nuestros valores",
+  "items": [
+    {
+      "title": "EXCELENCIA",
+      "text": "Buscamos los más altos estándares en todo lo que hacemos, ofreciendo una experiencia excepcional y estableciendo referencias en cada etapa del proyecto. Desde la planificación y coordinación técnica hasta la producción y la entrega final, prestamos atención a cada detalle, garantizando precisión, consistencia y una calidad inquebrantable que supera las expectativas."
+    },
+    {
+      "title": "COMPROMISO",
+      "text": "Respaldamos nuestra palabra con responsabilidad, transparencia y respeto, transformando promesas en resultados. Construimos confianza mediante una comunicación clara, responsabilidad en nuestras acciones y una ejecución confiable, fomentando relaciones duraderas con clientes, arquitectos, socios y todas las personas involucradas en cada proyecto."
+    },
+    {
+      "title": "MEJORA CONTINUA",
+      "text": "Aprendemos constantemente, perfeccionamos nuestros procesos y adoptamos la innovación para seguir evolucionando. Al desafiarnos cada día a mejorar, aumentamos la eficiencia, fortalecemos la colaboración y ofrecemos soluciones cada vez más inteligentes, confiables y de mayor calidad."
+    },
+    {
+      "title": "PERMANENCIA",
+      "text": "Pensamos a largo plazo, construyendo relaciones duraderas y tomando decisiones sostenibles que resisten el paso del tiempo. Valoramos la consistencia, la durabilidad y la confianza, creando alianzas y soluciones diseñadas para generar valor duradero tanto para nuestros clientes como para nuestra empresa."
+    },
+    {
+      "title": "CRECIMIENTO",
+      "text": "Creemos en el éxito compartido, creando oportunidades y generando valor para nuestros clientes, colaboradores y socios. Al crecer juntos, fomentar la colaboración e invertir en personas e innovación, construimos un ecosistema más sólido donde todos tienen la oportunidad de prosperar y desarrollarse."
+    }
+  ]
+}, "contactHero": {
+  "title": "Creemos lo que viene después.",
+  "description": "Solicite una cotización y descubra cómo podemos transformar su proyecto en una solución totalmente personalizada, entregada con calidad, precisión y un proceso diseñado para sus necesidades.",
+  "button": "Contáctenos",
+  "imageAlt": "Alme"
+} , "contactForm": {
+    "title": "Contáctenos",
+    "description": "¿Quieres saber más sobre cómo funciona nuestro modelo de servicio en los Estados Unidos? Completa el formulario y nuestro equipo se pondrá en contacto contigo para explicarte el proceso, responder tus preguntas y mostrarte cómo podemos construir juntos una alianza exitosa.",
+    "fields": {
+      "name": {
+        "label": "Nombre",
+        "placeholder": "Nombre"
+      },
+      "subject": {
+        "label": "Asunto",
+        "placeholder": "Asunto"
+      },
+      "email": {
+        "label": "Correo electrónico*",
+        "placeholder": "Correo electrónico"
+      },
+      "message": {
+        "label": "Mensaje*",
+        "placeholder": "Mensaje"
+      }
+    },
+    "button": {
+      "send": "Enviar mensaje",
+      "sending": "Enviando..."
+    },
+    "modal": {
+      "close": "Cerrar"
+    },
+    "success": {
+      "title": "¡Mensaje enviado!",
+      "messageLine1": "Gracias por ponerte en contacto con nosotros.",
+      "messageLine2": "Nuestro equipo se pondrá en contacto contigo pronto.",
+      "button": "Listo"
+    },
+    "error": {
+      "title": "Algo salió mal",
+      "messageLine1": "No pudimos enviar tu mensaje.",
+      "messageLine2": "Por favor, inténtalo de nuevo en unos momentos.",
+      "button": "Intentar de nuevo"
+    }
+  },  "footer": {
+    "title": "Navegación",
+
+    "menu": {
+      "title": "MENÚ",
+      "home": "INICIO",
+      "about": "NOSOTROS",
+      "contact": "CONTACTO"
+    },
+
+    "channels": {
+      "title": "ATENCIÓN",
+
+      "hours": {
+        "week": "Lun - Jue: 07:00 - 18:00 (FUSO)",
+        "friday": "Vie: 07:00 - 17:00",
+        "weekend": "Sáb - Dom: Cerrado"
+      },
+
+      "address": {
+        "line1": "Alameda Prof. Lucas Nogueira Garcez, 5220,",
+        "line2": "Atibaia - SP, Brasil"
+      }
+    },
+
+    "links": {
+      "title": "ENLACES",
+      "whatsapp": "WhatsApp",
+      "instagram": "Instagram",
+      "email": "Correo electrónico",
+      "tiktok": "TikTok",
+      "pinterest": "Pinterest"
+    }
+  }
+}

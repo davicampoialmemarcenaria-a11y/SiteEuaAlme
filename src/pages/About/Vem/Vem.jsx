@@ -1,11 +1,12 @@
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import "./Vem.scss";
 import imgAboutContact from "../../../assets/imgs/imgaboutcontact.png";
 
 function Vem() {
-
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   return (
     <section className="vem">
@@ -15,12 +16,11 @@ function Vem() {
         <div className="vem__content">
 
           <h2 className="vem__title">
-            Let’s make things happen
+            {t("vem.title")}
           </h2>
 
           <p className="vem__description">
-            Every great project begins with the right decision.
-            Get in touch with our team and discover what’s possible.
+            {t("vem.description")}
           </p>
 
           <button
@@ -28,17 +28,16 @@ function Vem() {
             className="vem__button"
             onClick={() => navigate("/contact")}
           >
-            Get your free proposal
+            {t("vem.button")}
           </button>
 
         </div>
-
 
         <div className="vem__visual">
 
           <img
             src={imgAboutContact}
-            alt="Our woodworking process"
+            alt={t("vem.imageAlt")}
             className="vem__image"
           />
 

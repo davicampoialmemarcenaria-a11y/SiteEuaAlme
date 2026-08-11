@@ -1,5 +1,6 @@
-
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+
 import "./Project.scss";
 
 import user from "../../../assets/imgs/user.png";
@@ -14,29 +15,30 @@ import projeto4 from "../../../assets/imgs/4.jpg";
 
 export default function Project() {
   const [active, setActive] = useState(0);
+  const { t } = useTranslation();
 
   const projetos = [
     {
-      titulo: "Banheiros",
-      subtitulo: "Design elegante e funcional.",
+      titulo: t("projects.cards.0.title"),
+      subtitulo: t("projects.cards.0.subtitle"),
       imagem: projeto2,
       icone: config,
     },
     {
-      titulo: "Projetos em lero lero",
-      subtitulo: "Conheça nossos ambientes exclusivos.",
+      titulo: t("projects.cards.1.title"),
+      subtitulo: t("projects.cards.1.subtitle"),
       imagem: projeto1,
       icone: user,
     },
     {
-      titulo: "Closets",
-      subtitulo: "Soluções sob medida.",
+      titulo: t("projects.cards.2.title"),
+      subtitulo: t("projects.cards.2.subtitle"),
       imagem: projeto3,
       icone: point,
     },
     {
-      titulo: "Veja mais",
-      subtitulo: "Conheça todos os projetos.",
+      titulo: t("projects.cards.3.title"),
+      subtitulo: t("projects.cards.3.subtitle"),
       imagem: projeto4,
       icone: more,
     },
@@ -49,14 +51,13 @@ export default function Project() {
 
           <div className="project__left">
             <h2>
-              Featured
+              {t("projects.titleLine1")}
               <br />
-              projects
+              {t("projects.titleLine2")}
             </h2>
 
             <p>
-              Every project tells a story. Get inspired by spaces that
-              reflect the quality and essence of our craftsmanship.
+              {t("projects.description")}
             </p>
           </div>
 
@@ -76,7 +77,10 @@ export default function Project() {
 
                 <div className="label">
                   <div className="icon">
-                    <img src={item.icone} alt="" />
+                    <img
+                      src={item.icone}
+                      alt=""
+                    />
                   </div>
 
                   <div className="info">
@@ -89,6 +93,7 @@ export default function Project() {
                     </div>
                   </div>
                 </div>
+
               </div>
             ))}
           </div>
@@ -98,4 +103,3 @@ export default function Project() {
     </section>
   );
 }
-

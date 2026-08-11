@@ -1,12 +1,13 @@
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import "./Hero.scss";
 
 import hero from "../../../assets/imgs/herohome.png";
 
 export default function Home() {
-
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   return (
     <>
@@ -15,28 +16,29 @@ export default function Home() {
         <div className="hero__left">
 
           <h1>
-            CUSTOM
+            {t("hero.titleLine1")}
             <br />
-            FURNITURE, BUILT
+            {t("hero.titleLine2")}
             <br />
-            ON TRUST.
+            {t("hero.titleLine3")}
           </h1>
 
           <p>
-            Our way of working combines premium quality manufacturing,
-            smart logistics, and a service approach designed to make
-            the entire process simpler and more efficient.
+            {t("hero.description")}
           </p>
 
           <button onClick={() => navigate("/contact")}>
-            Book a consultation
+            {t("hero.button")}
           </button>
 
         </div>
 
         <div className="hero__right">
 
-          <img src={hero} alt="Hero" />
+          <img
+            src={hero}
+            alt={t("hero.imageAlt")}
+          />
 
         </div>
 

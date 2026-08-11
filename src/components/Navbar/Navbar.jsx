@@ -1,70 +1,118 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+
 import "./Navbar.scss";
+
 import logo from "../../assets/imgs/imgnavbar.png";
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const { t } = useTranslation();
 
   return (
     <header className="navbar">
       <div className="navbar-container">
 
-        <div className="navbar-brand">
+        {/* LOGO */}
+        <a
+          href="/"
+          className="navbar-brand"
+          onClick={() => setMenuOpen(false)}
+          aria-label="Alme Woodworks - Home"
+        >
           <img
             src={logo}
             alt="Alme Woodworks"
           />
 
           <span>
-            ALME WOODWORKS
+            {t("nav.brand")}
           </span>
-        </div>
+        </a>
+
 
         <div className="navbar-right">
 
-          <nav className={`navbar-links ${menuOpen ? "active" : ""}`}>
+          {/* MENU */}
+          <nav
+            className={`navbar-links ${menuOpen ? "active" : ""}`}
+          >
 
-            <a href="/">
-              Home
-            </a>
-
-            <a href="/about">
-              About us
-            </a>
-
-            <a href="/contact">
-              Contact
-            </a>
-
-            {/* Botão apenas no mobile */}
             <a
-              href="https://wa.me/5511944956944"
+              href="/"
+              onClick={() => setMenuOpen(false)}
+            >
+              {t("nav.home")}
+            </a>
+
+            <a
+              href="/about"
+              onClick={() => setMenuOpen(false)}
+            >
+              {t("nav.about")}
+            </a>
+
+            <a
+              href="/contact"
+              onClick={() => setMenuOpen(false)}
+            >
+              {t("nav.contact")}
+            </a>
+
+
+            {/* REQUEST A QUOTE - MOBILE */}
+            <a
+              href="https://wa.me/6892762034"
               className="quote-btn mobile-btn"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Request a quote
+              {t("nav.quote")}
             </a>
+
+
+            {/* LANGUAGE SWITCHER - MOBILE */}
+            <div className="mobile-language-switcher">
+              <LanguageSwitcher />
+            </div>
 
           </nav>
 
-          {/* Botão apenas no desktop */}
+
+          {/* LANGUAGE SWITCHER - DESKTOP */}
+          <div className="language-switcher-wrapper">
+            <LanguageSwitcher />
+          </div>
+
+
+          {/* REQUEST A QUOTE - DESKTOP */}
           <a
-            href="https://wa.me/5511944956944"
+            href="https://wa.me/6892762034"
             className="quote-btn desktop-btn"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Request a quote
+            {t("nav.quote")}
           </a>
 
+
+          {/* HAMBURGER */}
           <button
             type="button"
-            className="hamburger"
+            className={`hamburger ${menuOpen ? "active" : ""}`}
             onClick={() => setMenuOpen((prev) => !prev)}
-            aria-label={menuOpen ? "Close menu" : "Open menu"}
+            aria-label={
+              menuOpen
+                ? t("nav.closeMenu")
+                : t("nav.openMenu")
+            }
+            aria-expanded={menuOpen}
           >
-            ☰
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
 
         </div>

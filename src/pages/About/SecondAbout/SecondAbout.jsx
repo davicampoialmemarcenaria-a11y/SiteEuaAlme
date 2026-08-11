@@ -1,8 +1,11 @@
 import "./SecondAbout.scss";
+import { useTranslation } from "react-i18next";
 
 import secondAbout from "../../../assets/imgs/imgcardabout.png";
 
 export default function SecondAbout() {
+  const { t } = useTranslation();
+
   return (
     <section className="second-about">
 
@@ -15,23 +18,14 @@ export default function SecondAbout() {
         <div className="second-about__content">
 
           <p>
-            Alme Custom Millwork was founded in 2020 by two childhood
-            friends with the goal of providing a safer, more organized,
-            and more reliable approach to custom millwork projects.
-            From the very beginning, our commitment has been to turn
-            challenges into well-managed processes, ensuring peace of
-            mind for both clients and partners.
+            {t("secondAbout.paragraph1")}
           </p>
 
           <p>
-            More than delivering custom millwork, we strive to build
-            trust. We want our clients to feel supported, confident,
-            and cared for throughout the entire journey, knowing their
-            project is in good hands.
+            {t("secondAbout.paragraph2")}
           </p>
 
         </div>
-
 
         {/* ==================================================
             CARD
@@ -43,7 +37,7 @@ export default function SecondAbout() {
 
             <img
               src={secondAbout}
-              alt="Custom millwork illustration"
+              alt={t("secondAbout.imageAlt")}
               className="second-about__image"
             />
 

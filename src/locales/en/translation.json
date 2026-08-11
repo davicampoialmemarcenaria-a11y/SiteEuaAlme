@@ -1,0 +1,252 @@
+{
+  "nav": {
+    "brand": "ALME WOODWORKS",
+    "home": "Home",
+    "about": "About Us",
+    "contact": "Contact",
+    "quote": "Request a Quote",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"},
+
+    "hero": {
+    "titleLine1": "CUSTOM",
+    "titleLine2": "FURNITURE, BUILT",
+    "titleLine3": "ON TRUST.",
+    "description": "Our way of working combines premium quality manufacturing, smart logistics, and a service approach designed to make the entire process simpler and more efficient.",
+    "button": "Contact us",
+    "imageAlt": "Custom furniture project"
+  },
+   "seconds": {
+    "paragraph1": {
+      "before": "",
+      "brand": "Alme",
+      "after": " was founded with the vision of creating a woodworking company that breaks away from industry standards, overcoming market limitations through modern solutions, smart processes, and truly personalized service."
+    },
+    "paragraph2": "We design and manufacture fully custom cabinetry with premium craftsmanship, tailored exclusively to your project.",
+    "paragraph3": "In the United States, our service model offers greater speed and flexibility: your cabinetry is delivered ready for installation, partially pre-assembled, carefully packaged, and accompanied by assembly instructions and all the necessary hardware.",
+    "paragraph4": "This allows you to schedule the installation with the professional you trust, at the time that works best for you—without compromising on quality, customization, or exceptional craftsmanship.",
+    "cardTitleLine1": "THE FUTURE OF CUSTOM.",
+    "cardTitleLine2": "MILLWORK STARTS HERE.",
+    "imageAlt": "Custom millwork"
+  },  "projects": {
+    "titleLine1": "Featured",
+    "titleLine2": "Projects",
+    "description": "Every project tells a story. Get inspired by spaces that reflect the quality and essence of our craftsmanship.",
+    "cards": [
+      {
+        "title": "Focus on Excellence",
+        "subtitle": "Elegant and functional design."
+      },
+      {
+        "title": "Refined Projects",
+        "subtitle": "Exclusive environments."
+      },
+      {
+        "title": "Planned Solutions",
+        "subtitle": "Every detail matters."
+      },
+      {
+        "title": "500+ Projects",
+        "subtitle": "Delivering exclusivity."
+      }
+    ]
+  },  "cards": {
+    "title": "Our model",
+    "subtitle": "What makes our service model different?",
+
+    "learnMore": "LEARN MORE",
+    "contact": "CONTACT",
+
+    "card1": {
+      "title1": "high",
+      "title2": "standards",
+      "item1": "100% custom cabinetry designed for your space.",
+      "item2": "Premium-quality manufacturing.",
+      "item3": "Fast and well-organized delivery."
+    },
+
+    "card2": {
+      "title1": "Long-term",
+      "title2": "thinking",
+      "alt": "Long-term thinking"
+    },
+
+    "card3": {
+      "alt": "Custom cabinetry"
+    },
+
+    "card4": {
+      "item1": "Pre-assembled components for easier installation.",
+      "item2": "Assembly guide and all hardware included.",
+      "item3": "Freedom to install with your preferred installer.",
+      "item4": "Greater convenience, time savings, and flexibility."
+    },
+
+    "card5": {
+      "title1": "Sustainable",
+      "title2": "decisions",
+      "description": "Your unique project. Our craftsmanship. Installation on your schedule, with the professional you trust."
+    },
+
+    "card6": {
+      "title1": "Promises into",
+      "title2": "results",
+      "alt": "Promises into results"
+    }},  "brasil": {
+    "title": "OUR ROOTS",
+    "description": "Get to know the story behind Alme and discover a complete custom millwork experience designed for the Brazilian market.",
+    "button": "Visit our local site",
+    "imageAlt": "Brazilian flag illustration"
+  },  "heroAbout": {
+    "title": "Get to know us!",
+    "paragraph1": "Every project represents a dream, an investment, and the expectation of transforming a space into something truly unique. That's why we believe custom millwork should go beyond technical execution—it should provide security, transparency, and confidence at every stage of the process.",
+    "paragraph2": "It is with this vision that we have built our story.",
+    "imageAlt": "ALME custom millwork process illustration"
+  }, "secondAbout": {
+    "paragraph1": "Alme Custom Millwork was founded in 2020 by two childhood friends with the goal of providing a safer, more organized, and more reliable approach to custom millwork projects. From the very beginning, our commitment has been to turn challenges into well-managed processes, ensuring peace of mind for both clients and partners.",
+    "paragraph2": "More than delivering custom millwork, we strive to build trust. We want our clients to feel supported, confident, and cared for throughout the entire journey, knowing their project is in good hands.",
+    "imageAlt": "Custom millwork illustration"
+  },   "questions": {
+    "items": [
+      {
+        "number": "01",
+        "title": "Contact",
+        "text": "Every great project starts with a conversation. Our team is ready to understand your project's needs, answer your questions, and learn the details that make all the difference in the final result. During this stage, we align expectations, review the initial information, and gather everything needed to prepare your quote."
+      },
+      {
+        "number": "02",
+        "title": "Estimate",
+        "text": "Once we understand your project, our team reviews all the information provided and develops a detailed estimate based on your needs, specifications, materials, and desired results."
+      },
+      {
+        "number": "03",
+        "title": "Proposal & Agreement",
+        "text": "After the estimate is approved, we prepare the proposal and agreement, clearly outlining the scope, specifications, timelines, responsibilities, and conditions of the project."
+      },
+      {
+        "number": "04",
+        "title": "Project Approval",
+        "text": "With the proposal and agreement finalized, the project moves into the approval stage. We review all details together to ensure everything is aligned before production begins."
+      },
+      {
+        "number": "05",
+        "title": "Pre-assembly",
+        "text": "Before delivery, every component goes through a careful pre-assembly process. This allows our team to verify measurements, finishes, fittings, and overall quality before the project reaches its final destination."
+      },
+      {
+        "number": "06",
+        "title": "Shipping & Delivery",
+        "text": "Once everything has been checked and approved, your project is carefully prepared for shipping and delivery, ensuring that every component arrives safely and ready for the next stage."
+      }
+    ]
+  }, "vem": {
+    "title": "Let's make things happen",
+    "description": "Every great project begins with the right decision. Get in touch with our team and discover what's possible.",
+    "button": "Get your free proposal",
+    "imageAlt": "Our woodworking process"
+  }, "values": {
+  "title": "Our values",
+  "items": [
+    {
+      "title": "EXCELLENCE",
+      "text": "We pursue the highest standards in everything we do, delivering an exceptional experience and setting the benchmark at every stage of the project. From planning and technical coordination to production and final delivery, we pay close attention to every detail, ensuring precision, consistency, and uncompromising quality that exceed expectations."
+    },
+    {
+      "title": "COMMITMENT",
+      "text": "We stand by our word with responsibility, transparency, and respect, turning promises into results. We build trust through clear communication, accountability, and reliable execution, fostering long-term relationships with clients, architects, partners, and everyone involved in each project."
+    },
+    {
+      "title": "CONTINUOUS IMPROVEMENT",
+      "text": "We are constantly learning, refining our processes, and embracing innovation to keep evolving. By challenging ourselves to improve every day, we enhance efficiency, strengthen collaboration, and deliver increasingly smarter, more reliable, and higher-quality solutions."
+    },
+    {
+      "title": "LONGEVITY",
+      "text": "We think long-term, building lasting relationships and making sustainable decisions that stand the test of time. We value consistency, durability, and trust, creating partnerships and solutions designed to generate lasting value for both our clients and our business."
+    },
+    {
+      "title": "GROWTH",
+      "text": "We believe in shared success, creating opportunities and generating value for our clients, team members, and partners. By growing together, encouraging collaboration, and investing in people and innovation, we create a stronger ecosystem where everyone has the opportunity to thrive and prosper."
+    }
+  ]
+}, "contactHero": {
+  "title": "Let's create what's next.",
+  "description": "Request a quote and discover how we can transform your project into a fully customized solution, delivered with quality, precision, and a process designed around your needs.",
+  "button": "Contact us",
+  "imageAlt": "Alme"
+},  "contactForm": {
+    "title": "Contact Us",
+    "description": "Want to learn more about how our service model works in the United States? Fill out the form, and our team will get in touch to walk you through the process, answer your questions, and show you how we can build a successful partnership together.",
+    "fields": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Name"
+      },
+      "subject": {
+        "label": "Subject",
+        "placeholder": "Subject"
+      },
+      "email": {
+        "label": "Email*",
+        "placeholder": "Email"
+      },
+      "message": {
+        "label": "Message*",
+        "placeholder": "Message"
+      }
+    },
+    "button": {
+      "send": "Send Message",
+      "sending": "Sending..."
+    },
+    "modal": {
+      "close": "Close"
+    },
+    "success": {
+      "title": "Message sent!",
+      "messageLine1": "Thank you for reaching out to us.",
+      "messageLine2": "Our team will get back to you soon.",
+      "button": "Done"
+    },
+    "error": {
+      "title": "Something went wrong",
+      "messageLine1": "We couldn't send your message.",
+      "messageLine2": "Please try again in a moment.",
+      "button": "Try Again"
+    }
+  },  "footer": {
+    "title": "Navigation",
+
+    "menu": {
+      "title": "MENU",
+      "home": "HOME",
+      "about": "ABOUT",
+      "contact": "CONTACT"
+    },
+
+    "channels": {
+      "title": "CHANNELS",
+
+      "hours": {
+        "week": "Mon - Thu: 07:00 AM - 06:00 PM (FUSO)",
+        "friday": "Fri: 07:00 AM - 05:00 PM",
+        "weekend": "Sat - Sun: Closed"
+      },
+
+      "address": {
+        "line1": "Alameda Prof. Lucas Nogueira Garcez, 5220,",
+        "line2": "Atibaia - SP, Brazil"
+      }
+    },
+
+    "links": {
+      "title": "LINKS",
+      "whatsapp": "WhatsApp",
+      "instagram": "Instagram",
+      "email": "E-mail",
+      "tiktok": "TikTok",
+      "pinterest": "Pinterest"
+    }
+  }
+  
+  
+}

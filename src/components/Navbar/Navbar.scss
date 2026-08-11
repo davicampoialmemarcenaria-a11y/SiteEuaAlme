@@ -26,7 +26,7 @@ body {
 .navbar-right {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 24px;
 }
 
 .navbar-links {
@@ -35,10 +35,16 @@ body {
   gap: 42px;
 }
 
+
+/* =====================================================
+   BRAND
+===================================================== */
+
 .navbar-brand {
   display: flex;
   align-items: center;
   gap: 18px;
+
   flex-shrink: 0;
 
   img {
@@ -49,16 +55,77 @@ body {
   span {
     font-size: 28px;
     font-weight: 500;
+
     color: #111;
+
     letter-spacing: 0.4px;
+
     white-space: nowrap;
   }
 }
 
-/* LINKS DO MENU */
+
+/* =====================================================
+   LANGUAGE SWITCHER
+===================================================== */
+
+.language-switcher-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.language-switcher button {
+  background: transparent;
+  border: none;
+
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  color: #777;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  &:hover {
+    color: #d98c1f;
+  }
+
+  &.active {
+    color: #d98c1f;
+  }
+}
+
+.language-switcher span {
+  color: #d0d0d0;
+  font-size: 14px;
+}
+
+
+/* =====================================================
+   LANGUAGE SWITCHER MOBILE
+===================================================== */
+
+.mobile-language-switcher {
+  display: none;
+}
+
+
+/* =====================================================
+   LINKS DO MENU
+===================================================== */
 
 .navbar-links a {
   text-decoration: none;
+
   color: #111;
 
   font-size: 20px;
@@ -71,7 +138,10 @@ body {
   }
 }
 
-/* BOTÃO REQUEST A QUOTE */
+
+/* =====================================================
+   REQUEST A QUOTE
+===================================================== */
 
 .quote-btn {
   width: 245px;
@@ -96,36 +166,94 @@ body {
 
   transition: 0.3s;
 
+  white-space: nowrap;
+
+  flex-shrink: 0;
+
   &:hover {
     background: #c98317;
     color: white;
   }
 }
 
-/* BOTÃO MOBILE ESCONDIDO NO DESKTOP */
+
+/* =====================================================
+   BOTÃO MOBILE ESCONDIDO NO DESKTOP
+===================================================== */
 
 .mobile-btn {
   display: none;
 }
 
-/* HAMBURGER */
+
+/* =====================================================
+   HAMBURGER
+===================================================== */
 
 .hamburger {
   display: none;
 
+  width: 42px;
+  height: 42px;
+
+  padding: 0;
+
   border: none;
-  background: none;
 
-  font-size: 34px;
-
-  color: #d98c1f;
+  background: transparent;
 
   cursor: pointer;
+
+  flex-shrink: 0;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+
+  gap: 6px;
 }
 
-/* -------- TABLET -------- */
+
+/* Barras do hamburger */
+
+.hamburger span {
+  display: block;
+
+  width: 27px;
+  height: 3px;
+
+  background: #d98c1f;
+
+  border-radius: 10px;
+
+  transition: 0.25s ease;
+}
+
+
+/* =====================================================
+   HAMBURGER ABERTO
+===================================================== */
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
 
 @media (max-width: 1100px) {
+
   .navbar-brand span {
     display: none;
   }
@@ -138,11 +266,19 @@ body {
     width: 190px;
     font-size: 17px;
   }
+
+  .language-switcher select {
+    font-size: 15px;
+  }
 }
 
-/* -------- MOBILE -------- */
+
+/* =====================================================
+   MOBILE
+===================================================== */
 
 @media (max-width: 860px) {
+
   .navbar {
     padding: 18px 0;
   }
@@ -155,80 +291,255 @@ body {
     gap: 0;
   }
 
+
+  /* ===================================================
+     HAMBURGER
+  =================================================== */
+
   .hamburger {
-    display: block;
+    display: flex;
   }
 
-  /* Esconde botão desktop */
+
+  /* ===================================================
+     ESCONDE ELEMENTOS DESKTOP
+  =================================================== */
+
+  .language-switcher-wrapper {
+    display: none;
+  }
+
   .desktop-btn {
     display: none;
   }
 
-  /* Botão dentro do menu mobile */
-  .mobile-btn {
-    display: flex;
 
-    width: 200px;
-    height: 50px;
+  /* ===================================================
+     MENU MOBILE
+  =================================================== */
 
-    font-size: 16px;
-
-    margin-top: 10px;
-  }
-
-  /* MENU MOBILE */
   .navbar-links {
     position: absolute;
 
-    top: 75px;
-    right: 50%;
+    top: calc(100% + 15px);
+    right: 0;
 
-    width: 260px;
+    width: 280px;
 
-    background: white;
+    /*
+      Nunca deixa o menu ultrapassar
+      a largura da tela.
+    */
+    max-width: calc(100vw - 30px);
+
+    background: #fff;
 
     display: flex;
     flex-direction: column;
+
     align-items: center;
     justify-content: center;
 
-    padding: 35px 20px;
+    padding: 30px 25px;
 
     border-radius: 20px;
 
     border: 1px solid rgba(0, 0, 0, 0.05);
 
     box-shadow:
-      0 25px 60px rgba(0, 0, 0, 0.2),
+      0 25px 60px rgba(0, 0, 0, 0.20),
       0 10px 25px rgba(0, 0, 0, 0.12),
       0 4px 10px rgba(0, 0, 0, 0.08);
 
-    gap: 25px;
+    gap: 22px;
 
-    /* FECHADO */
+
+    /* MENU FECHADO */
+
     opacity: 0;
+
     visibility: hidden;
 
-    transform: translateX(85%) translateY(-15px);
+    transform: translateY(-10px);
 
-    /* IMPORTANTE:
-       não animar durante resize */
-    transition: none;
+    pointer-events: none;
+
+    /*
+      Só anima quando abre/fecha.
+    */
+
+    transition:
+      opacity 0.2s ease,
+      transform 0.2s ease,
+      visibility 0.2s ease;
   }
 
-  /* MENU ABERTO */
+
+  /* ===================================================
+     MENU ABERTO
+  =================================================== */
+
   .navbar-links.active {
     opacity: 1;
+
     visibility: visible;
 
-    transform: translateX(85%) translateY(0);
+    transform: translateY(0);
+
+    pointer-events: auto;
+  }
+
+
+  /* ===================================================
+     LINKS MOBILE
+  =================================================== */
+
+  .navbar-links > a:not(.quote-btn) {
+    width: 100%;
+
+    padding: 4px 0;
+
+    text-align: center;
+
+    font-size: 18px;
+  }
+
+
+  /* ===================================================
+     REQUEST A QUOTE MOBILE
+  =================================================== */
+
+ .mobile-btn {
+  display: flex;
+
+  width: 100%;
+
+  max-width: 100%;
+
+  height: 50px;
+
+  padding: 0 20px;
+
+  margin-top: 4px;
+
+  font-size: 16px;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  text-overflow: ellipsis;
+}
+
+  /* ===================================================
+     LANGUAGE SWITCHER MOBILE
+  =================================================== */
+
+  .mobile-language-switcher {
+    display: flex;
+
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 18px;
+
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  .mobile-language-switcher .language-switcher {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    max-width: 100%;
+
+    flex-wrap: wrap;
+  }
+
+  .mobile-language-switcher .language-switcher button {
+    font-size: 13px;
+
+    white-space: nowrap;
+  }
+
+  .mobile-language-switcher .language-switcher span {
+    font-size: 12px;
   }
 }
 
-/* -------- CELULAR PEQUENO -------- */
+
+/* =====================================================
+   CELULAR PEQUENO
+===================================================== */
 
 @media (max-width: 520px) {
+
   .navbar-brand img {
     width: 48px;
+  }
+
+  .hamburger {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hamburger span {
+    width: 25px;
+  }
+
+  .navbar-links {
+    width: 270px;
+
+    max-width: calc(100vw - 24px);
+
+    padding: 28px 20px;
+
+    gap: 20px;
+  }
+
+  .mobile-btn {
+  width: 100%;
+  max-width: 100%;
+}
+}
+
+
+/* =====================================================
+   CELULAR MUITO PEQUENO
+===================================================== */
+
+@media (max-width: 380px) {
+
+  .navbar-container {
+    width: 90%;
+  }
+
+  .navbar-links {
+    width: 260px;
+
+    max-width: calc(100vw - 20px);
+
+    padding: 25px 18px;
+  }
+
+  .navbar-links > a:not(.quote-btn) {
+    font-size: 17px;
+  }
+
+  .mobile-btn {
+    max-width: 200px;
+
+    font-size: 12px;
+  }
+
+  .mobile-language-switcher .language-switcher button {
+    font-size: 12px;
   }
 }
