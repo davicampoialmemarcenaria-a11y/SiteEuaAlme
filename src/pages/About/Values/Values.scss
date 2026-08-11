@@ -1,0 +1,566 @@
+/* =========================================================
+VALUES
+========================================================= */
+
+.values {
+    width: 100%;
+
+    padding: 130px 5% 120px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+
+    font-family: "Space Grotesk", sans-serif;
+}
+
+
+/* =========================================================
+CONTAINER
+========================================================= */
+
+.values__container {
+    width: 100%;
+    max-width: 1320px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+TITLE
+========================================================= */
+
+.values__title {
+    margin: 0 0 85px;
+
+    color: #050505;
+
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(38px, 4vw, 52px);
+    font-weight: 500;
+
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+}
+
+
+/* =========================================================
+LIST
+========================================================= */
+
+.values__list {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 125px;
+}
+
+
+/* =========================================================
+ITEM
+========================================================= */
+
+.values__item {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 75px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+ITEM REVERSE
+========================================================= */
+
+.values__item--reverse {
+    flex-direction: row-reverse;
+}
+
+
+/* =========================================================
+IMAGE
+========================================================= */
+
+.values__image-wrapper {
+    flex: 0 0 245px;
+
+    width: 245px;
+    height: 245px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.values__image {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+CONTENT
+========================================================= */
+
+.values__content {
+    flex: 0 1 800px;
+}
+
+
+/* =========================================================
+HEADING
+========================================================= */
+
+.values__heading {
+    margin: 0 0 18px;
+
+    color: #050505;
+
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(34px, 3.3vw, 48px);
+    font-weight: 500;
+
+    line-height: 1.1;
+    letter-spacing: -1.3px;
+}
+
+
+/* =========================================================
+TEXT
+========================================================= */
+
+.values__text {
+    max-width: 800px;
+
+    margin: 0;
+
+    color: #292929;
+
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 1.5;
+
+    letter-spacing: -0.1px;
+}
+
+
+/* =========================================================
+DESKTOP
+========================================================= */
+
+.values__item--reverse .values__content {
+    text-align: right;
+}
+
+
+/* =========================================================
+TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .values {
+        padding: 100px 5% 90px;
+    }
+
+    .values__title {
+        margin-bottom: 60px;
+
+        font-size: 42px;
+    }
+
+    .values__list {
+        gap: 70px;
+    }
+
+    .values__item {
+        gap: 40px;
+    }
+
+    .values__image-wrapper {
+        flex: 0 0 190px;
+
+        width: 190px;
+        height: 190px;
+    }
+
+    .values__content {
+        flex: 1;
+    }
+
+    .values__heading {
+        margin-bottom: 12px;
+
+        font-size: 34px;
+    }
+
+    .values__text {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+
+/* =========================================================
+TABLET PEQUENO
+ATÉ 750px
+========================================================= */
+
+@media (max-width: 750px) {
+
+    .values {
+        padding: 80px 6% 70px;
+    }
+
+    .values__title {
+        margin-bottom: 40px;
+
+        font-size: 36px;
+        letter-spacing: -1px;
+    }
+
+
+    /* -----------------------------------------
+       IMPORTANTE:
+       NÃO usamos gap para separar os tópicos.
+    ----------------------------------------- */
+
+    .values__list {
+        display: flex;
+        flex-direction: column;
+
+        gap: 0;
+    }
+
+
+    /* -----------------------------------------
+       ITEM
+    ----------------------------------------- */
+
+    .values__item,
+    .values__item--reverse {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 0;
+
+        margin: 0;
+        padding: 0;
+
+        text-align: center;
+    }
+
+
+    /* -----------------------------------------
+       ESPAÇO ENTRE OS TÓPICOS
+       
+       ESTE É O ESPAÇO PRINCIPAL.
+    ----------------------------------------- */
+
+    .values__item + .values__item {
+        margin-top: 45px;
+    }
+
+
+    /* -----------------------------------------
+       IMAGEM
+    ----------------------------------------- */
+
+    .values__image-wrapper {
+        flex: none;
+
+        width: 170px;
+        height: 170px;
+
+        margin: 0 0 8px;
+    }
+
+
+    /* -----------------------------------------
+       CONTENT
+    ----------------------------------------- */
+
+    .values__content,
+    .values__item--reverse .values__content {
+        width: 100%;
+        max-width: 620px;
+
+        flex: none;
+
+        text-align: center;
+
+        margin: 0;
+        padding: 0;
+    }
+
+
+    /* -----------------------------------------
+       HEADING
+    ----------------------------------------- */
+
+    .values__heading {
+        margin: 0 0 6px;
+
+        font-size: 31px;
+
+        line-height: 1.1;
+
+        letter-spacing: -0.8px;
+    }
+
+
+    /* -----------------------------------------
+       TEXT
+    ----------------------------------------- */
+
+    .values__text {
+        width: 100%;
+        max-width: 620px;
+
+        margin: 0 auto;
+
+        font-size: 14px;
+
+        line-height: 1.45;
+    }
+}
+
+
+/* =========================================================
+MOBILE
+ATÉ 500px
+========================================================= */
+
+@media (max-width: 500px) {
+
+    .values {
+        padding: 65px 20px 60px;
+    }
+
+
+    /* -----------------------------------------
+       TITLE
+    ----------------------------------------- */
+
+    .values__title {
+        margin-bottom: 30px;
+
+        font-size: 33px;
+
+        line-height: 1.05;
+
+        letter-spacing: -1px;
+    }
+
+
+    /* -----------------------------------------
+       LISTA
+       
+       GAP = ZERO.
+       
+       O espaçamento é controlado exclusivamente
+       pelo .values__item + .values__item abaixo.
+    ----------------------------------------- */
+
+    .values__list {
+        gap: 0 !important;
+        row-gap: 0 !important;
+    }
+
+
+    /* -----------------------------------------
+       ITEM
+    ----------------------------------------- */
+
+    .values__item,
+    .values__item--reverse {
+        gap: 0 !important;
+
+        margin: 0;
+        padding: 0;
+
+        min-width: 0;
+    }
+
+
+    /* -----------------------------------------
+       ESPAÇO ENTRE CADA TÓPICO
+       
+       20px = compacto
+       30px = equilibrado
+       40px = mais espaçado
+    ----------------------------------------- */
+
+    .values__item + .values__item {
+        margin-top: 70px !important;
+    }
+.values__text {
+    text-align: justify;
+}
+
+    /* -----------------------------------------
+       IMAGEM
+    ----------------------------------------- */
+
+    .values__image-wrapper {
+        width: 155px;
+        height: 155px;
+
+        margin: 0 0 5px;
+    }
+
+
+    /* -----------------------------------------
+       CONTENT
+    ----------------------------------------- */
+
+    .values__content,
+    .values__item--reverse .values__content {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+        padding: 0;
+
+        text-align: center;
+    }
+
+
+    /* -----------------------------------------
+       HEADING
+    ----------------------------------------- */
+
+    .values__heading {
+        margin: 0 0 5px;
+
+        font-size: 28px;
+
+        line-height: 1.05;
+
+        letter-spacing: -0.7px;
+    }
+
+
+    /* -----------------------------------------
+       TEXT
+    ----------------------------------------- */
+
+    .values__text {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+
+        font-size: 13px;
+
+        line-height: 1.45;
+    }
+}
+
+
+/* =========================================================
+MOBILE PEQUENO
+ATÉ 360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .values {
+        padding: 55px 16px 50px;
+    }
+
+
+    /* -----------------------------------------
+       TITLE
+    ----------------------------------------- */
+
+    .values__title {
+        margin-bottom: 25px;
+
+        font-size: 30px;
+
+        letter-spacing: -0.8px;
+    }
+
+
+    /* -----------------------------------------
+       LISTA
+    ----------------------------------------- */
+
+    .values__list {
+        gap: 0 !important;
+        row-gap: 0 !important;
+    }
+
+
+    /* -----------------------------------------
+       ITEM
+    ----------------------------------------- */
+
+    .values__item,
+    .values__item--reverse {
+        gap: 0 !important;
+    }
+
+
+    /* -----------------------------------------
+       ESPAÇO ENTRE TÓPICOS
+    ----------------------------------------- */
+
+    .values__item + .values__item {
+        margin-top: 15px !important;
+    }
+
+
+    /* -----------------------------------------
+       IMAGEM
+    ----------------------------------------- */
+
+    .values__image-wrapper {
+        width: 140px;
+        height: 140px;
+
+        margin-bottom: 4px;
+    }
+
+
+    /* -----------------------------------------
+       HEADING
+    ----------------------------------------- */
+
+    .values__heading {
+        margin-bottom: 4px;
+
+        font-size: 26px;
+
+        line-height: 1.05;
+    }
+
+
+    /* -----------------------------------------
+       TEXT
+    ----------------------------------------- */
+
+    .values__text {
+        font-size: 12.5px;
+
+        line-height: 1.4;
+    }
+}

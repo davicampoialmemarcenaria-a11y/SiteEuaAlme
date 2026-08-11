@@ -1,0 +1,303 @@
+.vem {
+    width: 100%;
+    padding: 80px 5%;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.vem__container {
+    width: 100%;
+    max-width: 1320px;
+    min-height: 280px;
+
+    margin: 0 auto;
+    padding: 45px 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+
+    box-sizing: border-box;
+
+    background: #f3f3f2;
+
+    border-radius: 34px;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.vem__content {
+    flex: 0 0 38%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.vem__title {
+    margin: 0 0 20px;
+
+    color: #111111;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(26px, 2.2vw, 34px);
+    font-weight: 600;
+
+    line-height: 1.15;
+    letter-spacing: -0.8px;
+}
+
+
+.vem__description {
+    max-width: 430px;
+
+    margin: 0 0 28px;
+
+    color: #222222;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.vem__button {
+    min-width: 230px;
+
+    padding: 16px 28px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    background: #d88a19;
+    color: #ffffff;
+
+    border-radius: 11px;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.vem__button:hover {
+    background: #c77a10;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
+
+.vem__button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.vem__visual {
+    flex: 1;
+
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.vem__image {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .vem {
+        padding: 60px 4%;
+    }
+
+    .vem__container {
+        padding: 40px;
+
+        gap: 35px;
+
+        border-radius: 30px;
+    }
+
+    .vem__content {
+        flex-basis: 40%;
+    }
+
+    .vem__description {
+        font-size: 14px;
+    }
+
+    .vem__image {
+        max-width: 570px;
+    }
+}
+
+
+/* =========================================
+   TABLET / MOBILE
+========================================= */
+
+@media (max-width: 850px) {
+
+    .vem {
+        padding: 50px 4%;
+    }
+
+    .vem__container {
+        padding: 40px 35px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 40px;
+    }
+
+    .vem__content {
+        width: 100%;
+        flex: none;
+    }
+
+    .vem__description {
+        max-width: 550px;
+    }
+
+    .vem__visual {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    .vem__image {
+        width: 100%;
+        max-width: 650px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .vem {
+        padding: 35px 18px;
+    }
+
+    .vem__container {
+        padding: 30px 24px;
+
+        gap: 35px;
+
+        border-radius: 24px;
+    }
+
+    .vem__title {
+        margin-bottom: 16px;
+
+        font-size: 26px;
+        letter-spacing: -0.5px;
+    }
+
+    .vem__description {
+        margin-bottom: 22px;
+
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .vem__button {
+        width: 100%;
+        min-width: 0;
+
+        padding: 16px 20px;
+
+        font-size: 14px;
+    }
+
+    .vem__visual {
+        width: 100%;
+
+        overflow: hidden;
+    }
+
+    .vem__image {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+
+/* =========================================
+   MOBILE PEQUENO
+========================================= */
+
+@media (max-width: 400px) {
+
+    .vem {
+        padding: 28px 14px;
+    }
+
+    .vem__container {
+        padding: 28px 20px;
+
+        border-radius: 21px;
+    }
+
+    .vem__title {
+        font-size: 24px;
+    }
+
+    .vem__description {
+        font-size: 13px;
+    }
+}
