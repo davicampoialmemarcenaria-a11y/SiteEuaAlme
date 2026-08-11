@@ -1,42 +1,53 @@
+import { useNavigate } from "react-router-dom";
+
 import "./Vem.scss";
 import imgAboutContact from "../../../assets/imgs/imgaboutcontact.png";
 
 function Vem() {
-    return (
-        <section className="vem">
-            <div className="vem__container">
 
-                <div className="vem__content">
+  const navigate = useNavigate();
 
-                    <h2 className="vem__title">
-                        Let’s make things happen
-                    </h2>
+  return (
+    <section className="vem">
 
-                    <p className="vem__description">
-                        Every great project begins with the right decision.
-                        Get in touch with our team and discover what’s possible.
-                    </p>
+      <div className="vem__container">
 
-                    <a
-                        href="#contact"
-                        className="vem__button"
-                    >
-                        Get your free proposal
-                    </a>
+        <div className="vem__content">
 
-                </div>
+          <h2 className="vem__title">
+            Let’s make things happen
+          </h2>
 
-                <div className="vem__visual">
-                    <img
-                        src={imgAboutContact}
-                        alt="Our woodworking process"
-                        className="vem__image"
-                    />
-                </div>
+          <p className="vem__description">
+            Every great project begins with the right decision.
+            Get in touch with our team and discover what’s possible.
+          </p>
 
-            </div>
-        </section>
-    );
+          <button
+            type="button"
+            className="vem__button"
+            onClick={() => navigate("/contact")}
+          >
+            Get your free proposal
+          </button>
+
+        </div>
+
+
+        <div className="vem__visual">
+
+          <img
+            src={imgAboutContact}
+            alt="Our woodworking process"
+            className="vem__image"
+          />
+
+        </div>
+
+      </div>
+
+    </section>
+  );
 }
 
 export default Vem;

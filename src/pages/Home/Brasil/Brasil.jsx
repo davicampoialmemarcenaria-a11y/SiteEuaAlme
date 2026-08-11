@@ -24,15 +24,17 @@ export default function Brasil() {
             </p>
 
             <a
-              href="#"
-              className="brasil__button"
-            >
-              <span>Visit our local site</span>
+  href="https://almemarcenaria.com"
+  className="brasil__button"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <span>Visit our local site</span>
 
-              <span className="brasil__arrow">
-                →
-              </span>
-            </a>
+  <span className="brasil__arrow">
+    →
+  </span>
+</a>
 
           </div>
 

@@ -1,0 +1,784 @@
+// =========================================================
+// CONTACT FORM SECTION
+// =========================================================
+
+.contact-form-section {
+  width: 100%;
+
+  padding: 70px 6.5vw 100px;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+}
+
+
+// =========================================================
+// HEADER
+// =========================================================
+
+.contact-form-header {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  align-items: start;
+
+  column-gap: 8px;
+
+  margin-bottom: 45px;
+
+  box-sizing: border-box;
+
+  h2 {
+    width: fit-content;
+
+    margin: 0;
+
+    padding: 2px 7px 4px;
+
+    border-radius: 6px;
+
+    background: #d98919;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1;
+
+    color: #050505;
+
+    box-sizing: border-box;
+  }
+
+  p {
+    max-width: 760px;
+
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15.5px;
+    font-weight: 400;
+    line-height: 1.25;
+
+    color: #111111;
+  }
+}
+
+
+// =========================================================
+// FORM CONTAINER
+// =========================================================
+
+.contact-form-wrapper {
+  width: 100%;
+  max-width: 1010px;
+
+  min-height: 618px;
+
+  display: grid;
+  grid-template-columns: 52% 48%;
+  align-items: center;
+
+  margin: 0 auto;
+
+  padding: 35px 80px;
+
+  border-radius: 38px;
+
+  background: #f3f3f3;
+
+  box-sizing: border-box;
+}
+
+
+// =========================================================
+// FORM
+// =========================================================
+
+.contact-form {
+  width: 100%;
+  max-width: 470px;
+
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+}
+
+
+// =========================================================
+// FIELD
+// =========================================================
+
+.contact-form__field {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 19px;
+
+  label {
+    margin-bottom: 7px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1;
+
+    color: #111111;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+
+    border: 1px solid #222222;
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+
+    color: #111111;
+
+    outline: none;
+
+    box-sizing: border-box;
+
+    transition:
+      border-color 0.2s ease,
+      box-shadow 0.2s ease;
+
+    &::placeholder {
+      color: #999999;
+
+      opacity: 1;
+    }
+
+    &:focus {
+      border-color: #d98919;
+
+      box-shadow: 0 0 0 2px rgba(217, 137, 25, 0.12);
+    }
+  }
+
+  input {
+    height: 50px;
+
+    padding: 0 24px;
+  }
+
+  textarea {
+    height: 140px;
+
+    padding: 17px 24px;
+
+    resize: vertical;
+
+    min-height: 100px;
+    max-height: 250px;
+  }
+}
+
+
+// =========================================================
+// MESSAGE FIELD
+// =========================================================
+
+.contact-form__field--message {
+  margin-bottom: 56px;
+}
+
+
+// =========================================================
+// SUBMIT BUTTON
+// =========================================================
+
+.contact-form__submit {
+  width: 100%;
+  height: 52px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: #d98919;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  color: #ffffff;
+
+  cursor: pointer;
+
+  box-sizing: border-box;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease,
+    opacity 0.2s ease;
+
+  &:hover:not(:disabled) {
+    background: #c67c15;
+
+    transform: translateY(-1px);
+  }
+
+  &:active:not(:disabled) {
+    transform: translateY(0);
+  }
+
+  &:disabled {
+    opacity: 0.65;
+
+    cursor: not-allowed;
+  }
+}
+
+
+// =========================================================
+// LOGO
+// =========================================================
+
+.contact-form__logo {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-left: 75px;
+
+  box-sizing: border-box;
+
+  img {
+    display: block;
+
+    width: min(70%, 330px);
+    height: auto;
+
+    object-fit: contain;
+  }
+}
+
+
+// =========================================================
+// STATUS MESSAGE
+// =========================================================
+
+.contact-form__status {
+  margin: 14px 0 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+
+  text-align: center;
+}
+
+.contact-form__status--success {
+  color: #43844a;
+}
+
+.contact-form__status--error {
+  color: #b33a3a;
+}
+
+
+// =========================================================
+// DESKTOP — ALIGN HEADER WITH FORM
+// =========================================================
+
+@media (min-width: 1201px) {
+
+  .contact-form-header {
+    padding-left: calc((90% - 1010px) / 2 + 80px);
+
+    box-sizing: border-box;
+  }
+
+}
+
+
+// =========================================================
+// LARGE DESKTOP
+// =========================================================
+
+@media (max-width: 1200px) {
+
+  .contact-form-section {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .contact-form-wrapper {
+    max-width: 1000px;
+
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .contact-form__logo {
+    padding-left: 20px;
+  }
+
+}
+
+
+// =========================================================
+// TABLET
+// =========================================================
+
+@media (max-width: 900px) {
+
+  .contact-form-section {
+    padding: 60px 30px 80px;
+  }
+
+  .contact-form-header {
+    grid-template-columns: 1fr;
+
+    row-gap: 15px;
+
+    margin-bottom: 35px;
+
+    h2 {
+      font-size: 32px;
+    }
+
+    p {
+      max-width: 700px;
+
+      font-size: 15px;
+    }
+  }
+
+  .contact-form-wrapper {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+
+    min-height: auto;
+
+    padding: 50px 50px 60px;
+  }
+
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .contact-form__logo {
+    padding-left: 0;
+
+    img {
+      width: min(100%, 300px);
+    }
+  }
+
+}
+
+
+// =========================================================
+// MOBILE
+// =========================================================
+
+@media (max-width: 600px) {
+
+  .contact-form-section {
+    padding: 45px 20px 70px;
+  }
+
+  .contact-form-header {
+    margin-bottom: 30px;
+
+    h2 {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  }
+
+  .contact-form-wrapper {
+    padding: 35px 25px 45px;
+
+    border-radius: 25px;
+
+    gap: 45px;
+  }
+
+  .contact-form__field {
+    margin-bottom: 17px;
+
+    label {
+      font-size: 12px;
+    }
+
+    input {
+      height: 48px;
+
+      padding: 0 18px;
+    }
+
+    textarea {
+      height: 130px;
+
+      padding: 15px 18px;
+    }
+  }
+
+  .contact-form__field--message {
+    margin-bottom: 35px;
+  }
+
+  .contact-form__submit {
+    height: 50px;
+
+    font-size: 15px;
+  }
+
+  .contact-form__logo {
+    img {
+      width: min(100%, 270px);
+    }
+  }
+
+}
+
+
+// =========================================================
+// SMALL MOBILE
+// =========================================================
+
+@media (max-width: 400px) {
+
+  .contact-form-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .contact-form-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    border-radius: 22px;
+  }
+
+  .contact-form-header {
+
+    h2 {
+      font-size: 26px;
+    }
+
+    p {
+      font-size: 13px;
+    }
+  }
+
+}
+
+
+// =========================================================
+// SUCCESS / ERROR POPUP
+// =========================================================
+
+.contact-success-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px;
+
+  background: rgba(0, 0, 0, 0.35);
+
+  backdrop-filter: blur(4px);
+
+  box-sizing: border-box;
+
+  animation: contactOverlayFadeIn 0.25s ease;
+}
+
+
+// =========================================================
+// MODAL
+// =========================================================
+
+.contact-success-modal {
+  position: relative;
+
+  width: 100%;
+  max-width: 480px;
+
+  padding: 50px 45px 45px;
+
+  background: #ffffff;
+
+  border-radius: 28px;
+
+  box-sizing: border-box;
+
+  text-align: center;
+
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.15);
+
+  animation: contactModalAppear 0.3s ease;
+}
+
+
+// =========================================================
+// CLOSE BUTTON
+// =========================================================
+
+.contact-success-modal__close {
+  position: absolute;
+
+  top: 18px;
+  right: 22px;
+
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+
+  line-height: 1;
+
+  color: #555555;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+
+  &:hover {
+    color: #d98919;
+
+    transform: rotate(90deg);
+  }
+}
+
+
+// =========================================================
+// CHECK / ERROR ICON
+// =========================================================
+
+.contact-success-modal__icon {
+  width: 72px;
+  height: 72px;
+
+  margin: 0 auto 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #d98919;
+
+  border-radius: 50%;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+
+  color: #d98919;
+
+  box-sizing: border-box;
+
+  animation: contactCheckAppear 0.4s ease 0.15s both;
+}
+
+.contact-success-modal__icon--error {
+  border-color: #b33a3a;
+
+  color: #b33a3a;
+}
+
+
+// =========================================================
+// MODAL TITLE
+// =========================================================
+
+.contact-success-modal h3 {
+  margin: 0 0 15px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+
+  line-height: 1.1;
+
+  color: #050505;
+}
+
+
+// =========================================================
+// MODAL MESSAGE
+// =========================================================
+
+.contact-success-modal p {
+  margin: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  line-height: 1.5;
+
+  color: #555555;
+}
+
+
+// =========================================================
+// MODAL BUTTON
+// =========================================================
+
+.contact-success-modal__button {
+  width: 180px;
+  height: 48px;
+
+  margin-top: 30px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #d98919;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  color: #ffffff;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+
+  &:hover {
+    background: #c67c15;
+
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+
+// =========================================================
+// POPUP ANIMATIONS
+// =========================================================
+
+@keyframes contactOverlayFadeIn {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+
+}
+
+
+@keyframes contactModalAppear {
+
+  from {
+    opacity: 0;
+
+    transform: translateY(15px) scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0) scale(1);
+  }
+
+}
+
+
+@keyframes contactCheckAppear {
+
+  from {
+    opacity: 0;
+
+    transform: scale(0.5);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: scale(1);
+  }
+
+}
+
+
+// =========================================================
+// POPUP MOBILE
+// =========================================================
+
+@media (max-width: 600px) {
+
+  .contact-success-overlay {
+    padding: 20px;
+  }
+
+  .contact-success-modal {
+    max-width: 100%;
+
+    padding: 45px 25px 35px;
+
+    border-radius: 24px;
+  }
+
+  .contact-success-modal__icon {
+    width: 64px;
+    height: 64px;
+
+    margin-bottom: 20px;
+
+    font-size: 32px;
+  }
+
+  .contact-success-modal h3 {
+    font-size: 28px;
+  }
+
+  .contact-success-modal p {
+    font-size: 15px;
+  }
+
+  .contact-success-modal__button {
+    width: 160px;
+  }
+
+}

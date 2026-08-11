@@ -3,28 +3,22 @@ import "./Navbar.scss";
 import logo from "../../assets/imgs/imgnavbar.png";
 
 export default function Navbar() {
-
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-
     <header className="navbar">
-
       <div className="navbar-container">
 
         <div className="navbar-brand">
-
-          <img 
-            src={logo} 
-            alt="Alme Woodworks" 
+          <img
+            src={logo}
+            alt="Alme Woodworks"
           />
 
           <span>
             ALME WOODWORKS
           </span>
-
         </div>
-
 
         <div className="navbar-right">
 
@@ -42,36 +36,40 @@ export default function Navbar() {
               Contact
             </a>
 
-
             {/* Botão apenas no mobile */}
-            <button className="quote-btn mobile-btn">
+            <a
+              href="https://wa.me/5511944956944"
+              className="quote-btn mobile-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Request a quote
-            </button>
-
+            </a>
 
           </nav>
 
-
           {/* Botão apenas no desktop */}
-          <button className="quote-btn desktop-btn">
+          <a
+            href="https://wa.me/5511944956944"
+            className="quote-btn desktop-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Request a quote
-          </button>
-
+          </a>
 
           <button
+            type="button"
             className="hamburger"
-            onClick={() => setMenuOpen(!menuOpen)}
+            onClick={() => setMenuOpen((prev) => !prev)}
+            aria-label={menuOpen ? "Close menu" : "Open menu"}
           >
             ☰
           </button>
 
-
         </div>
 
-
       </div>
-
     </header>
-
   );
 }

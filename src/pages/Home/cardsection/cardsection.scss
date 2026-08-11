@@ -39,7 +39,20 @@
 
   }
 
+.model-card__learn,
+.model-card__contact {
+  border: none;
+  padding: 0;
 
+  background: transparent;
+
+  font: inherit;
+  color: inherit;
+
+  cursor: pointer;
+
+  text-align: left;
+}
   &__header h2 {
 
     display: inline-block;

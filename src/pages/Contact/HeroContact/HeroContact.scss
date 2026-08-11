@@ -1,0 +1,407 @@
+.contact-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+
+// =========================================================
+// HERO
+// =========================================================
+
+.contact-hero {
+  width: 100%;
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-columns: 52% 48%;
+  align-items: center;
+
+  padding: 60px 5vw;
+
+  box-sizing: border-box;
+}
+
+
+// =========================================================
+// LEFT — ILLUSTRATION
+// =========================================================
+
+.contact-hero__illustration {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-right: 20px;
+
+  box-sizing: border-box;
+
+  img {
+    display: block;
+
+    width: min(100%, 900px);
+    height: auto;
+
+    object-fit: contain;
+  }
+}
+
+
+// =========================================================
+// RIGHT — CONTENT
+// =========================================================
+
+.contact-hero__content {
+  width: 100%;
+  max-width: 680px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: right;
+
+  margin: 0 auto;
+
+  padding: 20px 20px 20px 40px;
+
+  box-sizing: border-box;
+
+  h1 {
+    width: 100%;
+
+    margin: 0 0 28px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(42px, 4vw, 72px);
+    font-weight: 700;
+    line-height: 1.08;
+    letter-spacing: -2.5px;
+
+    color: #050505;
+  }
+
+  p {
+    width: 100%;
+    max-width: 620px;
+
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(18px, 1.35vw, 27px);
+    font-weight: 400;
+    line-height: 1.38;
+
+    color: #111111;
+  }
+}
+
+
+// =========================================================
+// CTA — LOGO + BUTTON
+// =========================================================
+
+.contact-hero__cta {
+  position: relative;
+
+  width: 355px;
+
+  display: flex;
+  justify-content: center;
+
+  margin-top: 70px;
+
+  // Isso cria espaço para a ilustração
+  // sem alterar o posicionamento do restante.
+  padding-top: 145px;
+
+  box-sizing: border-box;
+}
+
+
+// =========================================================
+// LOGO / IMGNAVBAR
+// =========================================================
+
+.contact-hero__cta > img {
+  position: absolute;
+
+  width: 210px;
+  height: auto;
+
+  top: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  z-index: 1;
+
+  pointer-events: none;
+}
+
+
+// =========================================================
+// BUTTON
+// =========================================================
+
+.contact-hero__button {
+  position: relative;
+
+  z-index: 2;
+
+  width: 355px;
+  height: 68px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+
+  border: 1.5px solid #dc8a17;
+  border-radius: 15px;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+
+  span {
+    position: relative;
+    z-index: 3;
+
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+
+    color: #d78316;
+
+    transition: color 0.25s ease;
+  }
+
+  &:hover {
+    background: #d78316;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+    span {
+      color: #ffffff;
+    }
+  }
+}
+
+
+// =========================================================
+// LARGE DESKTOP
+// =========================================================
+
+@media (max-width: 1400px) {
+
+  .contact-hero {
+    grid-template-columns: 51% 49%;
+
+    padding: 60px 4vw;
+  }
+
+  .contact-hero__illustration {
+    padding-right: 10px;
+
+    img {
+      width: min(100%, 780px);
+    }
+  }
+
+  .contact-hero__content {
+    padding-left: 20px;
+
+    h1 {
+      font-size: clamp(40px, 4vw, 62px);
+    }
+
+    p {
+      font-size: 20px;
+      max-width: 560px;
+    }
+  }
+
+  .contact-hero__cta {
+    margin-top: 60px;
+  }
+
+  .contact-hero__cta > img {
+    width: 270px;
+  }
+
+  .contact-hero__button {
+    width: 340px;
+  }
+}
+
+
+// =========================================================
+// TABLET
+// =========================================================
+
+@media (max-width: 1024px) {
+
+  .contact-hero {
+    min-height: auto;
+
+    grid-template-columns: 1fr;
+
+    padding: 80px 40px 100px;
+
+    gap: 40px;
+  }
+
+  .contact-hero__illustration {
+    order: 1;
+
+    padding: 0;
+
+    img {
+      width: min(100%, 700px);
+    }
+  }
+
+  .contact-hero__content {
+    order: 2;
+
+    max-width: 700px;
+
+    padding: 0;
+
+    h1 {
+      font-size: clamp(40px, 7vw, 60px);
+    }
+
+    p {
+      max-width: 620px;
+      font-size: 20px;
+    }
+  }
+
+  .contact-hero__cta {
+    margin-top: 65px;
+  }
+}
+
+
+// =========================================================
+// MOBILE
+// =========================================================
+
+@media (max-width: 600px) {
+
+  .contact-page {
+    min-height: auto;
+  }
+
+  .contact-hero {
+    padding: 50px 20px 80px;
+
+    gap: 25px;
+  }
+
+  .contact-hero__illustration {
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .contact-hero__content {
+
+    h1 {
+      margin-bottom: 20px;
+
+      font-size: clamp(36px, 10vw, 48px);
+      line-height: 1.08;
+      letter-spacing: -1.5px;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.5;
+    }
+  }
+
+
+  // CTA MOBILE
+
+  .contact-hero__cta {
+    width: 100%;
+    max-width: 340px;
+
+    padding-top: 125px;
+
+    margin-top: 55px;
+  }
+
+  .contact-hero__cta > img {
+    width: 235px;
+  }
+
+  .contact-hero__button {
+    width: 100%;
+    max-width: 340px;
+
+    height: 78px;
+
+    border-radius: 16px;
+
+    span {
+      font-size: 19px;
+    }
+  }
+}
+
+
+// =========================================================
+// SMALL MOBILE
+// =========================================================
+
+@media (max-width: 400px) {
+
+  .contact-hero {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .contact-hero__content {
+
+    h1 {
+      font-size: 34px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .contact-hero__cta {
+    padding-top: 110px;
+  }
+
+  .contact-hero__cta > img {
+    width: 210px;
+  }
+
+  .contact-hero__button {
+    height: 72px;
+
+    span {
+      font-size: 18px;
+    }
+  }
+}

@@ -6,7 +6,17 @@
 
     background: #ffffff;
 }
+.vem__button {
+  border: none;
+  padding: 0;
 
+  background: transparent;
+
+  font: inherit;
+  color: inherit;
+
+  cursor: pointer;
+}
 
 /* =========================================
    CONTAINER

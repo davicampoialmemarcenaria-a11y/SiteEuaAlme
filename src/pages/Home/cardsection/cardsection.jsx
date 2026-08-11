@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 import "./cardsection.scss";
 
 import card2Image from "../../../assets/imgs/card2.png";
@@ -5,11 +7,16 @@ import card3Image from "../../../assets/imgs/card3.png";
 import card6Image from "../../../assets/imgs/card6.png";
 
 export default function CardSection() {
+
+  const navigate = useNavigate();
+
   return (
     <section className="card-section">
+
       <div className="card-section__container">
 
         <div className="card-section__header">
+
           <h2>Our model</h2>
 
           <p>
@@ -17,26 +24,44 @@ export default function CardSection() {
             <br />
             model different?
           </p>
+
         </div>
+
 
         <div className="card-section__grid">
 
-          {/* CARD 1 */}
+
+          {/* =====================================================
+              CARD 1
+          ===================================================== */}
+
           <article className="model-card model-card--light card-one">
 
             <div className="model-card__content">
+
               <div className="model-card__title">
                 <span>high</span>
                 <span>standarts</span>
               </div>
 
-              <div className="model-card__learn">
+
+              <button
+                type="button"
+                className="model-card__learn"
+                onClick={() => navigate("/about")}
+              >
+
                 <div className="arrow">↗</div>
+
                 <span>LEARN MORE</span>
-              </div>
+
+              </button>
+
             </div>
 
+
             <ul className="model-card__list">
+
               <li>
                 100% custom cabinetry
                 <br />
@@ -54,12 +79,16 @@ export default function CardSection() {
                 <br />
                 organized delivery.
               </li>
+
             </ul>
 
           </article>
 
 
-          {/* CARD 2 */}
+          {/* =====================================================
+              CARD 2
+          ===================================================== */}
+
           <article className="model-card model-card--orange card-two">
 
             <div className="model-card__title model-card__title--white">
@@ -76,7 +105,10 @@ export default function CardSection() {
           </article>
 
 
-          {/* CARD 3 */}
+          {/* =====================================================
+              CARD 3
+          ===================================================== */}
+
           <article className="model-card model-card--brown card-three">
 
             <img
@@ -88,10 +120,14 @@ export default function CardSection() {
           </article>
 
 
-          {/* CARD 4 */}
+          {/* =====================================================
+              CARD 4
+          ===================================================== */}
+
           <article className="model-card model-card--light card-four">
 
             <ul className="model-card__list model-card__list--full">
+
               <li>
                 Pre-assembled components for easier installation.
               </li>
@@ -107,12 +143,16 @@ export default function CardSection() {
               <li>
                 Greater convenience, time savings, and flexibility.
               </li>
+
             </ul>
 
           </article>
 
 
-          {/* CARD 5 */}
+          {/* =====================================================
+              CARD 5
+          ===================================================== */}
+
           <article className="model-card model-card--orange card-five">
 
             <div className="model-card__title model-card__title--white">
@@ -129,7 +169,10 @@ export default function CardSection() {
           </article>
 
 
-          {/* CARD 6 */}
+          {/* =====================================================
+              CARD 6
+          ===================================================== */}
+
           <article className="model-card model-card--brown card-six">
 
             <div className="model-card__title model-card__title--orange">
@@ -137,21 +180,35 @@ export default function CardSection() {
               <span>results</span>
             </div>
 
+
             <img
               src={card6Image}
               alt="Promises into results"
               className="model-card__image model-card__image--six"
             />
 
-            <div className="model-card__contact">
-              <div className="arrow arrow--white">↗</div>
+
+            <button
+              type="button"
+              className="model-card__contact"
+              onClick={() => navigate("/contact")}
+            >
+
+              <div className="arrow arrow--white">
+                ↗
+              </div>
+
               <span>CONTACT</span>
-            </div>
+
+            </button>
 
           </article>
 
+
         </div>
+
       </div>
+
     </section>
   );
 }

@@ -1,13 +1,15 @@
-import "./Hero.scss";
+import { useNavigate } from "react-router-dom";
 
+import "./Hero.scss";
 
 import hero from "../../../assets/imgs/herohome.png";
 
 export default function Home() {
+
+  const navigate = useNavigate();
+
   return (
     <>
-     
-
       <section className="hero">
 
         <div className="hero__left">
@@ -26,7 +28,7 @@ export default function Home() {
             the entire process simpler and more efficient.
           </p>
 
-          <button>
+          <button onClick={() => navigate("/contact")}>
             Book a consultation
           </button>
 
@@ -34,12 +36,11 @@ export default function Home() {
 
         <div className="hero__right">
 
-          <img src={hero} alt="Hero"/>
+          <img src={hero} alt="Hero" />
 
         </div>
 
       </section>
-
     </>
   );
 }

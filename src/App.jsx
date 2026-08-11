@@ -1,25 +1,27 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
-// import About from "./pages/About/About";
-// import Contact from "./pages/Contact/Contact";
+import Contact from "./pages/Contact/Contact";
 
 export default function App() {
   return (
     <BrowserRouter>
+
+      <ScrollToTop />
+
       <Routes>
 
-        {/* HOME */}
         <Route path="/" element={<Home />} />
 
-        {/* ABOUT */}
-       <Route path="/about" element={<About />} /> 
+        <Route path="/about" element={<About />} />
 
-        {/* CONTACT */}
-        {/* <Route path="/contact" element={<Contact />} /> */}
+        <Route path="/contact" element={<Contact />} />
 
       </Routes>
+
     </BrowserRouter>
   );
 }
