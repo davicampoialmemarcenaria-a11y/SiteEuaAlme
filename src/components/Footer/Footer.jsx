@@ -1,4 +1,5 @@
 import "./Footer.scss";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 export default function Footer() {
@@ -22,21 +23,20 @@ export default function Footer() {
             </h3>
 
             <nav>
-              <a href="/">
+              <Link to="/">
                 {t("footer.menu.home")}
-              </a>
+              </Link>
 
-              <a href="/about">
+              <Link to="/about">
                 {t("footer.menu.about")}
-              </a>
+              </Link>
 
-              <a href="/contact">
+              <Link to="/contact">
                 {t("footer.menu.contact")}
-              </a>
+              </Link>
             </nav>
 
           </div>
-
 
           {/* CHANNELS */}
           <div className="footer__column footer__channels">
@@ -71,7 +71,6 @@ export default function Footer() {
 
           </div>
 
-
           {/* LINKS */}
           <div className="footer__column footer__links">
 
@@ -82,7 +81,7 @@ export default function Footer() {
             <nav>
 
               <a
-                href="https://wa.me/5511944956944"
+                href="https://wa.me/6892762034"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -90,32 +89,18 @@ export default function Footer() {
               </a>
 
               <a
-                href="#"
+                href="https://www.instagram.com/alme.woodworks/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 {t("footer.links.instagram")}
               </a>
 
-              <a href="mailto:">
+              <a href="mailto:contact@almewoodworks.com">
                 {t("footer.links.email")}
               </a>
 
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {t("footer.links.tiktok")}
-              </a>
-
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {t("footer.links.pinterest")}
-              </a>
+          
 
             </nav>
 

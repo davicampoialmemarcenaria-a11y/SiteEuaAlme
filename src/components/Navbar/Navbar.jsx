@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 import "./Navbar.scss";
@@ -16,8 +17,8 @@ export default function Navbar() {
       <div className="navbar-container">
 
         {/* LOGO */}
-        <a
-          href="/"
+        <Link
+          to="/"
           className="navbar-brand"
           onClick={() => setMenuOpen(false)}
           aria-label="Alme Woodworks - Home"
@@ -30,8 +31,7 @@ export default function Navbar() {
           <span>
             {t("nav.brand")}
           </span>
-        </a>
-
+        </Link>
 
         <div className="navbar-right">
 
@@ -40,27 +40,26 @@ export default function Navbar() {
             className={`navbar-links ${menuOpen ? "active" : ""}`}
           >
 
-            <a
-              href="/"
+            <Link
+              to="/"
               onClick={() => setMenuOpen(false)}
             >
               {t("nav.home")}
-            </a>
+            </Link>
 
-            <a
-              href="/about"
+            <Link
+              to="/about"
               onClick={() => setMenuOpen(false)}
             >
               {t("nav.about")}
-            </a>
+            </Link>
 
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               onClick={() => setMenuOpen(false)}
             >
               {t("nav.contact")}
-            </a>
-
+            </Link>
 
             {/* REQUEST A QUOTE - MOBILE */}
             <a
@@ -72,7 +71,6 @@ export default function Navbar() {
               {t("nav.quote")}
             </a>
 
-
             {/* LANGUAGE SWITCHER - MOBILE */}
             <div className="mobile-language-switcher">
               <LanguageSwitcher />
@@ -80,12 +78,10 @@ export default function Navbar() {
 
           </nav>
 
-
           {/* LANGUAGE SWITCHER - DESKTOP */}
           <div className="language-switcher-wrapper">
             <LanguageSwitcher />
           </div>
-
 
           {/* REQUEST A QUOTE - DESKTOP */}
           <a
@@ -96,7 +92,6 @@ export default function Navbar() {
           >
             {t("nav.quote")}
           </a>
-
 
           {/* HAMBURGER */}
           <button
