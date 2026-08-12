@@ -369,16 +369,16 @@
   // IMAGE
   // -------------------------------------------------------
 
-  .brasil__image {
-    width: 100%;
+.brasil__image {
+  width: 100%;
 
-    margin-top: 45px;
+  margin-top: 45px;
+  margin-left: 0;
 
-    // REMOVE O DESLOCAMENTO DO DESKTOP
-    left: 0;
+  left: 0;
 
-    justify-content: center;
-  }
+  justify-content: center;
+}
 
   .brasil__image img {
     width: 100%;
@@ -436,15 +436,13 @@
     font-size: 2rem;
   }
 
-  .brasil__image {
-    margin-top: 35px;
-
-    left: 0;
-
-    width: 100%;
-
-    justify-content: center;
-  }
+.brasil__image {
+  width: 100%;
+  margin-top: 35px;
+  margin-left: 0;
+  left: 0;
+  justify-content: center;
+}
 
   .brasil__image img {
     width: 110%;

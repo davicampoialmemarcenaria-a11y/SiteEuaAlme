@@ -85,7 +85,7 @@ export default function Navbar() {
 
           {/* REQUEST A QUOTE - DESKTOP */}
           <a
-            href="https://wa.me/6892762034"
+            href="https://wa.me/16892762034"
             className="quote-btn desktop-btn"
             target="_blank"
             rel="noopener noreferrer"

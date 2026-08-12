@@ -25,7 +25,7 @@
     "paragraph2": "We design and manufacture fully custom cabinetry with premium craftsmanship, tailored exclusively to your project.",
     "paragraph3": "In the United States, our service model offers greater speed and flexibility: your cabinetry is delivered ready for installation, partially pre-assembled, carefully packaged, and accompanied by assembly instructions and all the necessary hardware.",
     "paragraph4": "This allows you to schedule the installation with the professional you trust, at the time that works best for you—without compromising on quality, customization, or exceptional craftsmanship.",
-    "cardTitleLine1": "THE FUTURE OF CUSTOM.",
+    "cardTitleLine1": "THE FUTURE OF CUSTOM",
     "cardTitleLine2": "MILLWORK STARTS HERE.",
     "imageAlt": "Custom millwork"
   },  "projects": {
@@ -85,7 +85,7 @@
     "card5": {
       "title1": "Sustainable",
       "title2": "decisions",
-      "description": "Your unique project. Our craftsmanship. Installation on your schedule, with the professional you trust."
+      "description": "Unique designs. Featuring our manufacturing and the professional you trust."
     },
 
     "card6": {
@@ -116,33 +116,33 @@
       {
         "number": "02",
         "title": "Estimate",
-        "text": "Once we understand your project, our team reviews all the information provided and develops a detailed estimate based on your needs, specifications, materials, and desired results."
+        "text": "Based on the information provided, we prepare a detailed estimate that considers materials, finishes, hardware, dimensions, and all project specifications. Our goal is to provide a clear, accurate proposal tailored to your project's requirements."
       },
       {
         "number": "03",
         "title": "Proposal & Agreement",
-        "text": "After the estimate is approved, we prepare the proposal and agreement, clearly outlining the scope, specifications, timelines, responsibilities, and conditions of the project."
+        "text": "Once the estimate is complete, we send a comprehensive proposal outlining the project scope, pricing, lead times, and commercial terms. After the proposal is approved and signed, we officially begin production planning, ensuring every stage moves forward exactly as agreed."
       },
       {
         "number": "04",
         "title": "Project Approval",
-        "text": "With the proposal and agreement finalized, the project moves into the approval stage. We review all details together to ensure everything is aligned before production begins."
+        "text": "Before manufacturing begins, we develop the shop drawings for your review and approval. During this stage, you will verify dimensions, finishes, construction details, and all project specifications. Production only begins after final approval, ensuring every detail is fully aligned."
       },
       {
         "number": "05",
         "title": "Pre-assembly",
-        "text": "Before delivery, every component goes through a careful pre-assembly process. This allows our team to verify measurements, finishes, fittings, and overall quality before the project reaches its final destination."
+        "text": "Before shipping, we pre-assemble the cabinetry to verify fit, hardware functionality, alignment, and the quality of each component. This process allows us to identify and make any necessary adjustments, ensuring the product arrives ready for a smooth and accurate installation."
       },
       {
         "number": "06",
         "title": "Shipping & Delivery",
-        "text": "Once everything has been checked and approved, your project is carefully prepared for shipping and delivery, ensuring that every component arrives safely and ready for the next stage."
+        "text": "After the pre-assembly stage, every cabinet component is carefully labeled, protected, and packaged for transportation. Each piece is organized to simplify installation at its destination. The product is delivered pre-assembled and fully identified, allowing your installation team to complete the assembly efficiently, safely, and exactly as designed."
       }
     ]
   }, "vem": {
     "title": "Let's make things happen",
     "description": "Every great project begins with the right decision. Get in touch with our team and discover what's possible.",
-    "button": "Get your free proposal",
+    "button": "Request your free quote",
     "imageAlt": "Our woodworking process"
   }, "values": {
   "title": "Our values",
@@ -169,7 +169,7 @@
     }
   ]
 }, "contactHero": {
-  "title": "Let's create what's next.",
+  "title": "Where design, functionality, and identity come together.",
   "description": "Request a quote and discover how we can transform your project into a fully customized solution, delivered with quality, precision, and a process designed around your needs.",
   "button": "Contact us",
   "imageAlt": "Alme"

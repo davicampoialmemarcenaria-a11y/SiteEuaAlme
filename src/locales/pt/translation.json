@@ -18,7 +18,7 @@
   },
   "seconds": {
     "paragraph1": {
-      "before": "",
+      "before": "A ",
       "brand": "Alme",
       "after": " nasceu com a visão de criar uma marcenaria que rompe os padrões tradicionais do mercado, superando limitações por meio de soluções modernas, processos inteligentes e um atendimento verdadeiramente personalizado."
     },
@@ -85,7 +85,7 @@
     "card5": {
       "title1": "Decisões",
       "title2": "sustentáveis",
-      "description": "Seu projeto único. Nossa fabricação. Instalação no seu tempo, com o profissional da sua confiança."
+      "description": "Projetos únicos com a nossa fabricação, e com o profissional da sua confiança."
     },
 
     "card6": {
@@ -116,33 +116,33 @@
       {
         "number": "02",
         "title": "Orçamento",
-        "text": "Após entendermos o seu projeto, nossa equipe analisa todas as informações fornecidas e desenvolve um orçamento detalhado com base nas necessidades, especificações, materiais e resultados desejados."
+        "text": "Com base nas informações fornecidas, elaboramos um orçamento detalhado que considera materiais, acabamentos, ferragens, dimensões e todas as especificações do projeto. Nosso objetivo é apresentar uma proposta clara e precisa, adequada às necessidades do seu projeto."
       },
       {
         "number": "03",
         "title": "Proposta e Contrato",
-        "text": "Depois da aprovação do orçamento, elaboramos a proposta comercial e o contrato, detalhando claramente escopo, especificações, prazos, responsabilidades e condições do projeto."
+        "text": "Após a conclusão do orçamento, enviamos uma proposta completa detalhando o escopo do projeto, valores, prazos de entrega e condições comerciais. Com a proposta aprovada e assinada, iniciamos oficialmente o planejamento da produção, garantindo que cada etapa ocorra exatamente conforme o combinado."
       },
       {
         "number": "04",
-        "title": "Aprovação do Projeto",
-        "text": "Com a proposta e o contrato definidos, o projeto segue para a etapa de aprovação. Revisamos todos os detalhes em conjunto para garantir que tudo esteja alinhado antes do início da produção."
+        "title": "Aprovação do projeto",
+        "text": "Antes de iniciar a fabricação, desenvolvemos os desenhos técnicos detalhados para sua análise e aprovação. Nesta fase, você poderá conferir dimensões, acabamentos, detalhes construtivos e todas as especificações do projeto. A produção só começa após a aprovação final, assegurando que todos os detalhes estejam em perfeita conformidade."
       },
       {
         "number": "05",
         "title": "Pré-montagem",
-        "text": "Antes do envio, cada componente passa por um cuidadoso processo de pré-montagem. Isso permite que nossa equipe verifique medidas, acabamentos, encaixes e a qualidade geral antes que o projeto siga para seu destino final."
+        "text": "Antes do envio, realizamos a pré-montagem dos móveis para verificar o encaixe, o funcionamento das ferragens, o alinhamento e a qualidade de cada componente. Esse processo nos permite identificar e realizar quaisquer ajustes necessários, garantindo que o produto chegue pronto para uma instalação precisa e sem contratempos."
       },
       {
         "number": "06",
-        "title": "Envio e Entrega",
-        "text": "Após todas as verificações e aprovações, o projeto é cuidadosamente preparado para transporte e entrega, garantindo que cada componente chegue em segurança e pronto para a próxima etapa."
+        "title": "Expedição e Entrega",
+        "text": "Após a etapa de pré-montagem, todos os componentes dos móveis são cuidadosamente etiquetados, protegidos e embalados para o transporte. Cada peça é organizada para facilitar a instalação no local de destino. O produto é entregue pré-montado e devidamente identificado, permitindo que sua equipe de instalação conclua a montagem com eficiência, segurança e exatamente conforme o projeto."
       }
     ]
   },  "vem": {
     "title": "Vamos transformar seu projeto em realidade",
     "description": "Todo grande projeto começa com a decisão certa. Entre em contato com nossa equipe e descubra tudo o que é possível realizar.",
-    "button": "Solicite sua proposta gratuita",
+    "button": "Solicite seu orçamento gratuito",
     "imageAlt": "Nosso processo de marcenaria"
   }, "values": {
   "title": "Nossos valores",
@@ -169,7 +169,7 @@
     }
   ]
 }, "contactHero": {
-  "title": "Vamos criar o que vem a seguir.",
+  "title": "Onde design, funcionalidade e identidade se encontram.",
   "description": "Solicite um orçamento e descubra como podemos transformar seu projeto em uma solução totalmente personalizada, entregue com qualidade, precisão e um processo pensado para atender às suas necessidades.",
   "button": "Entre em contato",
   "imageAlt": "Alme"

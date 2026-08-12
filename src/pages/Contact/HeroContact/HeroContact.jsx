@@ -38,7 +38,7 @@ export default function HeroContact() {
           />
 
           <a
-            href="https://wa.me/6892762034"
+            href="https://wa.me/16892762034"
             className="contact-hero__button"
             target="_blank"
             rel="noopener noreferrer"

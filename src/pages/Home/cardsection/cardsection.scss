@@ -505,10 +505,10 @@
 .card-six .model-card__image {
   position: absolute;
 
-  right: -10px;
-  bottom: -25px;
+  right: 30px;
+  bottom: -55px;
 
-  width: 70%;
+  width: 30%;
   height: 108%;
 
   object-fit: contain;
@@ -736,9 +736,9 @@
 
   .card-two .model-card__image {
 
-    right: 10px;
-
-    width: 53%;
+   right: 8px;
+  width: 43%;
+  height: 68%;
 
   }
 
@@ -808,10 +808,11 @@
 
 
   .card-six .model-card__image {
+ width: 40%;
+  height: 95%;
 
-    width: 58%;
-
-    right: 5px;
+  right: 5px;
+  bottom: -20px;
 
   }
 

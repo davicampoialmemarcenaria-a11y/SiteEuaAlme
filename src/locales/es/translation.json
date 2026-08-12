@@ -85,7 +85,7 @@
     "card5": {
       "title1": "Decisiones",
       "title2": "sostenibles",
-      "description": "Su proyecto único. Nuestra fabricación. Instalación en el momento que prefiera, con el profesional de su confianza."
+      "description": "Diseños exclusivos que combinan nuestra fabricación con el profesional en quien confía."
     },
 
     "card6": {
@@ -116,33 +116,33 @@
       {
         "number": "02",
         "title": "Presupuesto",
-        "text": "Una vez que comprendemos su proyecto, nuestro equipo analiza toda la información proporcionada y desarrolla un presupuesto detallado basado en sus necesidades, especificaciones, materiales y resultados esperados."
+        "text": "Basándonos en la información proporcionada, elaboramos un presupuesto detallado que contempla materiales, acabados, herrajes, dimensiones y todas las especificaciones del proyecto. Nuestro objetivo es ofrecer una propuesta clara y precisa, adaptada a los requisitos de su proyecto."
       },
       {
         "number": "03",
-        "title": "Propuesta y Contrato",
-        "text": "Después de aprobar el presupuesto, preparamos la propuesta y el contrato, definiendo claramente el alcance, especificaciones, plazos, responsabilidades y condiciones del proyecto."
+        "title": "Propuesta y Acuerdo",
+        "text": "Una vez finalizado el presupuesto, enviamos una propuesta integral que detalla el alcance del proyecto, los precios, los plazos de entrega y las condiciones comerciales. Tras la aprobación y firma de la propuesta, iniciamos oficialmente la planificación de la producción, asegurando que cada etapa avance exactamente según lo acordado."
       },
       {
         "number": "04",
         "title": "Aprobación del Proyecto",
-        "text": "Con la propuesta y el contrato finalizados, el proyecto avanza a la etapa de aprobación. Revisamos todos los detalles conjuntamente para garantizar que todo esté alineado antes de comenzar la producción."
+        "text": "Antes de comenzar la fabricación, elaboramos los planos técnicos de taller para su revisión y aprobación. En esta fase, usted verificará las dimensiones, los acabados, los detalles constructivos y todas las especificaciones del proyecto. La producción solo comienza tras la aprobación final, garantizando que todos los detalles estén perfectamente alineados."
       },
       {
         "number": "05",
-        "title": "Preensamblaje",
-        "text": "Antes de la entrega, cada componente pasa por un cuidadoso proceso de preensamblaje. Esto permite a nuestro equipo verificar medidas, acabados, herrajes y la calidad general antes de que el proyecto llegue a su destino final."
+        "title": "Premontaje",
+        "text": "Antes del envío, realizamos un premontaje del mobiliario para verificar el encaje, el funcionamiento de los herrajes, la alineación y la calidad de cada componente. Este proceso nos permite identificar y realizar los ajustes necesarios, asegurando que el producto llegue listo para una instalación fluida y precisa."
       },
       {
         "number": "06",
         "title": "Envío y Entrega",
-        "text": "Una vez que todo ha sido revisado y aprobado, su proyecto se prepara cuidadosamente para el envío y la entrega, garantizando que cada componente llegue de forma segura y listo para la siguiente etapa."
+        "text": "Tras la fase de premontaje, cada componente del mobiliario se etiqueta, protege y embala cuidadosamente para su transporte. Las piezas se organizan de manera que se simplifique la instalación en el destino. El producto se entrega premontado y debidamente identificado, lo que permite a su equipo de instalación completar el montaje de forma eficiente, segura y exacta al diseño original."
       }
     ]
   },  "vem": {
     "title": "Hagamos que suceda",
     "description": "Todo gran proyecto comienza con la decisión correcta. Póngase en contacto con nuestro equipo y descubra todo lo que es posible.",
-    "button": "Solicite su propuesta gratuita",
+    "button": "Solicite su presupuesto gratuito",
     "imageAlt": "Nuestro proceso de carpintería"
   }, "values": {
   "title": "Nuestros valores",
@@ -169,7 +169,7 @@
     }
   ]
 }, "contactHero": {
-  "title": "Creemos lo que viene después.",
+  "title": "Donde convergen el diseño, la funcionalidad y la identidad.",
   "description": "Solicite una cotización y descubra cómo podemos transformar su proyecto en una solución totalmente personalizada, entregada con calidad, precisión y un proceso diseñado para sus necesidades.",
   "button": "Contáctenos",
   "imageAlt": "Alme"

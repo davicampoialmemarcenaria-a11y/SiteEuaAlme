@@ -81,7 +81,7 @@ export default function Footer() {
             <nav>
 
               <a
-                href="https://wa.me/6892762034"
+                href="https://wa.me/16892762034"
                 target="_blank"
                 rel="noopener noreferrer"
               >
