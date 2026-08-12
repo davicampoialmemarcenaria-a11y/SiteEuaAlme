@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 import "./Navbar.scss";
@@ -16,7 +16,9 @@ export default function Navbar() {
     <header className="navbar">
       <div className="navbar-container">
 
-        {/* LOGO */}
+        {/* =====================================================
+            LOGO
+        ===================================================== */}
         <Link
           to="/"
           className="navbar-brand"
@@ -35,35 +37,40 @@ export default function Navbar() {
 
         <div className="navbar-right">
 
-          {/* MENU */}
+          {/* ===================================================
+              MENU
+          =================================================== */}
           <nav
             className={`navbar-links ${menuOpen ? "active" : ""}`}
           >
 
-            <Link
+            <NavLink
               to="/"
+              end
               onClick={() => setMenuOpen(false)}
             >
               {t("nav.home")}
-            </Link>
+            </NavLink>
 
-            <Link
+            <NavLink
               to="/about"
               onClick={() => setMenuOpen(false)}
             >
               {t("nav.about")}
-            </Link>
+            </NavLink>
 
-            <Link
+            <NavLink
               to="/contact"
               onClick={() => setMenuOpen(false)}
             >
               {t("nav.contact")}
-            </Link>
+            </NavLink>
 
-            {/* REQUEST A QUOTE - MOBILE */}
+            {/* =================================================
+                REQUEST A QUOTE - MOBILE
+            ================================================= */}
             <a
-              href="https://wa.me/6892762034"
+              href="https://wa.me/16892762034"
               className="quote-btn mobile-btn"
               target="_blank"
               rel="noopener noreferrer"
@@ -71,19 +78,25 @@ export default function Navbar() {
               {t("nav.quote")}
             </a>
 
-            {/* LANGUAGE SWITCHER - MOBILE */}
+            {/* =================================================
+                LANGUAGE SWITCHER - MOBILE
+            ================================================= */}
             <div className="mobile-language-switcher">
               <LanguageSwitcher />
             </div>
 
           </nav>
 
-          {/* LANGUAGE SWITCHER - DESKTOP */}
+          {/* ===================================================
+              LANGUAGE SWITCHER - DESKTOP
+          =================================================== */}
           <div className="language-switcher-wrapper">
             <LanguageSwitcher />
           </div>
 
-          {/* REQUEST A QUOTE - DESKTOP */}
+          {/* ===================================================
+              REQUEST A QUOTE - DESKTOP
+          =================================================== */}
           <a
             href="https://wa.me/16892762034"
             className="quote-btn desktop-btn"
@@ -93,7 +106,9 @@ export default function Navbar() {
             {t("nav.quote")}
           </a>
 
-          {/* HAMBURGER */}
+          {/* ===================================================
+              HAMBURGER
+          =================================================== */}
           <button
             type="button"
             className={`hamburger ${menuOpen ? "active" : ""}`}

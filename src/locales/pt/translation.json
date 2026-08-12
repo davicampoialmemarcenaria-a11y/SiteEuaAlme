@@ -12,7 +12,7 @@
     "titleLine1": "MÓVEIS",
     "titleLine2": "PLANEJADOS, FEITOS",
     "titleLine3": "COM CONFIANÇA.",
-    "description": "Nossa forma de trabalhar combina fabricação de alta qualidade, logística inteligente e um atendimento pensado para tornar todo o processo mais simples e eficiente.",
+    "description": "Nossa forma de trabalhar combina fabricação de alta qualidade, logística inteligente e um atendimento pensado para tornar todo o processo fluido e eficiente.",
     "button": "Entre em contato",
     "imageAlt": "Projeto de móveis planejados"
   },
@@ -30,7 +30,7 @@
     "imageAlt": "Marcenaria personalizada"
   }, "projects": {
     "titleLine1": "Projetos",
-    "titleLine2": "Em Destaque",
+    "titleLine2": "em destaque",
     "description": "Cada projeto conta uma história. Inspire-se em ambientes que refletem a qualidade e a essência do nosso trabalho.",
     "cards": [
       {
@@ -58,8 +58,8 @@
     "contact": "CONTATO",
 
     "card1": {
-      "title1": "altos",
-      "title2": "padrões",
+      "title1": "Alto",
+      "title2": "Padrão",
       "item1": "Marcenaria 100% personalizada para o seu espaço.",
       "item2": "Fabricação com padrão premium de qualidade.",
       "item3": "Entrega rápida e bem organizada."
@@ -227,7 +227,7 @@
       "title": "ATENDIMENTO",
 
       "hours": {
-        "week": "Seg - Qui: 07:00 - 18:00 (FUSO)",
+        "week": "Seg - Qui: 07:00 - 18:00 (BR)",
         "friday": "Sex: 07:00 - 17:00",
         "weekend": "Sáb - Dom: Fechado"
       },

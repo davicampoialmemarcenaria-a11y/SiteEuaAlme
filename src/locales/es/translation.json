@@ -30,7 +30,7 @@
     "imageAlt": "Carpintería personalizada"
   },  "projects": {
     "titleLine1": "Proyectos",
-    "titleLine2": "Destacados",
+    "titleLine2": "destacados",
     "description": "Cada proyecto cuenta una historia. Inspírese en espacios que reflejan la calidad y la esencia de nuestro trabajo.",
     "cards": [
       {
@@ -58,8 +58,8 @@
     "contact": "CONTACTO",
 
     "card1": {
-      "title1": "altos",
-      "title2": "estándares",
+      "title1": "Altos",
+      "title2": "Estándares",
       "item1": "Carpintería 100% personalizada para su espacio.",
       "item2": "Fabricación con calidad premium.",
       "item3": "Entrega rápida y bien organizada."
@@ -227,7 +227,7 @@
       "title": "ATENCIÓN",
 
       "hours": {
-        "week": "Lun - Jue: 07:00 - 18:00 (FUSO)",
+        "week": "Lun - Jue: 07:00 - 18:00 (BR)",
         "friday": "Vie: 07:00 - 17:00",
         "weekend": "Sáb - Dom: Cerrado"
       },

@@ -30,7 +30,7 @@
     "imageAlt": "Custom millwork"
   },  "projects": {
     "titleLine1": "Featured",
-    "titleLine2": "Projects",
+    "titleLine2": "projects",
     "description": "Every project tells a story. Get inspired by spaces that reflect the quality and essence of our craftsmanship.",
     "cards": [
       {
@@ -58,8 +58,8 @@
     "contact": "CONTACT",
 
     "card1": {
-      "title1": "high",
-      "title2": "standards",
+      "title1": "High",
+      "title2": "Standards",
       "item1": "100% custom cabinetry designed for your space.",
       "item2": "Premium-quality manufacturing.",
       "item3": "Fast and well-organized delivery."
@@ -169,7 +169,7 @@
     }
   ]
 }, "contactHero": {
-  "title": "Where design, functionality, and identity come together.",
+  "title": "Where design comes together with functionality and identity.",
   "description": "Request a quote and discover how we can transform your project into a fully customized solution, delivered with quality, precision, and a process designed around your needs.",
   "button": "Contact us",
   "imageAlt": "Alme"
@@ -227,13 +227,13 @@
       "title": "CHANNELS",
 
       "hours": {
-        "week": "Mon - Thu: 07:00 AM - 06:00 PM (FUSO)",
+        "week": "Mon - Thu: 06:00 AM - 05:00 PM (EUA)",
         "friday": "Fri: 07:00 AM - 05:00 PM",
         "weekend": "Sat - Sun: Closed"
       },
 
       "address": {
-        "line1": "Alameda Prof. Lucas Nogueira Garcez, 5220,",
+        "line1": "HQ: Alameda Prof. Lucas Nogueira Garcez, 5220,",
         "line2": "Atibaia - SP, Brazil"
       }
     },
