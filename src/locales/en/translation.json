@@ -9,10 +9,10 @@
     "closeMenu": "Close menu"},
 
     "hero": {
-    "titleLine1": "CUSTOM",
-    "titleLine2": "FURNITURE, BUILT",
-    "titleLine3": "ON TRUST.",
-    "description": "Our way of working combines premium quality manufacturing, smart logistics, and a service approach designed to make the entire process simpler and more efficient.",
+    "titleLine1": "DO YOU HAVE ",
+    "titleLine2": "YOUR RELIABLE ",
+    "titleLine3": "INSTALLER?",
+    "description": "Through carefully structured processes, we maximize the expertise of your installers on every ALME project, ensuring precision in execution, operational efficiency, and a more cost-effective solution, with costum cabinetry standard.",
     "button": "Contact us",
     "imageAlt": "Custom furniture project"
   },
@@ -242,7 +242,8 @@
       "title": "LINKS",
       "whatsapp": "WhatsApp",
       "instagram": "Instagram",
-      "email": "E-mail"
+      "email": "E-mail",
+      "houz": "Houzz"
     }
   }
   

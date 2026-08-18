@@ -100,6 +100,13 @@ export default function Footer() {
                 {t("footer.links.email")}
               </a>
 
+ <a
+                href="https://www.houzz.com/professionals/cabinets-and-cabinetry/alme-custom-woodworks-pfvwus-pf~760537037"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t("footer.links.houz")}
+              </a>
           
 
             </nav>

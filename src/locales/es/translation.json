@@ -9,10 +9,10 @@
     "closeMenu": "Cerrar menú"
   },
   "hero": {
-    "titleLine1": "MUEBLES",
-    "titleLine2": "PERSONALIZADOS, HECHOS",
-    "titleLine3": "CON CONFIANZA.",
-    "description": "Nuestra forma de trabajar combina fabricación de alta calidad, logística inteligente y un enfoque de servicio diseñado para hacer que todo el proceso sea más simple y eficiente.",
+    "titleLine1": "¿TIENES UM",
+    "titleLine2": "INSTALADOR ",
+    "titleLine3": "DE CONFIANZA?",
+    "description": "Mediante procesos cuidadosamente estructurados, aprovechamos la experiencia de sus instaladores en cada proyecto ALME, garantizando precisión en la ejecución, eficiencia operativa y una solución más rentable con un estándar hecho a medida.",
     "button": "Contáctenos",
     "imageAlt": "Proyecto de muebles personalizados"
   },
@@ -242,7 +242,8 @@
       "title": "ENLACES",
       "whatsapp": "WhatsApp",
       "instagram": "Instagram",
-      "email": "Correo electrónico"
+      "email": "Correo electrónico", 
+      "houz": "Houzz"
     }
   }
 }

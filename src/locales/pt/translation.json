@@ -9,10 +9,10 @@
     "closeMenu": "Fechar menu"
   },
   "hero": {
-    "titleLine1": "MÓVEIS",
-    "titleLine2": "PLANEJADOS, FEITOS",
-    "titleLine3": "COM CONFIANÇA.",
-    "description": "Nossa forma de trabalhar combina fabricação de alta qualidade, logística inteligente e um atendimento pensado para tornar todo o processo fluido e eficiente.",
+    "titleLine1": "VOCÊ TEM ",
+    "titleLine2": "UM INSTALADOR",
+    "titleLine3": "DE CONFIANÇA?",
+    "description": "Por meio de processos cuidadosamente estruturados, potencializamos a expertise de seus instaladores em cada projeto ALME, garantindo precisão na execução, eficiência operacional e uma solução mais vantajosa financeiramente, com padrão sob medida.",
     "button": "Entre em contato",
     "imageAlt": "Projeto de móveis planejados"
   },
@@ -242,7 +242,9 @@
       "title": "LINKS",
       "whatsapp": "WhatsApp",
       "instagram": "Instagram",
-      "email": "E-mail"
+      "email": "E-mail",
+      "houz": "Houzz"
+      
     }
   }
 }
