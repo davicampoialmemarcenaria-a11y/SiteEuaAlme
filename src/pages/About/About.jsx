@@ -1,7 +1,8 @@
 import Navbar from "../../components/Navbar/Navbar";
 import HeroAbout from "./HeroAbout/HeroAbout";
 import SecondAbout from "./SecondAbout/SecondAbout";
-import Questions from "./Questions/Questions";
+ {/*import Questions from "./Questions/Questions"; */}
+ import Brasil from "./Brasil/Brasil";
 import Footer from "../../components/Footer/Footer";
 import Vem from "./Vem/Vem";    
 import Values from "./Values/Values";
@@ -17,7 +18,8 @@ export default function About() {
             <Navbar />
         <HeroAbout />
         <SecondAbout />
-        <Questions />
+        <Brasil />
+        {/* <Questions /> */}
         <Vem />
         <Values />
             <main>
