@@ -50,49 +50,67 @@
         "subtitle": "Entregando exclusividad."
       }
     ]
-  },  "cards": {
+  },  
+  
+
+
+
+
+
+
+   "cards": {
     "title": "Nuestro modelo",
-    "subtitle": "¿Qué hace diferente nuestro modelo de servicio?",
+    "subtitle": "Qué hace que nuestro modelo de atención sea diferente? ...",
 
-    "learnMore": "SABER MÁS",
-    "contact": "CONTACTO",
+    
+"card6": {
+  "title1": "A medida",
+  "alt": "Marcenaria sob medida",
+  "item1": "Dimensiones personalizadas según el ambiente. ",
+  "item2": "Plazo de producción más largo ⧖⧖⧖⧖⧖. ",
+  "item3": "Costo elevado $$$$$. ",
+  "item4": "Mano de obra especializada. ",
+  "item5": "Amplia libertad para elementos complejos y variedad de colores.",
+  "item6": "Sin pre-montaje. "
+},
 
-    "card1": {
-      "title1": "Altos",
-      "title2": "Estándares",
-      "item1": "Carpintería 100% personalizada para su espacio.",
-      "item2": "Fabricación con calidad premium.",
-      "item3": "Entrega rápida y bien organizada."
-    },
+"card2": {
+  "title1": "Estándar ALME",
+  
+  "alt": "Visão de longo prazo"
+},
 
-    "card2": {
-      "title1": "Pensamiento",
-      "title2": "a largo plazo",
-      "alt": "Pensamiento a largo plazo"
-    },
+"card4": {
+  "item1": "Dimensiones personalizadas según el ambiente. ",
+  "item2": "Plazo de producción intermedio ⧖⧖. ",
+  "item3": "Excelente relación costo-beneficio $$. ",
+  "item4": "Posibilidad de utilizar mano de obra convencional o especializada, ya que incluye manual de montaje detallado. ",
+  "item5": "Amplia libertad para elementos complejos y variedad de colores. ",
+  "item6": "Componentes pre-montados que facilitan la instalación. "  
+},
 
-    "card3": {
-      "alt": "Carpintería personalizada"
-    },
+"card1": {
+  "title1": "Modular",
+  
+  "alt": "Transformando promessas em resultados",
 
-    "card4": {
-      "item1": "Componentes preensamblados para facilitar la instalación.",
-      "item2": "Guía de montaje y todos los herrajes incluidos.",
-      "item3": "Libertad para instalar con el profesional de su preferencia.",
-      "item4": "Mayor comodidad, ahorro de tiempo y flexibilidad."
-    },
+  "item1": "Dimensiones estandarizadas, adaptadas a tu ambiente. ",
+  "item2": "Prazo de produção mais ágil ⧖.  ",
+  "item3": "Costo reducido $. ",
+  "item4": "Mano de obra convencional.",
+  "item5": "Limitaciones para elementos complejos y colores específicos. ",
+  "item6": "Componentes pre-montados que facilitan la instalación. "  
+} }
 
-    "card5": {
-      "title1": "Decisiones",
-      "title2": "sostenibles",
-      "description": "Diseños exclusivos que combinan nuestra fabricación con el profesional en quien confía."
-    },
 
-    "card6": {
-      "title1": "Convertimos",
-      "title2": "promesas en resultados",
-      "alt": "Convertimos promesas en resultados"
-    }},   "brasil": {
+
+
+
+
+
+
+  
+  ,   "brasil": {
     "title": "NUESTRAS RAÍCES",
     "description": "Conozca la historia de Alme y descubra una experiencia completa en carpintería a medida diseñada para el mercado brasileño.",
     "button": "Visita nuestro sitio local",
@@ -230,11 +248,6 @@
         "week": "Lun - Jue: 07:00 - 18:00 (BR)",
         "friday": "Vie: 07:00 - 17:00",
         "weekend": "Sáb - Dom: Cerrado"
-      },
-
-      "address": {
-        "line1": "Alameda Prof. Lucas Nogueira Garcez, 5220,",
-        "line2": "Atibaia - SP, Brasil"
       }
     },
 

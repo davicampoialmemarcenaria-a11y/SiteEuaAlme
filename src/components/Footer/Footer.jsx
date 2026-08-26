@@ -59,13 +59,6 @@ export default function Footer() {
                 {t("footer.channels.hours.weekend")}
               </p>
 
-              <p>
-                {t("footer.channels.address.line1")}
-              </p>
-
-              <p>
-                {t("footer.channels.address.line2")}
-              </p>
 
             </div>
 

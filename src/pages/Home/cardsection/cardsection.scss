@@ -1,943 +1,1709 @@
+// =========================================================
+// CARD SECTION
+// =========================================================
+
 .card-section {
-
   width: 100%;
-
-  padding: 100px 0 120px;
+  padding: 65px 0 75px;
 
   background: #fff;
 
   font-family: "Space Grotesk", sans-serif;
-
   color: #111;
 
+  box-sizing: border-box;
+}
 
-  // =====================================================
-  // CONTAINER
-  // =====================================================
 
-  &__container {
-  width: min(90%, 1500px);
+// =========================================================
+// CONTAINER
+// =========================================================
+
+.card-section__container {
+  width: min(90%, 1350px);
   margin: 0 auto;
 }
 
 
-  // =====================================================
-  // HEADER
-  // =====================================================
-
-  &__header {
-
-    display: flex;
-
-    align-items: flex-start;
-
-    gap: 28px;
-
-    margin-bottom: 48px;
-
-    padding-left: 0;
-
-  }
-
-.model-card__learn,
-.model-card__contact {
-  border: none;
-  padding: 0;
-
-  background: transparent;
-
-  font: inherit;
-  color: inherit;
-
-  cursor: pointer;
-
-  text-align: left;
-}
-  &__header h2 {
-
-    display: inline-block;
-
-    margin: 0;
-
-    padding: 3px 7px 4px;
-
-    background: #df8c17;
-
-    border-radius: 4px;
-
-    font-size: 3rem;
-
-    font-weight: 500;
-
-    line-height: 1;
-
-    color: #111;
-
-  }
-
-
-  &__header p {
-
-    margin: 1px 0 0;
-
-    font-size: 1.25rem;
-
-    line-height: 1.2;
-
-    color: #222;
-
-  }
-
-
-  // =====================================================
-  // GRID
-  // =====================================================
-
-  &__grid {
-
-    display: grid;
-
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-
-    grid-template-rows: repeat(3, 300px);
-
-    gap: 24px 32px;
-
-  }
-
-}
-
-
-
 // =========================================================
-// CARD BASE
+// HEADER
 // =========================================================
 
-.model-card {
-
-  position: relative;
-
-  width: 100%;
-
-  height: 100%;
-
-  overflow: hidden;
-
-  border-radius: 34px;
-
-  border: 1px solid #606068;
-
-  box-sizing: border-box;
-
-  box-shadow:
-    0 6px 0 #17171b;
-
+.card-section__header {
   display: flex;
+  align-items: flex-start;
 
-  align-items: center;
+  gap: 22px;
 
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-
-
-  &:hover {
-
-    transform: translateY(-2px);
-
-    box-shadow:
-      0 8px 0 #17171b;
-
-  }
-
+  margin-bottom: 32px;
 }
 
 
+.card-section__header h2 {
+  display: inline-block;
 
-// =========================================================
-// CORES
-// =========================================================
+  flex-shrink: 0;
 
-.model-card--light {
+  margin: 0;
 
-  background: #f3f3f3;
-
-}
-
-
-.model-card--orange {
+  padding: 4px 8px 5px;
 
   background: #df8c17;
 
-  border-color: #414148;
+  border-radius: 4px;
 
+  font-size: 2.4rem;
+  font-weight: 500;
+
+  line-height: 0.95;
+  letter-spacing: -1px;
+
+  color: #111;
 }
 
 
-.model-card--brown {
+.card-section__header p {
+  width: 220px;
 
-  background: #4a1e00;
+  margin: 2px 0 0;
 
-  border-color: #171717;
+  font-size: 0.9rem;
+  line-height: 1.15;
 
+  color: #222;
 }
 
 
+// =========================================================
+// PLANS GRID
+// =========================================================
+
+.card-section__plans {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 22px;
+
+  align-items: stretch;
+}
+
 
 // =========================================================
-// TÍTULOS
+// PLAN CARD
 // =========================================================
 
-.model-card__title {
+.model-plan {
+  position: relative;
+
+  min-width: 0;
+  min-height: 420px;
 
   display: flex;
-
   flex-direction: column;
 
+  box-sizing: border-box;
+
+  border: 1px solid #606068;
+  border-radius: 28px;
+
+  box-shadow: 0 5px 0 #17171b;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.model-plan:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 8px 0 #17171b;
+}
+
+
+// =========================================================
+// CARD COLORS
+// =========================================================
+
+.model-plan--light {
+  background: #f3f3f3;
+  border-color: #606068;
+}
+
+
+.model-plan--brown {
+  background: #4a1e00;
+  border-color: #171717;
+}
+
+
+// =========================================================
+// VISUAL AREA
+// =========================================================
+
+.model-plan__visual {
+  position: relative;
+
+  width: 100%;
+  height: 205px;
+
+  flex-shrink: 0;
+
+  box-sizing: border-box;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 46%)
+    minmax(0, 54%);
+
+  /*
+    O conteúdo fica alinhado pelo topo.
+    Isso permite subir o título sem mexer na imagem.
+  */
+  align-items: start;
+
+  overflow: hidden;
+}
+
+
+// =========================================================
+// TITLE
+// =========================================================
+
+.model-plan__title {
+  position: relative;
+
+  z-index: 5;
+
+  top: auto;
+  left: auto;
+
+  width: auto;
+  max-width: 100%;
+
+  /*
+    Mais espaço interno à esquerda
+    e título mais alto dentro do visual.
+  */
+  padding-left: 24px;
+  padding-top: 14px;
+
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
 
   gap: 0;
 
-  font-size: 1.55rem;
+  pointer-events: none;
 
-  font-weight: 500;
-
-  line-height: 1.05;
-
-  color: #111;
-
+  box-sizing: border-box;
 }
 
 
-.model-card__title span {
-
-  display: inline-block;
+.model-plan__title span {
+  display: block;
 
   width: fit-content;
+  max-width: 100%;
 
-  padding: 1px 5px 3px;
+  padding: 3px 6px 4px;
 
   background: #df8c17;
 
+  border-radius: 4px;
+
+  font-size: 1.35rem;
+  font-weight: 500;
+
+  line-height: 0.98;
+
+  color: #111;
+
+  box-sizing: border-box;
+
+  overflow-wrap: break-word;
+
+  word-break: break-word;
 }
 
 
-.model-card__title--white span {
-
+.model-plan__title--brown span {
   background: #fff;
-
-  color: #111;
-
+  color: #df8c17;
 }
-
-
-.model-card__title--orange span {
-
-  background: #df8c17;
-
-  color: #111;
-
-}
-
 
 
 // =========================================================
-// CARD 1
+// IMAGE
 // =========================================================
 
-.card-one {
+.model-plan__image {
+  position: relative;
 
-  padding: 40px 35px;
+  z-index: 2;
 
-  justify-content: space-between;
+  top: auto;
+  right: auto;
 
+  /*
+    Não ocupa mais 100% da coluna.
+    Isso cria uma pequena margem visual
+    entre a imagem e a borda do card.
+  */
+  width: calc(100% - 18px);
+
+  max-width: calc(100% - 18px);
+
+  height: 168px;
+
+  /*
+    Centraliza a imagem dentro da coluna,
+    mantendo distância da borda.
+  */
+  justify-self: center;
+
+  margin-right: 9px;
+
+  object-fit: contain;
+
+  /*
+    Evita que o conteúdo da própria PNG
+    fique colado na extremidade direita.
+  */
+  object-position: center center;
+
+  display: block;
+
+  pointer-events: none;
+
+  box-sizing: border-box;
+
+  margin-top: 15px;
 }
 
 
-.card-one .model-card__content {
+// =========================================================
+// BROWN IMAGE
+// =========================================================
 
-  height: 100%;
+.model-plan__image--brown {
+  width: calc(100% - 20px);
+
+  max-width: calc(100% - 20px);
+
+  height: 182px;
+
+  margin-right: 10px;
+
+  margin-top: 7px;
+
+  object-position: center center;
+}
+
+
+// =========================================================
+// MODULADO IMAGE
+// =========================================================
+
+.model-plan__image--modulado {
+  width: calc(100% - 20px);
+
+  max-width: calc(100% - 20px);
+
+  height: 178px;
+
+  margin-right: 10px;
+
+  margin-top: 10px;
+
+  object-position: center center;
+}
+
+
+// =========================================================
+// BODY
+// =========================================================
+
+.model-plan__body {
+  position: relative;
+
+  z-index: 3;
+
+  flex: 1;
+
+  min-height: 0;
 
   display: flex;
-
   flex-direction: column;
 
   justify-content: space-between;
 
+  box-sizing: border-box;
+
+  padding: 18px 24px 21px;
 }
 
 
-.card-one .model-card__title {
+// =========================================================
+// LIST
+// =========================================================
 
-  margin-top: 0;
-
-}
-
-
-.model-card__learn {
-
-  display: flex;
-
-  align-items: center;
-
-  gap: 9px;
-
-  font-size: 0.8rem;
-
-  font-weight: 500;
-
-}
-
-
-.arrow {
-
-  width: 29px;
-
-  height: 29px;
-
-  border-radius: 50%;
-
-  background: #17171b;
-
-  color: #df8c17;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  font-size: 1.1rem;
-
-  line-height: 1;
-
-}
-
-
-.model-card__list {
-
+.model-plan__list {
   margin: 0;
-
   padding: 0;
 
   list-style: none;
-
 }
 
 
-.model-card__list li {
-
+.model-plan__list li {
   position: relative;
+
+  margin: 0 0 11px;
 
   padding-left: 15px;
 
-  margin-bottom: 15px;
-
-  font-size: 1.2rem;
+  font-size: 0.82rem;
 
   line-height: 1.3;
 
   color: #202024;
-
 }
 
 
-.model-card__list li::before {
+.model-plan__list li:last-child {
+  margin-bottom: 0;
+}
 
+
+.model-plan__list li::before {
   content: "•";
 
   position: absolute;
 
   left: 0;
-
   top: 0;
 
+  color: #df8c17;
+
+  font-weight: 700;
 }
-
-
-.card-one .model-card__list {
-
-  width: 48%;
-
-  margin-right: 5px;
-
-}
-
 
 
 // =========================================================
-// CARD 2
+// BROWN LIST
 // =========================================================
 
-.card-two {
-
-  padding: 32px 27px;
-
-  justify-content: space-between;
-
+.model-plan__list--brown li {
+  color: #fff;
 }
 
 
-.card-two .model-card__title {
-
-  align-self: flex-start;
-
+.model-plan__list--brown li::before {
+  color: #df8c17;
 }
-
-
-.card-two .model-card__image {
-
-  position: absolute;
-
-  right: 20px;
-
-  top: 35px;
-
-  width: 52%;
-
-  height: 75%;
-
-  object-fit: contain;
-
-}
-
 
 
 // =========================================================
-// CARD 3
+// BUTTON
 // =========================================================
 
-.card-three {
-
-  justify-content: center;
-
-  align-items: center;
-
-}
-
-
-.card-three .model-card__image {
-
-  width: 72%;
-
-  height: 90%;
-
-  object-fit: contain;
-
-}
-
-
-
-// =========================================================
-// CARD 4
-// =========================================================
-
-.card-four {
-
-  padding: 35px 42px;
-
-}
-
-
-.card-four .model-card__list {
-
+.model-plan__button {
   width: 100%;
+  height: 42px;
 
-}
-
-
-.model-card__list--full li {
-
-  margin-bottom: 14px;
-
-  font-size: 1.2rem;
-
-}
-
-
-
-// =========================================================
-// CARD 5
-// =========================================================
-
-.card-five {
-
-  padding: 40px 32px;
-
+  display: flex;
+  align-items: center;
   justify-content: space-between;
 
-  align-items: flex-start;
+  padding: 0 13px 0 18px;
 
+  box-sizing: border-box;
+
+  border: 1px solid #df8c17;
+  border-radius: 21px;
+
+  background: transparent;
+
+  color: #df8c17;
+
+  font-family: inherit;
+
+  font-size: 0.78rem;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
 }
 
 
-.card-five .model-card__description {
-
-  width: 48%;
-
-  margin: 5px 0 0;
-
-  font-size: 1.2rem;
-
-  line-height: 1.25;
-
-  color: #151515;
-
+.model-plan__button:hover {
+  background: #df8c17;
+  color: #111;
 }
 
+
+.model-plan__arrow {
+  font-size: 1.3rem;
+  line-height: 1;
+
+  transition: transform 0.2s ease;
+}
+
+
+.model-plan__button:hover .model-plan__arrow {
+  transform: translateX(3px);
+}
 
 
 // =========================================================
-// CARD 6
+// BROWN ACTIONS
 // =========================================================
 
-.card-six {
-
-  padding: 30px 26px;
-
-  align-items: flex-start;
-
-  justify-content: space-between;
-
-}
-
-
-.card-six .model-card__image {
-  position: absolute;
-
-  right: 30px;
-  bottom: -55px;
-
-  width: 30%;
-  height: 108%;
-
-  object-fit: contain;
-}
-
-
-.card-six .model-card__contact {
-
-  position: absolute;
-
-  left: 36px;
-
-  bottom: 22px;
-
+.model-plan__actions {
   display: flex;
 
   align-items: center;
 
-  gap: 9px;
-
-  color: #fff;
-
-  font-size: 0.8rem;
-
+  gap: 20px;
 }
 
 
-.arrow--white {
+.model-plan__action {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  color: #fff;
+
+  font-family: inherit;
+
+  font-size: 0.72rem;
+
+  cursor: pointer;
+}
+
+
+.model-plan__action-arrow {
+  width: 25px;
+  height: 25px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
 
   background: #fff;
 
   color: #4a1e00;
 
+  font-size: 1rem;
+
+  transition: transform 0.2s ease;
 }
 
 
-
-
-
-// =========================================================
-// TABLET
-// =========================================================
-
-@media (max-width: 1000px) {
-
-  .card-section {
-
-    padding: 70px 0;
-
-  }
-
-
-  .card-section__grid {
-
-    grid-template-rows: repeat(3, 200px);
-
-    gap: 15px;
-
-  }
-
-
-  .model-card {
-
-    border-radius: 28px;
-
-  }
-
-
-  .model-card__title {
-
-    font-size: 1.35rem;
-
-  }
-
-
-  .model-card__list li {
-
-    font-size: 0.75rem;
-
-  }
-
-
-  .card-one {
-
-    padding: 28px;
-
-  }
-
-
-  .card-one .model-card__list {
-
-    width: 50%;
-
-  }
-
-
-  .card-five .model-card__description {
-
-    width: 50%;
-
-    font-size: 0.72rem;
-
-  }
-
+.model-plan__action:hover .model-plan__action-arrow {
+  transform: translateX(3px);
 }
 
 
-
 // =========================================================
-// MOBILE
+// LARGE DESKTOP
 // =========================================================
 
-@media (max-width: 768px) {
+@media (min-width: 1500px) {
 
   .card-section {
-
-    padding: 60px 0 75px;
-
+    padding: 75px 0 85px;
   }
 
 
   .card-section__container {
-
-    width: 92%;
-
+    width: min(88%, 1400px);
   }
 
 
-  // -----------------------------------------------------
-  // HEADER
-  // -----------------------------------------------------
-
-  .card-section__header {
-
-    align-items: center;
-
-    gap: 14px;
-
-    margin-bottom: 30px;
-
+  .card-section__plans {
+    gap: 26px;
   }
 
 
-  .card-section__header h2 {
+  .model-plan {
+    min-height: 440px;
 
+    border-radius: 30px;
+  }
+
+
+  // -------------------------------------------------------
+  // VISUAL
+  // -------------------------------------------------------
+
+  .model-plan__visual {
+    height: 215px;
+
+    grid-template-columns:
+      minmax(0, 45%)
+      minmax(0, 55%);
+  }
+
+
+  // -------------------------------------------------------
+  // TITLE
+  // -------------------------------------------------------
+
+  .model-plan__title {
+    padding-left: 27px;
+
+    /*
+      Sobe um pouco mais no desktop grande.
+    */
+    padding-top: 12px;
+  }
+
+
+  .model-plan__title span {
     font-size: 1.45rem;
-
-    padding: 5px 7px;
-
   }
 
 
-  .card-section__header p {
+  // -------------------------------------------------------
+  // IMAGE
+  // -------------------------------------------------------
 
-    font-size: 0.72rem;
+  .model-plan__image {
+    width: calc(100% - 22px);
 
+    max-width: calc(100% - 22px);
+
+    height: 178px;
+
+    margin-right: 11px;
+
+    margin-top: 16px;
   }
 
 
-  // -----------------------------------------------------
-  // GRID
-  // -----------------------------------------------------
+  .model-plan__image--brown {
+    width: calc(100% - 24px);
 
-  .card-section__grid {
+    max-width: calc(100% - 24px);
 
-    grid-template-columns: 1fr;
+    height: 193px;
 
-    grid-template-rows: none;
+    margin-right: 12px;
 
-    gap: 18px;
-
+    margin-top: 7px;
   }
 
 
-  // -----------------------------------------------------
-  // CARD
-  // -----------------------------------------------------
+  .model-plan__image--modulado {
+    width: calc(100% - 24px);
 
-  .model-card {
+    max-width: calc(100% - 24px);
 
-    min-height: 220px;
+    height: 188px;
 
-    height: 220px;
+    margin-right: 12px;
 
-    border-radius: 25px;
-
+    margin-top: 10px;
   }
 
 
-  .model-card__title {
-
-    font-size: 1.4rem;
-
+  .model-plan__body {
+    padding: 22px 27px 24px;
   }
 
 
-  // -----------------------------------------------------
-  // CARD 1
-  // -----------------------------------------------------
-
-  .card-one {
-
-    padding: 28px;
-
+  .model-plan__list li {
+    font-size: 0.88rem;
   }
-
-
-  .card-one .model-card__list {
-
-    width: 52%;
-
-  }
-
-
-  // -----------------------------------------------------
-  // CARD 2
-  // -----------------------------------------------------
-
-  .card-two {
-
-    padding: 28px;
-
-  }
-
-
-  .card-two .model-card__image {
-
-   right: 8px;
-  width: 33%;
-  height: 68%;
-
-  }
-
-
-  // -----------------------------------------------------
-  // CARD 3
-  // -----------------------------------------------------
-
-  .card-three .model-card__image {
-
-    width: 70%;
-
-    height: 90%;
-
-  }
-
-
-  // -----------------------------------------------------
-  // CARD 4
-  // -----------------------------------------------------
-
-  .card-four {
-
-    padding: 30px;
-
-  }
-
-
-  .card-four .model-card__list li {
-
-    font-size: 0.78rem;
-
-    margin-bottom: 13px;
-
-  }
-
-
-  // -----------------------------------------------------
-  // CARD 5
-  // -----------------------------------------------------
-
-  .card-five {
-
-    padding: 30px;
-
-  }
-
-
-  .card-five .model-card__description {
-
-    width: 48%;
-
-    font-size: 0.75rem;
-
-  }
-
-
-  // -----------------------------------------------------
-  // CARD 6
-  // -----------------------------------------------------
-
-  .card-six {
-
-    padding: 28px;
-
-  }
-
-
-  .card-six .model-card__image {
- width: 30%;
-  height: 95%;
-
-  right: 5px;
-  bottom: -20px;
-
-  }
-
-
-  .card-six .model-card__contact {
-
-    left: 28px;
-
-    bottom: 20px;
-
-  }
-
 }
 
 
+// =========================================================
+// DESKTOP / TABLET GRANDE
+// =========================================================
+
+@media (max-width: 1200px) and (min-width: 801px) {
+
+  .card-section__container {
+    width: 92%;
+  }
+
+
+  .card-section__plans {
+    gap: 18px;
+  }
+
+
+  .model-plan {
+    min-height: 405px;
+  }
+
+
+  // -------------------------------------------------------
+  // VISUAL
+  // -------------------------------------------------------
+
+  .model-plan__visual {
+    height: 190px;
+
+    grid-template-columns:
+      minmax(0, 44%)
+      minmax(0, 56%);
+  }
+
+
+  // -------------------------------------------------------
+  // TITLE
+  // -------------------------------------------------------
+
+  .model-plan__title {
+    padding-left: 20px;
+
+    /*
+      Título mais alto.
+    */
+    padding-top: 10px;
+  }
+
+
+  .model-plan__title span {
+    font-size: 1.2rem;
+  }
+
+
+  // -------------------------------------------------------
+  // IMAGE
+  // -------------------------------------------------------
+
+  .model-plan__image {
+    width: calc(100% - 16px);
+
+    max-width: calc(100% - 16px);
+
+    height: 158px;
+
+    margin-right: 8px;
+
+    margin-top: 14px;
+  }
+
+
+  .model-plan__image--brown {
+    width: calc(100% - 18px);
+
+    max-width: calc(100% - 18px);
+
+    height: 168px;
+
+    margin-right: 9px;
+
+    margin-top: 6px;
+  }
+
+
+  .model-plan__image--modulado {
+    width: calc(100% - 18px);
+
+    max-width: calc(100% - 18px);
+
+    height: 164px;
+
+    margin-right: 9px;
+
+    margin-top: 9px;
+  }
+
+
+  .model-plan__body {
+    padding: 17px 20px 19px;
+  }
+
+
+  .model-plan__list li {
+    font-size: 0.76rem;
+
+    margin-bottom: 9px;
+  }
+}
+
 
 // =========================================================
-// SMALL MOBILE
+// TABLET
+// 601px — 800px
+//
+// Aqui mudamos a composição:
+// título em cima,
+// imagem abaixo,
+// conteúdo depois.
+//
+// Isso evita completamente a sobreposição.
 // =========================================================
 
-@media (max-width: 500px) {
+@media (max-width: 800px) and (min-width: 601px) {
 
   .card-section {
+    padding: 50px 0 65px;
+  }
 
-    padding: 50px 0 60px;
 
+  .card-section__container {
+    width: 90%;
   }
 
 
   .card-section__header {
+    gap: 16px;
 
-    gap: 10px;
-
+    margin-bottom: 28px;
   }
 
 
   .card-section__header h2 {
+    font-size: 2rem;
 
-    font-size: 1.25rem;
-
+    padding: 5px 8px;
   }
 
 
   .card-section__header p {
+    width: 135px;
 
-    font-size: 0.65rem;
-
+    font-size: 0.75rem;
   }
 
 
-  .card-section__grid {
+  // -------------------------------------------------------
+  // GRID
+  // -------------------------------------------------------
 
+  .card-section__plans {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+  }
+
+
+  // -------------------------------------------------------
+  // CARD
+  // -------------------------------------------------------
+
+  .model-plan {
+    min-height: 430px;
+
+    border-radius: 24px;
+  }
+
+
+  // -------------------------------------------------------
+  // VISUAL
+  // -------------------------------------------------------
+
+  .model-plan__visual {
+    height: 210px;
+
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: center;
+
+    overflow: visible;
+  }
+
+
+  // -------------------------------------------------------
+  // TITLE
+  // -------------------------------------------------------
+
+  .model-plan__title {
+    position: absolute;
+
+    top: 17px;
+    left: 17px;
+
+    right: 17px;
+
+    max-width: none;
+
+    padding-left: 0;
+    padding-top: 0;
+
+    align-items: flex-start;
+  }
+
+
+  .model-plan__title span {
+    font-size: 1rem;
+
+    line-height: 1;
+
+    padding: 3px 5px 4px;
+  }
+
+
+  // -------------------------------------------------------
+  // IMAGE
+  // -------------------------------------------------------
+
+  .model-plan__image {
+    position: absolute;
+
+    top: 72px;
+    right: 50%;
+
+    left: auto;
+
+    transform: translateX(50%);
+
+    width: 72%;
+    height: 125px;
+
+    margin: 0;
+
+    object-fit: contain;
+    object-position: center;
+  }
+
+
+  .model-plan__image--brown {
+    top: 65px;
+    right: 50%;
+
+    width: 80%;
+    height: 140px;
+
+    margin: 0;
+  }
+
+
+  .model-plan__image--modulado {
+    top: 68px;
+    right: 50%;
+
+    width: 84%;
+    height: 135px;
+
+    margin: 0;
+  }
+
+
+  // -------------------------------------------------------
+  // BODY
+  // -------------------------------------------------------
+
+  .model-plan__body {
+    padding: 17px 18px 19px;
+  }
+
+
+  // -------------------------------------------------------
+  // LIST
+  // -------------------------------------------------------
+
+  .model-plan__list li {
+    padding-left: 13px;
+
+    margin-bottom: 8px;
+
+    font-size: 0.68rem;
+
+    line-height: 1.3;
+  }
+
+
+  // -------------------------------------------------------
+  // BUTTON
+  // -------------------------------------------------------
+
+  .model-plan__button {
+    height: 38px;
+
+    font-size: 0.67rem;
+  }
+
+
+  // -------------------------------------------------------
+  // ACTIONS
+  // -------------------------------------------------------
+
+  .model-plan__actions {
+    gap: 12px;
+  }
+
+
+  .model-plan__action {
+    font-size: 0.61rem;
+  }
+
+
+  .model-plan__action-arrow {
+    width: 22px;
+    height: 22px;
+
+    font-size: 0.85rem;
+  }
+}
+
+
+// =========================================================
+// MOBILE
+// 600px para baixo
+//
+// Layout vertical:
+// HEADER
+// ↓
+// TÍTULO
+// ↓
+// IMAGEM
+// ↓
+// LISTA
+// ↓
+// BOTÃO
+// =========================================================
+
+@media (max-width: 600px) {
+
+  .card-section {
+    padding: 45px 0 60px;
+  }
+
+
+  .card-section__container {
+    width: calc(100% - 32px);
+
+    max-width: 500px;
+  }
+
+
+  // =======================================================
+  // HEADER
+  // =======================================================
+
+  .card-section__header {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin-bottom: 25px;
+  }
+
+
+  .card-section__header h2 {
+    font-size: clamp(1.35rem, 6vw, 1.7rem);
+
+    letter-spacing: -0.5px;
+
+    padding: 5px 7px;
+
+    line-height: 0.95;
+  }
+
+
+  .card-section__header p {
+    width: auto;
+
+    max-width: 135px;
+
+    margin-top: 2px;
+
+    font-size: clamp(0.62rem, 2.8vw, 0.72rem);
+
+    line-height: 1.15;
+  }
+
+
+  // =======================================================
+  // GRID
+  // =======================================================
+
+  .card-section__plans {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+
+  // =======================================================
+  // CARD
+  // =======================================================
+
+  .model-plan {
+    width: 100%;
+
+    min-height: 0;
+
+    height: auto;
+
+    border-radius: 24px;
+  }
+
+
+  // =======================================================
+  // VISUAL
+  // =======================================================
+
+  .model-plan__visual {
+    width: 100%;
+
+    height: 220px;
+
+    flex-shrink: 0;
+
+    display: block;
+
+    overflow: visible;
+  }
+
+
+  // =======================================================
+  // TITLE
+  // =======================================================
+
+  .model-plan__title {
+    position: absolute;
+
+    top: 18px;
+    left: 18px;
+
+    right: 18px;
+
+    max-width: none;
+
+    padding-left: 0;
+    padding-top: 0;
+
+    z-index: 5;
+  }
+
+
+  .model-plan__title span {
+    font-size: clamp(1rem, 5vw, 1.25rem);
+
+    line-height: 1;
+
+    padding: 4px 6px 5px;
+
+    max-width: 90%;
+  }
+
+
+  // =======================================================
+  // IMAGE
+  // =======================================================
+
+  .model-plan__image {
+    position: absolute;
+
+    top: 68px;
+
+    left: 50%;
+    right: auto;
+
+    transform: translateX(-50%);
+
+    width: 82%;
+
+    height: 140px;
+
+    margin: 0;
+
+    object-fit: contain;
+
+    object-position: center;
+
+    display: block;
+  }
+
+
+  .model-plan__image--brown {
+    top: 62px;
+
+    left: 50%;
+    right: auto;
+
+    transform: translateX(-50%);
+
+    width: 80%;
+
+    height: 150px;
+
+    margin: 0;
+  }
+
+
+  .model-plan__image--modulado {
+    top: 65px;
+
+    left: 50%;
+    right: auto;
+
+    transform: translateX(-50%);
+
+    width: 84%;
+
+    height: 145px;
+
+    margin: 0;
+  }
+
+
+  // =======================================================
+  // BODY
+  // =======================================================
+
+  .model-plan__body {
+    padding: 18px 20px 21px;
+  }
+
+
+  // =======================================================
+  // LIST
+  // =======================================================
+
+  .model-plan__list li {
+    padding-left: 14px;
+
+    margin-bottom: 10px;
+
+    font-size: clamp(0.72rem, 3.1vw, 0.8rem);
+
+    line-height: 1.35;
+  }
+
+
+  // =======================================================
+  // BUTTON
+  // =======================================================
+
+  .model-plan__button {
+    height: 40px;
+
+    margin-top: 20px;
+
+    font-size: 0.72rem;
+
+    border-radius: 20px;
+  }
+
+
+  // =======================================================
+  // ACTIONS
+  // =======================================================
+
+  .model-plan__actions {
     gap: 16px;
 
+    margin-top: 20px;
   }
 
 
-  .model-card {
+  .model-plan__action {
+    font-size: 0.66rem;
+  }
 
+
+  .model-plan__action-arrow {
+    width: 23px;
+    height: 23px;
+
+    font-size: 0.9rem;
+  }
+}
+
+
+// =========================================================
+// MOBILE MÉDIO
+// 451px — 600px
+// =========================================================
+
+@media (min-width: 451px) and (max-width: 600px) {
+
+  .model-plan__visual {
+    height: 230px;
+  }
+
+
+  .model-plan__image {
+    width: 76%;
+    height: 155px;
+
+    top: 70px;
+  }
+
+
+  .model-plan__image--brown {
+    width: 75%;
+    height: 165px;
+
+    top: 62px;
+  }
+
+
+  .model-plan__image--modulado {
+    width: 78%;
+    height: 160px;
+
+    top: 66px;
+  }
+
+
+  .model-plan__body {
+    padding: 20px 22px 22px;
+  }
+
+
+  .model-plan__list li {
+    font-size: 0.78rem;
+  }
+}
+
+
+// =========================================================
+// MOBILE PEQUENO
+// 381px — 450px
+// =========================================================
+
+@media (max-width: 450px) {
+
+  .card-section {
+    padding: 40px 0 55px;
+  }
+
+
+  .card-section__container {
+    width: calc(100% - 28px);
+  }
+
+
+  .card-section__header {
+    gap: 8px;
+
+    margin-bottom: 22px;
+  }
+
+
+  .card-section__header h2 {
+    font-size: 1.3rem;
+
+    padding: 5px 6px;
+  }
+
+
+  .card-section__header p {
+    max-width: 115px;
+
+    font-size: 0.62rem;
+  }
+
+
+  .card-section__plans {
+    gap: 17px;
+  }
+
+
+  // -------------------------------------------------------
+  // CARD
+  // -------------------------------------------------------
+
+  .model-plan {
+    border-radius: 22px;
+  }
+
+
+  // -------------------------------------------------------
+  // VISUAL
+  // -------------------------------------------------------
+
+  .model-plan__visual {
     height: 205px;
-
-    min-height: 205px;
-
-    border-radius: 23px;
-
   }
 
 
-  .model-card__title {
+  // -------------------------------------------------------
+  // TITLE
+  // -------------------------------------------------------
 
-    font-size: 1.25rem;
-
+  .model-plan__title {
+    top: 16px;
+    left: 16px;
+    right: 16px;
   }
 
 
-  .card-one {
+  .model-plan__title span {
+    font-size: 1rem;
 
-    padding: 25px;
-
+    padding: 3px 5px 4px;
   }
 
 
-  .card-one .model-card__list {
+  // -------------------------------------------------------
+  // IMAGE
+  // -------------------------------------------------------
 
-    width: 50%;
+  .model-plan__image {
+    top: 64px;
 
+    width: 80%;
+    height: 135px;
   }
 
 
-  .model-card__list li {
-
-    font-size: 0.68rem;
-
-  }
-
-
-  .card-two .model-card__image {
-
-    width: 45%;
-
-    right: 15px;
-
-  }
-
-
-  .card-three .model-card__image {
+  .model-plan__image--brown {
+    top: 58px;
 
     width: 78%;
-
+    height: 145px;
   }
 
 
-  .card-five .model-card__description {
+  .model-plan__image--modulado {
+    top: 61px;
 
-    font-size: 0.68rem;
-
+    width: 82%;
+    height: 140px;
   }
 
 
-  .card-six .model-card__image {
+  // -------------------------------------------------------
+  // BODY
+  // -------------------------------------------------------
 
-    width: 25%;
-    right: 55px;
-    bottom: -40px;
-
+  .model-plan__body {
+    padding: 16px 18px 19px;
   }
 
+
+  // -------------------------------------------------------
+  // LIST
+  // -------------------------------------------------------
+
+  .model-plan__list li {
+    padding-left: 12px;
+
+    margin-bottom: 8px;
+
+    font-size: 0.69rem;
+
+    line-height: 1.35;
+  }
+
+
+  // -------------------------------------------------------
+  // BUTTON
+  // -------------------------------------------------------
+
+  .model-plan__button {
+    height: 37px;
+
+    margin-top: 18px;
+
+    font-size: 0.67rem;
+  }
+
+
+  // -------------------------------------------------------
+  // ACTIONS
+  // -------------------------------------------------------
+
+  .model-plan__actions {
+    gap: 11px;
+
+    margin-top: 18px;
+  }
+
+
+  .model-plan__action {
+    font-size: 0.59rem;
+  }
+
+
+  .model-plan__action-arrow {
+    width: 21px;
+    height: 21px;
+
+    font-size: 0.8rem;
+  }
+}
+
+
+// =========================================================
+// VERY SMALL PHONES
+// 340px — 380px
+// =========================================================
+
+@media (max-width: 380px) {
+
+  .card-section {
+    padding: 35px 0 48px;
+  }
+
+
+  .card-section__container {
+    width: calc(100% - 24px);
+  }
+
+
+  .card-section__header {
+    gap: 7px;
+
+    margin-bottom: 20px;
+  }
+
+
+  .card-section__header h2 {
+    font-size: 1.15rem;
+
+    padding: 5px 6px;
+  }
+
+
+  .card-section__header p {
+    max-width: 105px;
+
+    font-size: 0.57rem;
+  }
+
+
+  .card-section__plans {
+    gap: 15px;
+  }
+
+
+  // -------------------------------------------------------
+  // CARD
+  // -------------------------------------------------------
+
+  .model-plan {
+    border-radius: 20px;
+  }
+
+
+  // -------------------------------------------------------
+  // VISUAL
+  // -------------------------------------------------------
+
+  .model-plan__visual {
+    height: 190px;
+  }
+
+
+  // -------------------------------------------------------
+  // TITLE
+  // -------------------------------------------------------
+
+  .model-plan__title {
+    top: 14px;
+    left: 14px;
+    right: 14px;
+  }
+
+
+  .model-plan__title span {
+    font-size: 0.91rem;
+
+    padding: 3px 5px;
+  }
+
+
+  // -------------------------------------------------------
+  // IMAGE
+  // -------------------------------------------------------
+
+  .model-plan__image {
+    top: 58px;
+
+    width: 82%;
+    height: 128px;
+  }
+
+
+  .model-plan__image--brown {
+    top: 53px;
+
+    width: 80%;
+    height: 138px;
+  }
+
+
+  .model-plan__image--modulado {
+    top: 56px;
+
+    width: 84%;
+    height: 133px;
+  }
+
+
+  // -------------------------------------------------------
+  // BODY
+  // -------------------------------------------------------
+
+  .model-plan__body {
+    padding: 14px 15px 17px;
+  }
+
+
+  .model-plan__list li {
+    font-size: 0.63rem;
+
+    margin-bottom: 7px;
+
+    padding-left: 11px;
+  }
+
+
+  .model-plan__button {
+    height: 35px;
+
+    margin-top: 16px;
+
+    font-size: 0.61rem;
+  }
+
+
+  .model-plan__actions {
+    gap: 9px;
+
+    margin-top: 16px;
+  }
+
+
+  .model-plan__action {
+    font-size: 0.56rem;
+  }
+
+
+  .model-plan__action-arrow {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+// =========================================================
+// EXTRA SMALL
+// <= 340px
+// =========================================================
+
+@media (max-width: 340px) {
+
+  .card-section__container {
+    width: calc(100% - 20px);
+  }
+
+
+  .card-section__header h2 {
+    font-size: 1.05rem;
+  }
+
+
+  .card-section__header p {
+    max-width: 95px;
+
+    font-size: 0.53rem;
+  }
+
+
+  .model-plan__visual {
+    height: 180px;
+  }
+
+
+  .model-plan__title {
+    top: 13px;
+    left: 13px;
+    right: 13px;
+  }
+
+
+  .model-plan__title span {
+    font-size: 0.84rem;
+  }
+
+
+  .model-plan__image {
+    top: 54px;
+
+    width: 83%;
+    height: 120px;
+  }
+
+
+  .model-plan__image--brown {
+    top: 49px;
+
+    width: 81%;
+    height: 130px;
+  }
+
+
+  .model-plan__image--modulado {
+    top: 52px;
+
+    width: 85%;
+    height: 125px;
+  }
+
+
+  .model-plan__body {
+    padding: 13px 13px 15px;
+  }
+
+
+  .model-plan__list li {
+    font-size: 0.59rem;
+
+    margin-bottom: 6px;
+
+    line-height: 1.3;
+  }
+
+
+  .model-plan__button {
+    height: 34px;
+
+    margin-top: 14px;
+
+    font-size: 0.58rem;
+  }
+
+
+  .model-plan__actions {
+    gap: 8px;
+
+    margin-top: 14px;
+  }
+
+
+  .model-plan__action {
+    font-size: 0.53rem;
+  }
+
+
+  .model-plan__action-arrow {
+    width: 19px;
+    height: 19px;
+
+    font-size: 0.72rem;
+  }
 }

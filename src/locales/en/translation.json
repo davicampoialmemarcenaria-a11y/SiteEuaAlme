@@ -50,49 +50,59 @@
         "subtitle": "Delivering exclusivity."
       }
     ]
-  },  "cards": {
-    "title": "Our model",
+  }, 
+  
+  
+  
+  "cards": {
+    "title": "Our Model",
     "subtitle": "What makes our service model different?",
 
-    "learnMore": "LEARN MORE",
-    "contact": "CONTACT",
 
-    "card1": {
-      "title1": "High",
-      "title2": "Standards",
-      "item1": "100% custom cabinetry designed for your space.",
-      "item2": "Premium-quality manufacturing.",
-      "item3": "Fast and well-organized delivery."
-    },
+"card6": {
+  "title1": "Custom-Built",
+  "alt": "Marcenaria sob medida",
+  "item1": "Dimensions customized to fit your space.",
+  "item2": "Longer production lead time ⧖⧖⧖⧖⧖.  ",
+  "item3": "Higher cost $$$$$.  ",
+  "item4": "Skilled installers required.  ",
+  "item5": "Extensive flexibility for complex designs and a wide variety of colors.  ",
+  "item6": "No pre-assembly.  "
+},
 
-    "card2": {
-      "title1": "Long-term",
-      "title2": "thinking",
-      "alt": "Long-term thinking"
-    },
+"card2": {
+  "title1": "ALME Model",
+  
+  "alt": "Visão de longo prazo"
+},
 
-    "card3": {
-      "alt": "Custom cabinetry"
-    },
+"card4": {
+  "item1": "Dimensions customized to fit your space.  ",
+  "item2": "Intermediate production lead time ⧖⧖.  ",
+  "item3": "Excellent cost-benefit $$.  ",
+  "item4": "Can be installed by conventional or skilled installer, as it comes with a detailed assembly manual.  ",
+  "item5": "Extensive flexibility for complex designs and a wide variety of colors.  ",
+  "item6": "Pre-assembled components for easier installation.  "  
+},
 
-    "card4": {
-      "item1": "Pre-assembled components for easier installation.",
-      "item2": "Assembly guide and all hardware included.",
-      "item3": "Freedom to install with your preferred installer.",
-      "item4": "Greater convenience, time savings, and flexibility."
-    },
+"card1": {
+  "title1": "Modular",
+  
+  "alt": "Transformando promessas em resultados",
 
-    "card5": {
-      "title1": "Sustainable",
-      "title2": "decisions",
-      "description": "Unique designs. Featuring our manufacturing and the professional you trust."
-    },
-
-    "card6": {
-      "title1": "Promises into",
-      "title2": "results",
-      "alt": "Promises into results"
-    }},  "brasil": {
+  "item1": "Standardized dimensions, adapted to your space.  ",
+  "item2": "Faster production lead time ⧖.  ",
+  "item3": "Lower cost $.   ",
+  "item4": "Conventional installer.",
+  "item5": "Limitations on complex designs and specific colors.",
+  "item6": "Pre-assembled components for easier installation. "  
+} }
+  
+  
+  
+  
+  
+  ,  "brasil": {
     "title": "OUR ROOTS",
     "description": "Get to know the story behind Alme and discover a complete custom millwork experience designed for the Brazilian market.",
     "button": "Visit our local site",
@@ -230,11 +240,6 @@
         "week": "Mon - Thu: 06:00 AM - 05:00 PM (EUA)",
         "friday": "Fri: 07:00 AM - 05:00 PM",
         "weekend": "Sat - Sun: Closed"
-      },
-
-      "address": {
-        "line1": "HQ: Alameda Prof. Lucas Nogueira Garcez, 5220,",
-        "line2": "Atibaia - SP, Brazil"
       }
     },
 

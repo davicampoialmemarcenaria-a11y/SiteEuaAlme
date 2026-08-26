@@ -50,49 +50,64 @@
         "subtitle": "Entregando exclusividade."
       }
     ]
+
+
+    
   }, "cards": {
     "title": "Nosso modelo",
     "subtitle": "O que torna nosso modelo de atendimento diferente?",
 
     "learnMore": "SAIBA MAIS",
     "contact": "CONTATO",
+"card6": {
+  "title1": "Sobmedida",
+  "alt": "Marcenaria sob medida",
+  "item1": "Dimensões personalizadas de acordo com o ambiente.",
+  "item2": "Prazo de produção mais longo ⧖⧖⧖⧖⧖. ",
+  "item3": "Custo elevado $$$$$.",
+  "item4": "Mão de obra especializada.",
+  "item5": "Ampla liberdade para itens complexos e variedade de cores.",
+  "item6": "Sem pré-montagem."
+},
 
-    "card1": {
-      "title1": "Alto",
-      "title2": "Padrão",
-      "item1": "Marcenaria 100% personalizada para o seu espaço.",
-      "item2": "Fabricação com padrão premium de qualidade.",
-      "item3": "Entrega rápida e bem organizada."
-    },
+"card2": {
+  "title1": "Padrão ALME",
+  
+  "alt": "Visão de longo prazo"
+},
 
-    "card2": {
-      "title1": "Visão de",
-      "title2": "longo prazo",
-      "alt": "Visão de longo prazo"
-    },
+"card4": {
+  "item1": "Dimensões personalizadas de acordo com o ambiente.",
+  "item2": "Prazo de produção intermediário ⧖⧖.",
+  "item3": "Excelente custo-benefício $$.",
+  "item4": "Possibilidade de utilização de mão de obra convencional ou especializada já que acompanha manual de montagem detalhado. ",
+  "item5": "Ampla liberdade para itens complexos e variedade de cores.",
+  "item6": "Componentes pré-montados facilitando instalação."  
+},
 
-    "card3": {
-      "alt": "Marcenaria planejada"
-    },
+"card1": {
+  "title1": "Modulado",
+  
+  "alt": "Transformando promessas em resultados",
 
-    "card4": {
-      "item1": "Componentes pré-montados para facilitar a instalação.",
-      "item2": "Manual de montagem e todas as ferragens inclusas.",
-      "item3": "Liberdade para instalar com o profissional de sua preferência.",
-      "item4": "Mais praticidade, economia de tempo e flexibilidade."
-    },
+  "item1": "Dimensões padronizadas, adaptadas ao seu ambiente. ",
+  "item2": "Prazo de produção mais ágil ⧖. ",
+  "item3": "Custo reduzido $.  ",
+  "item4": "Mão de obra convencional.   ",
+  "item5": "Limitações para itens complexos e cores específicas. ",
+  "item6": "Componentes pré-montados facilitando instalação.  "  
+} }
 
-    "card5": {
-      "title1": "Decisões",
-      "title2": "sustentáveis",
-      "description": "Projetos únicos com a nossa fabricação, e com o profissional da sua confiança."
-    },
 
-    "card6": {
-      "title1": "Transformando",
-      "title2": "promessas em resultados",
-      "alt": "Transformando promessas em resultados"
-    }}, "brasil": {
+
+
+
+
+
+
+
+
+    , "brasil": {
     "title": "NOSSAS RAÍZES",
     "description": "Conheça a história da Alme e descubra uma experiência completa em marcenaria planejada desenvolvida para o mercado brasileiro.",
     "button": "Visite nosso site no Brasil",
@@ -230,11 +245,6 @@
         "week": "Seg - Qui: 07:00 - 18:00 (BR)",
         "friday": "Sex: 07:00 - 17:00",
         "weekend": "Sáb - Dom: Fechado"
-      },
-
-      "address": {
-        "line1": "Alameda Prof. Lucas Nogueira Garcez, 5220,",
-        "line2": "Atibaia - SP, Brasil"
       }
     },
 

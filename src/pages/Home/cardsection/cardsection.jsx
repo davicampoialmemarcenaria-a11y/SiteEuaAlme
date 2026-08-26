@@ -14,133 +14,217 @@ export default function CardSection() {
   return (
     <section className="card-section">
       <div className="card-section__container">
-        <div className="card-section__header">
-          <h2>{t("cards.title")}</h2>
 
-          <p>{t("cards.subtitle")}</p>
-        </div>
+        {/* =====================================================
+            HEADER
+        ===================================================== */}
 
-        <div className="card-section__grid">
+        <header className="card-section__header">
+          <h2>
+            {t("cards.title")}
+          </h2>
 
-          {/* =====================================================
-              CARD 1
-          ===================================================== */}
+          <p>
+            {t("cards.subtitle")}
+          </p>
+        </header>
 
-          <article className="model-card model-card--light card-one">
-            <div className="model-card__content">
-              <div className="model-card__title">
-                <span>{t("cards.card1.title1")}</span>
-                <span>{t("cards.card1.title2")}</span>
+
+        {/* =====================================================
+            PLANS
+        ===================================================== */}
+
+        <div className="card-section__plans">
+
+          {/* ===================================================
+              SOB MEDIDA
+          =================================================== */}
+
+          <article className="model-plan model-plan--light">
+
+            <div className="model-plan__visual">
+
+              <div className="model-plan__title">
+                <span>
+                  {t("cards.card1.title1")}
+                </span>
+
+          
               </div>
 
-              <button
-                type="button"
-                className="model-card__learn"
-                onClick={() => navigate("/about")}
-              >
-                <div className="arrow">↗</div>
+              <img
+                src={card2Image}
+                alt={t("cards.card1.alt")}
+                className="model-plan__image"
+              />
 
-                <span>{t("cards.learnMore")}</span>
-              </button>
             </div>
 
-            <ul className="model-card__list">
-              <li>{t("cards.card1.item1")}</li>
 
-              <li>{t("cards.card1.item2")}</li>
+            <div className="model-plan__body">
 
-              <li>{t("cards.card1.item3")}</li>
-            </ul>
-          </article>
+              <ul className="model-plan__list">
 
-          {/* =====================================================
-              CARD 2
-          ===================================================== */}
+                <li>
+                  {t("cards.card1.item1")}
+                </li>
 
-          <article className="model-card model-card--orange card-two">
-            <div className="model-card__title model-card__title--white">
-              <span>{t("cards.card2.title1")}</span>
-              <span>{t("cards.card2.title2")}</span>
+                <li>
+                  {t("cards.card1.item2")}
+                </li>
+
+                <li>
+                  {t("cards.card1.item3")}
+                </li>
+
+                 <li>
+                  {t("cards.card1.item4")}
+                </li>
+
+                <li>
+                  {t("cards.card1.item5")}
+                </li>
+
+                <li>
+                  {t("cards.card1.item6")}
+                </li>
+
+
+              </ul>
+
             </div>
 
-            <img
-              src={card2Image}
-              alt={t("cards.card2.alt")}
-              className="model-card__image"
-            />
           </article>
 
-          {/* =====================================================
-              CARD 3
-          ===================================================== */}
 
-          <article className="model-card model-card--brown card-three">
-            <img
-              src={card3Image}
-              alt={t("cards.card3.alt")}
-              className="model-card__image model-card__image--center"
-            />
-          </article>
+          {/* ===================================================
+              PADRÃO ALME
+          =================================================== */}
 
-          {/* =====================================================
-              CARD 4
-          ===================================================== */}
+          <article className="model-plan model-plan--brown">
 
-          <article className="model-card model-card--light card-four">
-            <ul className="model-card__list model-card__list--full">
-              <li>{t("cards.card4.item1")}</li>
+            <div className="model-plan__visual">
 
-              <li>{t("cards.card4.item2")}</li>
+              <div className="model-plan__title model-plan__title--brown">
+                <span>
+                  {t("cards.card2.title1")}
+                </span>
 
-              <li>{t("cards.card4.item3")}</li>
+               
+              </div>
 
-              <li>{t("cards.card4.item4")}</li>
-            </ul>
-          </article>
+              <img
+                src={card3Image}
+                alt={t("cards.card2.alt")}
+                className="model-plan__image model-plan__image--brown"
+              />
 
-          {/* =====================================================
-              CARD 5
-          ===================================================== */}
-
-          <article className="model-card model-card--orange card-five">
-            <div className="model-card__title model-card__title--white">
-              <span>{t("cards.card5.title1")}</span>
-              <span>{t("cards.card5.title2")}</span>
             </div>
 
-            <p className="model-card__description">
-              {t("cards.card5.description")}
-            </p>
-          </article>
 
-          {/* =====================================================
-              CARD 6
-          ===================================================== */}
+            <div className="model-plan__body">
 
-          <article className="model-card model-card--brown card-six">
-            <div className="model-card__title model-card__title--orange">
-              <span>{t("cards.card6.title1")}</span>
-              <span>{t("cards.card6.title2")}</span>
+              <ul className="model-plan__list model-plan__list--brown">
+
+                <li>
+                  {t("cards.card4.item1")}
+                </li>
+
+                <li>
+                  {t("cards.card4.item2")}
+                </li>
+
+                <li>
+                  {t("cards.card4.item3")}
+                </li>
+
+                <li>
+                  {t("cards.card4.item4")}
+                </li>
+
+                <li>
+                  {t("cards.card4.item5")}
+                </li>
+
+                <li>
+                  {t("cards.card4.item6")}
+                </li>
+
+              </ul>
+
+
+              <div className="model-plan__actions">
+
+              
+
+              </div>
+
             </div>
 
-            <img
-              src={card6Image}
-              alt={t("cards.card6.alt")}
-              className="model-card__image model-card__image--six"
-            />
+          </article>
 
-            <button
-              type="button"
-              className="model-card__contact"
-              onClick={() => navigate("/contact")}
-            >
-              <div className="arrow arrow--white">↗</div>
 
-              <span>{t("cards.contact")}</span>
-            </button>
+          {/* ===================================================
+              MODULADO
+          =================================================== */}
+
+          <article className="model-plan model-plan--light">
+
+            <div className="model-plan__visual">
+
+              <div className="model-plan__title">
+                <span>
+                  {t("cards.card6.title1")}
+                </span>
+
+           
+              </div>
+
+              <img
+                src={card6Image}
+                alt={t("cards.card6.alt")}
+                className="model-plan__image model-plan__image--modulado"
+              />
+
+            </div>
+
+
+            <div className="model-plan__body">
+
+              <ul className="model-plan__list">
+
+                <li>
+                  {t("cards.card6.item1")}
+                </li>
+
+                <li>
+                  {t("cards.card6.item2")}
+                </li>
+
+                <li>
+                  {t("cards.card6.item3")}
+                </li>
+
+                <li>
+                  {t("cards.card6.item4")}
+                </li>
+
+                <li>
+                  {t("cards.card6.item5")}
+                </li>
+
+                <li>
+                  {t("cards.card6.item6")}
+                </li>
+
+              </ul>
+
+            </div>
+
           </article>
 
         </div>
+
       </div>
     </section>
   );
